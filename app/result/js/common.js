@@ -13,10 +13,11 @@ jQuery(document).ready(function( $ ) {
     }
     $('.burger').removeClass("on");
     $('.resort-open').fadeOut();
+    $('.filter-where-list').hide();
   });
 
 
-  $(".burger, .top-mnu, .resort-open").click(function (e) {
+  $(".burger, .top-mnu, .resort-open, .filter-where-list, #where_search").click(function (e) {
     e.stopPropagation();
   });
 
@@ -83,6 +84,11 @@ $('.accordion-header').toggleClass('inactive-header');
 
   });
 
+
+  $('.resort-control-item').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('open');
+  });
 
   $('.tabs-control-2 .tabs_control_link').click(function (e) {
     e.preventDefault();
@@ -208,7 +214,7 @@ $('.accordion-header').toggleClass('inactive-header');
      speed: 300,
      slidesToShow: 2,   
      responsive: [     
-    {
+     {
       breakpoint: 768,
       settings: {
         slidesToShow: 1
@@ -237,7 +243,7 @@ $('.accordion-header').toggleClass('inactive-header');
      speed: 300,
      slidesToShow: 3,   
      responsive: [     
-    {
+     {
       breakpoint: 992,
       settings: {
         slidesToShow: 2
@@ -274,11 +280,11 @@ $('.accordion-header').toggleClass('inactive-header');
   dots: true
   */
 
-/*  $('.burger').click(function (e) {
+  $('.burger').click(function (e) {
     e.preventDefault();
     $(this).toggleClass('on');
     $('.resort-open').fadeToggle();
-  });*/
+  });
 
 
   $('.link').click(function(e) {
@@ -305,7 +311,7 @@ $('.accordion-header').toggleClass('inactive-header');
   });
 
 
-/*  $(window).scroll(function(){
+  $(window).scroll(function(){
     var wt = $(window).scrollTop();  
     var wh = $(window).height();    
     if (wt > 600) {
@@ -314,7 +320,7 @@ $('.accordion-header').toggleClass('inactive-header');
     else {
      $('.arr-up').hide();
    }
- });*/
+ });
 
   if($('select').length) {
     $('select').select2({
@@ -322,5 +328,33 @@ $('.accordion-header').toggleClass('inactive-header');
     });
   }
 
+
+  
+
+  $('#where_search').on('input', function() { 
+    $('.filter-where-list').show();
+});
+
+  $('#where_search').hideseek({
+    hidden_mode: true,
+    nodata: 'Пока ничего не найдено...'
+  });
+
+
+  $('.filter-where-list li').click(function (e) {
+    e.preventDefault();    
+    $('#where_search').val($(this).text());
+    $('.filter-where-list').hide();
+  });
+
+  
+
+  
+    
+  
+ 
+
 }); //ready
+
+
 

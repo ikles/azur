@@ -28,11 +28,11 @@
             <a href="#" class="logo"><img src="https://uploads-ssl.webflow.com/616e5f3df5a97f09e3e547c2/616e60e097a93bee5c7a8d16_logo.svg" class="logo-img" /></a>
             <a href="#" class="burger">
               <div class="burger-icon"></div>
-              <div class="burger-txt hide-640">Курорты</div>
-              <div class="burger-txt show-640">Меню</div>
+              <div class="burger-txt hide-767">Курорты</div>
+              <div class="burger-txt show-767">Меню</div>
             </a>
             @@include('var/_resort-open.html')
-            <div class="top-btns">
+            <div class="top-btns hide-767">
               <a href="#" class="btn btn-min">
                 <img src="img/user-i.svg" class="btn-icon" />
                 <div>Войти</div>
@@ -45,7 +45,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </header>    
     <main class="main">
 
       <div class="banner">
@@ -64,8 +64,14 @@
           <div class="filter-w">
             <div class="filer-form-block w-form">
               <form class="filter-form">
-                <div class="filter-col">
-                  <input type="text" class="filter-input loc" autocomplete="off" placeholder="Где отдыхать"/>
+                <div class="filter-col filter-col-where">
+                  <input type="text" id="where_search" name="where_search" class="filter-input loc" autocomplete="off" placeholder="Где отдыхать" data-list=".filter-where-list"/>
+                  <ul class="filter-where-list">
+                    <li><b>Адлер,</b> Сочи</li>
+                    <li><b>Адыгейск,</b> Республика Хакасия</li>
+                    <li><b>Барнаул,</b> Алтайский край</li>
+                  </ul>
+
                 </div>
                 <div class="filter-col">
                   <input type="text" class="filter-input date" placeholder="Дата заезда/выезда"/>
@@ -393,6 +399,7 @@
   
   <script src="js/jquery-3.4.1.min.js"></script>      
   <script src="js/slick.js"></script>
+  <script src="js/jquery.hideseek.js"></script>
   <script src="js/common.js"></script>
 </body>
 </html>
