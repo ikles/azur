@@ -333,7 +333,7 @@ $('.accordion-header').toggleClass('inactive-header');
 
   $('#where_search').on('input', function() { 
     $('.filter-where-list').show();
-});
+  });
 
   $('#where_search').hideseek({
     hidden_mode: true,
@@ -347,14 +347,123 @@ $('.accordion-header').toggleClass('inactive-header');
     $('.filter-where-list').hide();
   });
 
-  
+
+
+  const allowedDates = [
+  '2021-11-01', '2021-11-02', '2021-11-03',  '2021-11-04',  '2021-11-05',  '2021-11-06',  '2021-11-07',  '2021-11-08',  '2021-11-09',  '2021-11-10',  '2021-11-11',  '2021-11-12',  '2021-11-13', '2021-11-14',
+  '2021-12-13', '2021-12-14', '2021-12-15', '2021-12-16','2021-12-17','2021-12-18','2021-12-19','2021-12-20','2021-12-21','2021-12-22','2021-12-23','2021-12-24','2021-12-25','2021-12-26','2021-12-27','2021-12-28','2021-12-29','2021-12-30','2021-12-31',
+  ];
+
+
+
+
+
+  new Litepicker({
+    element: document.getElementById('filter_input_date'),
+    singleMode: false,
+    delimiter: ' - ',
+    lang: "ru-RU",
+    format: 'DD MMM',
+    numberOfMonths: 2,
+    tooltipText: {
+      one: 'night',
+      other: 'nights'
+    },
+    tooltipNumber: (totalDays) => {
+      return totalDays - 1;
+    },
+    lockDaysFilter: (date1, date2, pickedDates) => {
+      return allowedDates.includes(date1.format('YYYY-MM-DD'));
+    }
+  })
+
+  const filter_input_persons =  $('.filter-input.persons');
+  let total = '';
+  let total_adult = '';
+  let total_children = '';
+  let total_babies = '';
+
+  $('.filter-persons-control-row').each(function () {
+    let self = $(this);
+    let control = $(this).find('.filter-persons-control');
+    let plus = $(this).find('.filter-persons-control._plus');
+    let minus = $(this).find('.filter-persons-control._minus');
+    let input = $(this).find('.filter-persons-input');        
+
+    let input_adults = $('.filter-persons-input.adults');
+    let input_children = $('.filter-persons-input.children');
+    let input_babies = $('.filter-persons-input.babies');
+
+
+    control.click(function () {
+
+
+
+
+
+     if ($(this).hasClass('_plus')) {
+      input.val(+input.val() + 1);
+      if ( +input.val() < 0) {
+        input.val(0);
+      }
+    }
+    else if ($(this).hasClass('_minus')) {
+      input.val(+input.val() - 1);
+      if ( +input.val() < 0) {
+        input.val(0);
+      }
+    }
+
+    if ( input.val() > 0 ) {
+      minus.removeClass('dis');
+    }
+    else {
+     minus.addClass('dis'); 
+   }
+
+   if (input.hasClass('adults') && +input_adults.val() > 0 ) {
+     total_adult = input_adults.val() + ' Взрослых, '; 
+   }
+   else if (input.hasClass('adults') && +input_adults.val() <= 0) {
+    total_adult = '';
+  }
+
+  if (input.hasClass('children') && +input_children.val() > 0 ) {
+   total_children = input_children.val() + ' Детей, ';
+ }
+ else if (input.hasClass('children') && +input_children.val() <= 0) {
+  total_children = '';
+}
+
+
+if (input.hasClass('babies') && +input_babies.val() > 0) {
+  total_babies = input_babies.val() + ' Младенцев, ';
+}
+else if ( input.hasClass('babies') && +input_babies.val() <= 0 ) {
+  total_babies = '';
+}
+
+
+total = total_adult + total_children + total_babies;
+
+filter_input_persons.val(total);
+
+
+
+
+
+
+
+
+});
+
+
+
+
+
+
+  });
 
   
-    
-  
- 
-
 }); //ready
-
-
 

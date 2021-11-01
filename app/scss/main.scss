@@ -39,6 +39,9 @@ textarea {
   }
 }
 
+html {
+
+}
 
 
 body {  
@@ -50,6 +53,7 @@ body {
   position: relative;
   min-height: 100vh;
   background: #F6F7F9;
+  
 }
 
 .wrapper {
@@ -191,6 +195,7 @@ body {
   padding-right: 5px;
   padding-left: 5px;    
   flex-grow: 1;
+  position: relative;
 }
 
 
@@ -355,8 +360,27 @@ input[type="text"].filter-input {
   border-width: 1px;
   border-color: #d0dae9;
   border-radius: 6px;
-  color: #606a7c;
+  font-weight: 600;  
   background-color: #FFF;
+  color: #2F3544;  
+  &::placeholder {
+    font-weight: 500;
+    color: #606A7C;
+  }
+  &:focus {    
+    + span.finput-line  {
+      content: "";
+      display: block;
+      width: calc(100% - 10px);
+      height: 2px;
+      background: #3181F6;
+      border-radius: 1px;
+      bottom: -4px;
+      left: 5px;
+      position: absolute;      
+      z-index: 10;
+    }  
+  }
 }
 
 .filter-input.date {
@@ -1213,19 +1237,19 @@ input[type="text"].filter-input {
 }
 
 .filter-col-where {
-position: relative;
+  position: relative;
 }
 
 .filter-where-list {
   background: #FFFFFF;
-box-shadow: 0px 20px 20px -10px rgba(68, 85, 132, 0.15);
-border-radius: 6px;
-padding: 15px 20px;
-position: absolute;
-top: 70px;
-left: 5px;
-width: calc(100% - 10px);
-display: none;
+  box-shadow: 0px 20px 20px -10px rgba(68, 85, 132, 0.15);
+  border-radius: 6px;
+  padding: 15px 20px;
+  position: absolute;
+  top: 70px;
+  left: 5px;
+  width: calc(100% - 10px);
+  display: none;
   li {
     cursor: pointer;
     color: #919FB3;
@@ -1237,6 +1261,225 @@ display: none;
     }
   }
 }
+
+//--litepicker-month-width: calc(var(--litepicker-day-width) * 7);
+//--litepicker-day-width: 38px;
+
+:root {
+  --litepicker-day-width: 40px;  
+}
+
+
+
+
+.litepicker {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;  
+  transform: translate(0%, 7px);
+  .container__months {
+    display: flex;      
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: calc( (var(--litepicker-month-width) * 2) + 100px);
+    box-shadow: 0px 20px 20px -10px rgba(68, 85, 132, 0.15);
+    border-radius: 10px;
+    .month-item {
+      width: 50%;
+      padding: 30px;
+      &:nth-child(1) {
+        padding-right: 20px;
+      }      
+      &:nth-child(2) {
+        padding-left: 20px;
+      }      
+    }
+  }
+  .container__days {
+    .day-item {
+      padding: 13px 0;
+      font-weight: 500;
+      font-size: 14px;
+      text-align: center;
+      color: #606A7C;
+      &.is-locked {
+        color: #C2CCDA;
+        outline: none !important;
+        border: none !important;
+        &:hover {      
+          color: #C2CCDA;
+        }
+      }
+      &.is-today {
+        font-weight: 600;
+        color: #3181F6;
+      }
+      &.is-start-date, &.is-end-date {
+        border-radius: 6px;
+        background: #3181F6;
+        &:hover {
+          color: #FFF;
+        }
+      }
+      &.is-in-range {
+        background: rgba(#3181F6, 0.07);
+      }
+      
+      &:hover {
+        outline: 1px solid #D0DAE9;
+        border-radius: 6px;
+        box-shadow: none;
+        color: #606A7C;
+      }
+    }
+  }
+} 
+
+
+.litepicker .container__months .month-item-header div {
+  > .month-item-name {
+    font-weight: 600;
+    font-size: 16px;
+    color: #2F3544;
+  }
+  >.month-item-year {
+    font-weight: 500;
+    font-size: 16px;
+    color: #919FB3;  
+  }  
+  
+}
+
+.litepicker .container__months .month-item:first-child {
+  .button-previous-month {
+    display: none;
+  }
+  .button-next-month {
+
+
+  }
+} 
+
+.litepicker .container__months .month-item:last-child .button-next-month {
+  background: rgba(255, 255, 255, 0.85);
+  background: url('../img/arr-sl-r.svg') center center no-repeat rgba(255, 255, 255, 0.99);  
+  box-shadow: 0px 10px 10px rgba(46, 52, 68, 0.05);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  transform: translate(23px, 50%);
+  bottom: 50%;
+  svg {
+    display: none;
+  }
+
+}
+
+
+
+
+.litepicker .container__months .month-item-weekdays-row {
+  >div {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #919FB3;
+    padding: 13px 0;
+  }
+}
+
+.litepicker .container__months .month-item-header div > .month-item-name {
+  text-transform: capitalize;
+  
+}
+
+.litepicker .container__days .day-item {
+
+}
+
+
+
+
+.filter-persons-control-wrap {
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(68, 85, 132, 0.15) 0px 20px 20px -10px;
+  border-radius: 10px;
+  width: 100%;
+  padding: 22px 20px;
+  position: absolute;
+  left: 0;
+  top: 80px;
+  z-index: 2;
+}
+.filter-persons-control-row {
+  display: flex;
+  align-items: center;  
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.filter-persons-control-l {
+  flex: 1 1 auto;
+  padding-right: 30px;
+}
+.filter-persons-tit {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(47, 53, 68);
+  margin-bottom: 4px;
+}
+.filter-persons-info {
+  font-weight: 500;
+  font-size: 14px;
+
+  color: #919fb3;
+}
+.filter-persons-control-r {
+  width: 104px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter-persons-control {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgb(208, 218, 233);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  &._minus {
+  background: url("../img/minus.png") $nr center;
+  &.dis {
+    opacity: 0.4;
+    cursor: default;
+  }
+}
+
+&._plus {
+  background: url("../img/plus.png") $nr center;
+}
+}
+
+
+
+input[type="text"].filter-persons-input {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(96, 106, 124);
+  text-align: center;
+}
+
 
 
 @import "_media.scss";

@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/litepicker.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -66,6 +67,7 @@
               <form class="filter-form">
                 <div class="filter-col filter-col-where">
                   <input type="text" id="where_search" name="where_search" class="filter-input loc" autocomplete="off" placeholder="Где отдыхать" data-list=".filter-where-list"/>
+                  <span class="finput-line"></span>
                   <ul class="filter-where-list">
                     <li><b>Адлер,</b> Сочи</li>
                     <li><b>Адыгейск,</b> Республика Хакасия</li>
@@ -74,10 +76,47 @@
 
                 </div>
                 <div class="filter-col">
-                  <input type="text" class="filter-input date" placeholder="Дата заезда/выезда"/>
+                  <input type="text" id="filter_input_date" class="filter-input date" placeholder="Дата заезда/выезда"/>
+                  <span class="finput-line"></span>
                 </div>
                 <div class="filter-col">
-                  <input type="text" class="filter-input persons" placeholder="2 взрослых" />
+                  <input type="text" class="filter-input persons" placeholder="Выберите из списка" />
+                  <span class="finput-line"></span>
+                  <div class="filter-persons-control-wrap">
+                    <div class="filter-persons-control-row">
+                      <div class="filter-persons-control-l">
+                        <div class="filter-persons-tit">Взрослые</div>
+                        <div class="filter-persons-info">от 13 лет</div>
+                      </div>
+                      <div class="filter-persons-control-r">
+                        <span class="filter-persons-control _minus dis"></span>
+                        <input class="filter-persons-input adults" name="adults" type="text" placeholder="0" value="0">
+                        <span class="filter-persons-control _plus"></span>
+                      </div>
+                    </div><!--row-->
+                    <div class="filter-persons-control-row">
+                      <div class="filter-persons-control-l">
+                        <div class="filter-persons-tit">Дети</div>
+                        <div class="filter-persons-info">от 2 до 12 лет</div>
+                      </div>
+                      <div class="filter-persons-control-r">
+                        <span class="filter-persons-control _minus dis"></span>
+                        <input class="filter-persons-input children" name="children" type="text" placeholder="0" value="0">
+                        <span class="filter-persons-control _plus"></span>
+                      </div>
+                    </div><!--row-->
+                    <div class="filter-persons-control-row">
+                      <div class="filter-persons-control-l">
+                        <div class="filter-persons-tit">Младенцы</div>
+                        <div class="filter-persons-info">до 2 лет</div>
+                      </div>
+                      <div class="filter-persons-control-r">
+                        <span class="filter-persons-control _minus dis"></span>
+                        <input class="filter-persons-input babies" name="babies" type="text" placeholder="0" value="0">
+                        <span class="filter-persons-control _plus"></span>
+                      </div>
+                    </div><!--row-->
+                  </div>
                 </div>
                 <input type="submit" value="Подобрать жилье" class="btn filter-btn" />
               </form>
@@ -400,6 +439,7 @@
   <script src="js/jquery-3.4.1.min.js"></script>      
   <script src="js/slick.js"></script>
   <script src="js/jquery.hideseek.js"></script>
+  <script src="js/litepicker.js"></script>
   <script src="js/common.js"></script>
 </body>
 </html>
