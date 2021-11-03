@@ -14,10 +14,11 @@ jQuery(document).ready(function( $ ) {
     $('.burger').removeClass("on");
     $('.resort-open').fadeOut();
     $('.filter-where-list').hide();
+    $('.filter-persons-control-wrap').hide();
   });
 
 
-  $(".burger, .top-mnu, .resort-open, .filter-where-list, #where_search").click(function (e) {
+  $(".burger, .top-mnu, .resort-open, .filter-where-list, #where_search, .filter-persons-control-wrap, .filter-input.persons").click(function (e) {
     e.stopPropagation();
   });
 
@@ -333,7 +334,18 @@ $('.accordion-header').toggleClass('inactive-header');
 
   $('#where_search').on('input', function() { 
     $('.filter-where-list').show();
+    $('.input-where-delete').show();
   });
+
+  $('.filter-input.persons').on('focus', function () {
+    $('.filter-persons-control-wrap').fadeIn();
+  });
+
+  $('.input-where-delete').click(function () {
+    $('#where_search').val('');
+  });
+
+  
 
   $('#where_search').hideseek({
     hidden_mode: true,
@@ -365,6 +377,11 @@ $('.accordion-header').toggleClass('inactive-header');
     lang: "ru-RU",
     format: 'DD MMM',
     numberOfMonths: 2,
+    setup: (picker) => {
+      picker.on('hide', () => {
+        $('.container__main_before-1').removeClass('on');
+      });
+    },
     tooltipText: {
       one: 'night',
       other: 'nights'
@@ -375,7 +392,10 @@ $('.accordion-header').toggleClass('inactive-header');
     lockDaysFilter: (date1, date2, pickedDates) => {
       return allowedDates.includes(date1.format('YYYY-MM-DD'));
     }
-  })
+  });
+
+
+  
 
   const filter_input_persons =  $('.filter-input.persons');
   let total = '';
@@ -397,10 +417,6 @@ $('.accordion-header').toggleClass('inactive-header');
 
     control.click(function () {
 
-
-
-
-
      if ($(this).hasClass('_plus')) {
       input.val(+input.val() + 1);
       if ( +input.val() < 0) {
@@ -415,7 +431,7 @@ $('.accordion-header').toggleClass('inactive-header');
     }
 
     if ( input.val() > 0 ) {
-      minus.removeClass('dis');
+      minus.removeClass('dis');      
     }
     else {
      minus.addClass('dis'); 
@@ -446,6 +462,15 @@ else if ( input.hasClass('babies') && +input_babies.val() <= 0 ) {
 
 total = total_adult + total_children + total_babies;
 
+if (total != '') {
+  $('.where-persons-pda').addClass('on');
+
+}
+else {
+ $('.where-persons-pda').removeClass('on'); 
+
+}
+
 filter_input_persons.val(total);
 
 
@@ -455,15 +480,91 @@ filter_input_persons.val(total);
 
 
 
-});
-
-
-
-
-
-
+}); //control.click
   });
 
   
+  $('.where-persons-pda').click(function () {
+    if ( $(this).hasClass('on') ) {
+      $('.container__main_before-2').removeClass('on');
+      $('.filter').removeClass('on-2');  
+    }
+    else {
+      return;
+    }
+  });  
+  
+
+
+  function open_date_pda() {
+    $('#filter_input_date').click(function () {
+      $('.container__main_before-1').addClass('on');
+
+      $('html, body').animate({
+        scrollTop: 0
+      });
+    });
+
+    $('#where_search').on('focus', function () {
+      $('.filter').addClass('on');
+
+      $('html, body').animate({
+        scrollTop: 0
+      });
+
+
+    });
+  }
+  function open_persons_pda() {
+   $('.filter-input.persons').on('focus', function () {
+    $('.filter').addClass('on-2');
+    $('.container__main_before-2').addClass('on');
+
+    $('html, body').animate({
+      scrollTop: 0
+    });
+
+  });
+ }
+
+
+ $(window).resize(function() {
+  if( $(window).width() < 481 ) {
+
+    open_date_pda();
+
+    open_persons_pda();
+
+  }
+  });//res
+
+ if( $(window).width() < 481 ) {
+  open_date_pda();
+
+  open_persons_pda();
+
+  }//w
+
+//filter-col-persons
+
+
+$('.container__main_before-1').click(function () {
+  $(this).removeClass('on');
+});
+
+$('.container__main_before-2').click(function () {
+  $(this).removeClass('on');
+  $('.filter').removeClass('on-2');
+});
+
+
+$('.where-close-pda, .filter-where-list li').click(function () {
+  $('.filter').removeClass('on');
+});
+
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+
 }); //ready
 

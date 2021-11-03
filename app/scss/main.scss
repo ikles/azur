@@ -68,7 +68,7 @@ body {
 
 .main {  
   flex-grow: 1;
-  position: relative;
+  
 }
 
 .contain {
@@ -195,12 +195,14 @@ body {
   padding-right: 5px;
   padding-left: 5px;    
   flex-grow: 1;
-  position: relative;
+  position: relative;  
 }
 
 
 
-
+.container__main_before {
+  display: none;
+}
 
 
 .top-btn-wh {
@@ -368,9 +370,14 @@ input[type="text"].filter-input {
     color: #606A7C;
   }
   &:focus {    
-    + span.finput-line  {
-      content: "";
-      display: block;
+    + span.finput-line  {      
+      display: block;      
+    }  
+  }
+}
+
+span.finput-line  {      
+      display: none;
       width: calc(100% - 10px);
       height: 2px;
       background: #3181F6;
@@ -380,7 +387,17 @@ input[type="text"].filter-input {
       position: absolute;      
       z-index: 10;
     }  
-  }
+
+input[type="text"]#where_search {
+  padding-right: 30px;
+}
+
+.where-close-pda {
+  display: none;
+}
+
+.where-persons-pda {
+  display: none;
 }
 
 .filter-input.date {
@@ -501,6 +518,9 @@ input[type="text"].filter-input {
   justify-content: space-between;
   position: relative;
   align-items: center;
+  .slick-track {
+    padding-bottom: 40px;
+  }
 }
 
 .hotels-w-js {
@@ -522,6 +542,7 @@ input[type="text"].filter-input {
   position: relative;
   &:before {
     background: linear-gradient(rgba(43, 53, 78, 0.3) 50%, rgba(43, 53, 78, 0.45) 75.26%, rgba(43, 53, 78, 0.85) 100%);
+    background: linear-gradient(180deg, rgba(43, 53, 78, 0) 50%, rgba(43, 53, 78, 0.45) 75.26%, rgba(43, 53, 78, 0.85) 100%);
     content: "";
     position: absolute;
     top: 0;
@@ -649,7 +670,8 @@ input[type="text"].filter-input {
 }
 
 .region {
-  padding-top: 40px;  
+  padding-top: 40px; 
+  padding-top: 0;
 }
 
 .region-h-w {
@@ -667,6 +689,16 @@ input[type="text"].filter-input {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  &:hover {
+    text-decoration: none;
+    .wshow-map-span {
+     border-bottom: 1px solid rgb(145, 159, 179); 
+    }    
+  }
+}
+
+.slick-track {
+  overflow: visible;
 }
 
 .wshow-map-span {
@@ -674,6 +706,7 @@ input[type="text"].filter-input {
   font-size: 16px;
   color: rgb(145, 159, 179);
   margin-right: 7px;
+  
   span {
     color: #C2CCDA;
   }
@@ -724,8 +757,7 @@ input[type="text"].filter-input {
 }
 
 .sale {
-
-  padding-top: 40px;
+  padding-top: 40px;  
   padding-bottom: 40px;
 }
 
@@ -1244,22 +1276,38 @@ input[type="text"].filter-input {
   background: #FFFFFF;
   box-shadow: 0px 20px 20px -10px rgba(68, 85, 132, 0.15);
   border-radius: 6px;
-  padding: 15px 20px;
+  padding: 15px 10px;
   position: absolute;
   top: 70px;
   left: 5px;
   width: calc(100% - 10px);
   display: none;
+  z-index: 2;
   li {
     cursor: pointer;
-    color: #919FB3;
-    line-height: 40px;
+    color: #919FB3;    
+    padding: 12px 10px;
+    &:hover {
+      background: #F0F2F6;
+      border-radius: 5px
+    }
     &:not(:last-child) {      
     }
     b {
       color: #2F3544;
     }
-  }
+  }  
+}
+
+.input-where-delete {  
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  width: 20px;  
+  height: 20px;
+  cursor: pointer;
+  background: url("../img/delete.svg") $nr center;
+  display: none;
 }
 
 //--litepicker-month-width: calc(var(--litepicker-day-width) * 7);
@@ -1413,7 +1461,9 @@ input[type="text"].filter-input {
   left: 0;
   top: 80px;
   z-index: 2;
+  display: none;
 }
+
 .filter-persons-control-row {
   display: flex;
   align-items: center;  
@@ -1455,16 +1505,16 @@ input[type="text"].filter-input {
   overflow: hidden;
   cursor: pointer;
   &._minus {
-  background: url("../img/minus.png") $nr center;
-  &.dis {
-    opacity: 0.4;
-    cursor: default;
+    background: url("../img/minus.png") $nr center;
+    &.dis {
+      opacity: 0.4;
+      cursor: default;
+    }
   }
-}
 
-&._plus {
-  background: url("../img/plus.png") $nr center;
-}
+  &._plus {
+    background: url("../img/plus.png") $nr center;
+  }
 }
 
 

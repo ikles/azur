@@ -719,26 +719,35 @@
           </div>
         </div>
       </div>
-      <div class="filter">
+      <div class="filter">        
         <div class="contain">
           <div class="filter-w">
+            <span class="where-close-pda"></span>
+            <span class="where-persons-pda">Готово</span>
             <div class="filer-form-block w-form">
               <form class="filter-form">
                 <div class="filter-col filter-col-where">
+                  <span class="input-where-delete"></span>
                   <input type="text" id="where_search" name="where_search" class="filter-input loc" autocomplete="off" placeholder="Где отдыхать" data-list=".filter-where-list"/>
                   <span class="finput-line"></span>
                   <ul class="filter-where-list">
+                    <li><b>Анапа</b></li>
+                    <li><b>Абакан</b></li>
                     <li><b>Адлер,</b> Сочи</li>
                     <li><b>Адыгейск,</b> Республика Хакасия</li>
                     <li><b>Барнаул,</b> Алтайский край</li>
+                    <li><b>Бийск</b></li>
+                    <li><b>Владимир</b></li>
+                    <li><b>Новосибирск</b></li>
+                    <li><b>Норильск</b></li>
+                    <li><b>Москва</b></li>                    
                   </ul>
-
-                </div>
+                </div><!--col-where-->
                 <div class="filter-col">
-                  <input type="text" id="filter_input_date" class="filter-input date" placeholder="Дата заезда/выезда"/>
+                  <input type="text" readonly="readonly" id="filter_input_date" class="filter-input date" placeholder="Дата заезда/выезда"/>
                   <span class="finput-line"></span>
                 </div>
-                <div class="filter-col">
+                <div class="filter-col filter-col-persons">
                   <input type="text" class="filter-input persons" placeholder="Выберите из списка" />
                   <span class="finput-line"></span>
                   <div class="filter-persons-control-wrap">
@@ -775,7 +784,7 @@
                         <span class="filter-persons-control _plus"></span>
                       </div>
                     </div><!--row-->
-                  </div>
+                  </div>                  
                 </div>
                 <input type="submit" value="Подобрать жилье" class="btn filter-btn" />
               </form>
@@ -1086,20 +1095,13 @@
       <a href="#top" class="arr-up"></a>
     </footer>
   </div><!--wrapper-->
-  
-
-
-
-
-  
-
-
-  
   <script src="js/jquery-3.4.1.min.js"></script>      
   <script src="js/slick.js"></script>
   <script src="js/jquery.hideseek.js"></script>
   <script src="js/litepicker.js"></script>
-  <script src="js/common.js"></script>
+  <script src="js/common.js"></script>  
+  <div class="container__main_before container__main_before-1">Дата заезда/выезда</div>
+  <div class="container__main_before container__main_before-2">Количество гостей</div>
 </body>
 </html>
 
