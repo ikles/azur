@@ -125,146 +125,145 @@ $('.accordion-header').toggleClass('inactive-header');
   });*/
 
 
-  if($('.carous').length) {
-    $('.carous').slick({  
-     dots: false,
-     infinite: true,
-     speed: 300,
-     slidesToShow: 1,   
-   });
-  }
-
-  if($('.hotels-w-js-1').length) {
-    $('.hotels-w-js-1').slick({  
-     dots: false,
-     infinite: true,
-     speed: 300,
-     slidesToShow: 4,   
-     responsive: [
-
-     {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 3        
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 570,
-      settings: {
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 3
-      }
-    },
-    ]
-  });
-  }
 
 
-  if($('.hotels-w-js-2').length) {
-    $('.hotels-w-js-2').slick({  
-     dots: false,
-     infinite: true,
-     speed: 300,
-     slidesToShow: 4,   
-     responsive: [
-
-     {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 3        
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 570,
-      settings: {
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    ]
-  });
-  }
 
 
-  if($('.sale-w-js').length) {
-    $('.sale-w-js').slick({  
-     dots: false,
-     infinite: true,
-     speed: 300,
-     slidesToShow: 2,   
-     responsive: [     
-     {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 570,
-      settings: {
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    ]
-  });
-  }
 
-  if($('.rev-it-w-js').length) {
-    $('.rev-it-w-js').slick({  
-     dots: false,
-     infinite: true,
-     speed: 300,
-     slidesToShow: 3,   
-     responsive: [     
-     {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    ]
-  });
-  }
+if($('.hotels-w-js-1').length) {
+
+  $('.hotels-w-js-1').slick({  
+   dots: false,
+   infinite: false,
+   
+   speed: 300,
+   slidesToShow: 4,   
+   responsive: [
+
+   {
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 3        
+    }
+  },
+  {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 2
+    }
+  },
+  {
+    breakpoint: 570,
+    settings: {
+      slidesToShow: 1
+    }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 3
+    }
+  },
+  ]
+});
+
+}//if
+
+
+if($('.hotels-w-js-2').length) {
+  $('.hotels-w-js-2').slick({  
+   dots: false,
+   infinite: false,
+   speed: 300,
+   slidesToShow: 4,   
+   responsive: [
+
+   {
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 3        
+    }
+  },
+  {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 2
+    }
+  },
+  {
+    breakpoint: 570,
+    settings: {
+      slidesToShow: 1
+    }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 2
+    }
+  },
+  ]
+});
+}
+
+
+if($('.sale-w-js').length) {
+  $('.sale-w-js').slick({  
+   dots: false,
+   infinite: false,
+   speed: 300,
+   slidesToShow: 2,   
+   responsive: [     
+   {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 1
+    }
+  },
+  {
+    breakpoint: 570,
+    settings: {
+      slidesToShow: 1
+    }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 2
+    }
+  },
+  ]
+});
+}
+
+if($('.rev-it-w-js').length) {
+  $('.rev-it-w-js').slick({  
+   dots: false,
+   infinite: false,
+   speed: 300,
+   slidesToShow: 3,   
+   responsive: [     
+   {
+    breakpoint: 992,
+    settings: {
+      slidesToShow: 2
+    }
+  },
+  {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 1
+    }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 2
+    }
+  },
+  ]
+});
+}
 
 
 

@@ -513,23 +513,31 @@ input[type="text"]#where_search {
   margin-bottom: 36px;
 }
 
-.hotels-w {  
+/*.hotels-w {  
   display: flex;
   justify-content: space-between;
   position: relative;
   align-items: center;
+  width: 100%;
   .slick-track {
     padding-bottom: 40px;
   }
-}
+}*/
 
-.hotels-w-js {
+.hotels-w {
+    
+  position: relative;
+  align-items: center;
+  width: 100%;
   .slick-list {
     margin: 0 -10px;
   }
   .slick-slide {
    padding: 0 10px; 
  }
+ .slick-track {
+    padding-bottom: 40px;
+  }
 }
 
 .hotels-it {
@@ -649,11 +657,22 @@ input[type="text"]#where_search {
       border: none;
     }
   }
+  &.slick-prev { 
+ right: auto;
+ z-index: 30;
+ transform: rotate(180deg);
+ left: -30px; 
+ 
+}
+&.slick-next {
+ 
+}
+&.slick-disabled {
+ display: none !important; 
+}
 }
 
-.slick-prev {
-  display: none;
-}
+
 
 .arr-sl-r {
   background: url("../img/arr-sl-r.svg") center center no-repeat rgba(255, 255, 255, 0.85);
