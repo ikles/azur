@@ -5,12 +5,8 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Главная</title>  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/main.css">
+  <title>2. Azur. Region</title>  
+  @@include('var/_styless.html')
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -21,107 +17,254 @@
 <body>
 
   <div class="wrapper">
-    <header class="header">
-      <div class="top" id="top">
-        <div class="contain">
-          <div class="top-w">
-            <a href="#" class="logo"><img src="https://uploads-ssl.webflow.com/616e5f3df5a97f09e3e547c2/616e60e097a93bee5c7a8d16_logo.svg" class="logo-img" /></a>
-            <a href="#" class="burger">
-              <div class="burger-icon"></div>
-              <div class="burger-txt hide-640">Курорты</div>
-              <div class="burger-txt show-640">Меню</div>
-            </a>
-            @@include('var/_resort-open.html')
-            <div class="top-btns">
-              <a href="#" class="btn btn-min">
-                <img src="img/user-i.svg" class="btn-icon" />
-                <div>Войти</div>
-              </a>
-              <a href="#" class="btn-wh btn-min top-btn-wh">
-                <img src="img/plus-icon.svg" class="btn-icon" />
-                <div>Разместить заказ</div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+
+    @@include('var/_header.html')    
     <main class="main">
 
-
-
-      <section class="artblock section">
+      @@include('var/_banner2.html',{
+        "class2": "",
+        "img": "banner2",          
+        "bread1": "<li><a href='#'>Главная</a></li>",
+        "bread2": "<li><a href='#'>Геленджик</a></li>",
+        "bread3": "",
+        "bread4": "",
+        "bread_last": "<li><span>Кабардинка</span></li>",
+        "title1": "Отдых в Крыму",          
+        "title2": ""
+      })
+      @@include('var/_filter.html')
+      
+      <section class="section hotels">
         <div class="contain">
-          <div class="artblock-w">
-            <div class="artblock-l">
-              <div class="head-2-2">Отдых в Крыму: Восточный Берег, Южный Берег, Западный Берег</div><p class="artblock-p">Отдых в Крыму был востребован и крайне интересен во все времена. Полуостров настолько насыщен уникальными природными и историческими достопримечательностями, что поездка сюда представляется настоящим событием. Разнообразие курортов, ландшафтов и пляжей, огромное количество достопримечательностей во всех уголках полуострова, — всё это сделает отдых в Крыму интересным и запоминающимся буквально на всю жизнь.
-              </p>
-              <p class="artblock-p">Отдых в Крыму был востребован и крайне интересен во все времена. Полуостров настолько насыщен уникальными природными и историческими достопримечательностями, что поездка сюда представляется настоящим событием. Разнообразие курортов, ландшафтов и пляжей, огромное количество достопримечательностей во всех уголках полуострова, — всё это сделает отдых в Крыму интересным и запоминающимся буквально на всю жизнь.
-              </p>
-              <a href="#" class="btn-gray w100 artblock-btn">Читать все</a>
-            </div>
-            <div class="artblock-r">
-              <div class="artblock-img-w">
-                <img src="img/artblock-img.jpg" class="artblock-img">
-              </div>
-            </div>
-          </div>
+          <div class="head-2">Гостиницы и отели Крыма</div>
+          <div class="hotels-w hotels-w-js hotels-w-js-1">
+           @@include('var/_hotels-it.html',{
+            "image": "hotel-1",
+            "name1": "Гостевой дом",
+            "name2": "Мечта",
+            "geo": "Дивноморское",
+            "price": "от <strong><span>1200</span>  ₽</strong>",
+            "stock": "",
+            "sale": ""
+          })
+          @@include('var/_hotels-it.html',{
+            "image": "hotel-23",
+            "name1": "Гостевой дом",
+            "name2": "Мечта",
+            "geo": "Дивноморское",
+            "price": "от <strong><span>1200</span>  ₽</strong>",
+            "stock": "Акция",
+            "sale": ""
+          })
+          @@include('var/_hotels-it.html',{
+            "image": "hotel-33",
+            "name1": "Гостевой дом",
+            "name2": "Мечта",
+            "geo": "Дивноморское",
+            "price": "от <strong><span>1200</span>  ₽</strong>",
+            "stock": "",
+            "sale": ""
+          })
+          @@include('var/_hotels-it.html',{
+            "image": "hotel-4",
+            "name1": "Гостиница",
+            "name2": "Мечта",
+            "geo": "Дивноморское",
+            "price": "от <strong><span>1200</span>  ₽</strong>",
+            "stock": "",
+            "sale": ""
+          })
+          @@include('var/_hotels-it.html',{
+            "image": "hotel-33",
+            "name1": "Гостевой дом",
+            "name2": "Мечта",
+            "geo": "Дивноморское",
+            "price": "от <strong><span>1200</span>  ₽</strong>",
+            "stock": "",
+            "sale": ""
+          })           
         </div>
-      </section>
+      </div>
+    </section>
 
 
-    </main>
-    <footer class="foot">
+    <section class="section region">
       <div class="contain">
-        <div class="foot-top">
-          <div class="foot-top-cont">
-            <div class="foot-cont-txt-w">
-              <div class="foot-cont-txt-1">Офис:</div>
-              <div class="foot-cont-txt-2">Геленджик, Тельмана 104а,</div>
-            </div>
-            <div class="foot-cont-txt-w">
-              <div class="foot-cont-txt-1">Телефон:</div>
-              <div class="foot-cont-txt-2">+7 (928) 240-06-66</div>
-            </div>
-          </div>
-          <div class="foot-mn">
-            <ul class="c">
-              <li class="foot-li"><a href="#" class="foot-a">О проекте</a></li>
-              <li class="foot-li"><a href="#" class="foot-a">Вход в личный кабинет</a></li>
-              <li class="foot-li"><a href="#" class="foot-a">Политика конфиденциальности</a></li>
-              <li class="foot-li"><a href="#" class="foot-a">Пользовательское соглашение</a></li>
-            </ul>
-            <ul class="c">
-              <li class="foot-li"><a href="#" class="foot-a">Реклама на сайте</a></li>
-              <li class="foot-li"><a href="#" class="foot-a">Разместить объект</a></li>
-              <li class="foot-li"><a href="#" class="foot-a">Оферта</a></li>
-              <li class="foot-li"><a href="#" class="foot-a">Контакты</a></li>
-            </ul>
-          </div>
+        <div class="region-h-w">
+          <div class="head-2">Курорты Крыма</div>
+          <a href="#" class="show-map hide-640"><span class="wshow-map-span">Показать на карте</span> <img src="img/show-map.svg" /></a>
         </div>
-        <div class="foot-dw">
-          <div class="foot-dw-txt">© Azur.ru, 2003 - 2021</div>
-          <div class="foot-dw-soc-w">
-            <a href="#" class="foot-dw-soc"><img src="img/soc-1.svg" /></a><a href="#" class="foot-dw-soc"><img src="img/soc-2.svg" /></a><a href="#" class="foot-dw-soc"><img src="img/soc-3.svg" /></a><a href="#" class="foot-dw-soc"><img src="img/soc-4.svg" /></a>
-            <a href="#" class="foot-dw-soc"><img src="img/soc-5.svg" /></a><a href="#" class="foot-dw-soc"><img src="img/soc-6.svg" /></a>
+        <div class="region-it-w">
+          @@include('var/_region-its2.html')
+          @@include('var/_region-its2.html')
+          @@include('var/_region-its2.html')
+        </div>
+        <a href="#" class="region-it-btn btn-dia btn-gray">Показать еще <span>(18 из 30)</span></a>
+        <a href="#" class="show-map show-640"><span class="wshow-map-span">Показать на карте</span><img src="img/show-map.svg" /></a>
+      </div>
+    </section>
+
+    <section class="section new-objects new-objects-2">
+      <div class="contain">
+        <div class="head-2">Новые объекты</div>
+        <div class="hotels-w hotels-w-js hotels-w-js-2">
+         @@include('var/_hotels-it.html',{
+          "image": "nw-obj-1",
+          "name1": "Гостевой дом",
+          "name2": "Доля и Ко",
+          "geo": "Витязево",
+          "price": "",
+          "stock": "",
+          "sale": ""
+        })
+
+        @@include('var/_hotels-it.html',{
+          "image": "nw-obj-2",
+          "name1": "Отель",
+          "name2": "Маяк",
+          "geo": "Витязево",
+          "price": "",
+          "stock": "Акция",
+          "sale": ""
+        })
+
+        @@include('var/_hotels-it.html',{
+          "image": "nw-obj-3",
+          "name1": "Отель",
+          "name2": "Оранж",
+          "geo": "Витязево",
+          "price": "",
+          "stock": "",
+          "sale": ""
+        })
+
+        @@include('var/_hotels-it.html',{
+          "image": "nw-obj-4",
+          "name1": "",
+          "name2": "Квартира",
+          "geo": "Витязево",
+          "price": "",
+          "stock": "",
+          "sale": ""
+        })
+
+        @@include('var/_hotels-it.html',{
+          "image": "nw-obj-3",
+          "name1": "Отель",
+          "name2": "Оранж",
+          "geo": "Витязево",
+          "price": "",
+          "stock": "",
+          "sale": ""
+        })
+      </div>
+    </div>
+  </section>
+  <section class="section sale">
+    <div class="contain">
+      <div class="region-h-w">
+        <div class="head-2">Акции и скидки</div>
+        <a href="#" class="show-map hide-640"><span class="wshow-map-span">Все акции <span>(146)</span></span> <img src="img/arr-r-sale.svg" /></a>
+      </div>
+      <div class="sale-w sale-w-js">
+        @@include('var/_sale-its.html')   
+      </div>
+      <a href="#" class="show-map show-640 all-no-image all-promo"><span class="wshow-map-span">Все акции <span>(146)</span></span> <img src="img/arr-r-sale.svg" /></a>
+    </div>
+  </section>
+  <section class="artblock section">
+    <div class="contain">
+      <div class="artblock-w">
+        <div class="artblock-l">
+          <div class="head-2-2">Отдых в Крыму: Восточный Берег, Южный Берег, Западный Берег</div><p class="artblock-p">Отдых в Крыму был востребован и крайне интересен во все времена. Полуостров настолько насыщен уникальными природными и историческими достопримечательностями, что поездка сюда представляется настоящим событием. Разнообразие курортов, ландшафтов и пляжей, огромное количество достопримечательностей во всех уголках полуострова, — всё это сделает отдых в Крыму интересным и запоминающимся буквально на всю жизнь.
+          </p>
+          <p class="artblock-p">Отдых в Крыму был востребован и крайне интересен во все времена. Полуостров настолько насыщен уникальными природными и историческими достопримечательностями, что поездка сюда представляется настоящим событием. Разнообразие курортов, ландшафтов и пляжей, огромное количество достопримечательностей во всех уголках полуострова, — всё это сделает отдых в Крыму интересным и запоминающимся буквально на всю жизнь.
+          </p>
+          <a href="#" class="btn-gray w100 artblock-btn">Читать все</a>
+        </div>
+        <div class="artblock-r">
+          <div class="artblock-img-w">
+            <img src="img/artblock-img.jpg" class="artblock-img">
           </div>
         </div>
       </div>
-      <a href="#top" class="arr-up"></a>
-    </footer>
-  </div><!--wrapper-->
-  
+    </div>
+  </section>
+  <section class="section rev">
+    <div class="contain">
+      <div class="region-h-w">
+        <div class="head-2">Отзывы о местах размещения</div>
+        <a href="#" class="show-map hide-640"><span class="wshow-map-span">Все отзывы <span>(18656)</span></span> <img src="img/arr-r-sale.svg" /></a>
+      </div>
+      <div class="rev-it-w rev-it-w-js">            
 
 
+        @@include('var/_rev-it.html',{
+          "class2": "",
+          "name1": "Гостевой дом",
+          "name2": "Семейный дворик",
+          "stars": "3,2",
+          "rewphoto1": "<a href='#' class='rev-photo'><img src='img/rev-1.jpg' class='rev-photo-img' /></a>",
+          "rewphoto2": "<a href='#' class='rev-photo'><img src='img/rev-2.jpg' class='rev-photo-img' /></a>",
+          "rewphoto3": "<a href='#' class='rev-photo'><img src='img/rev-3.jpg' class='rev-photo-img' /></a>",
+          "rewphoto4": "<a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>",
+          "name": "Николай",
+          "city": "Чебоксары",
+          "month": "(Август-Сентябрь)",
+          "text": "В этом году отдыхали в гостевом доме у Дмитрия, с конца августа до начала сентября, первоее впечатление сложилось уже с р впечатление..."
+        })
 
+        @@include('var/_rev-it.html',{
+          "class2": "",
+          "name1": "Гостевой дом",
+          "name2": "Доля и Ко",
+          "stars": "6,4",
+          "rewphoto1": "<a href='#' class='rev-photo'><img src='img/rev-1.jpg' class='rev-photo-img' /></a>",
+          "rewphoto2": "<a href='#' class='rev-photo'><img src='img/rev-2.jpg' class='rev-photo-img' /></a>",
+          "rewphoto3": "<a href='#' class='rev-photo'><img src='img/rev-3.jpg' class='rev-photo-img' /></a>",
+          "rewphoto4": "<a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>",
+          "name": "Николай",
+          "city": "Чебоксары",
+          "month": "(Август-Сентябрь)",
+          "text": "В этом году отдыхали в гостевом доме у Дмитрия, с конца августа до начала сентября, первоее впечатление сложилось уже с р впечатление..."
+        })
 
-  
+        @@include('var/_rev-it.html',{
+          "class2": "",
+          "name1": "Гостевой дом",
+          "name2": "Оранж",
+          "stars": "9,2",
+          "rewphoto1": "<a href='#' class='rev-photo'><img src='img/rev-1.jpg' class='rev-photo-img' /></a>",
+          "rewphoto2": "<a href='#' class='rev-photo'><img src='img/rev-2.jpg' class='rev-photo-img' /></a>",
+          "rewphoto3": "<a href='#' class='rev-photo'><img src='img/rev-3.jpg' class='rev-photo-img' /></a>",
+          "rewphoto4": "<a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>",
+          "name": "Николай",
+          "city": "Чебоксары",
+          "month": "(Август-Сентябрь)",
+          "text": "В этом году отдыхали в гостевом доме у Дмитрия, с конца августа до начала сентября, первоее впечатление сложилось уже с р впечатление..."
+        })
 
-
-  
-  <script src="js/jquery-3.4.1.min.js"></script>      
-  <script src="js/slick.js"></script>
-  <script src="js/common.js"></script>
+        @@include('var/_rev-it.html',{
+          "class2": "",
+          "name1": "Гостевой дом",
+          "name2": "Доля и Ко",
+          "stars": "6,4",
+          "rewphoto1": "<a href='#' class='rev-photo'><img src='img/rev-1.jpg' class='rev-photo-img' /></a>",
+          "rewphoto2": "<a href='#' class='rev-photo'><img src='img/rev-2.jpg' class='rev-photo-img' /></a>",
+          "rewphoto3": "<a href='#' class='rev-photo'><img src='img/rev-3.jpg' class='rev-photo-img' /></a>",
+          "rewphoto4": "<a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>",
+          "name": "Николай",
+          "city": "Чебоксары",
+          "month": "(Август-Сентябрь)",
+          "text": "В этом году отдыхали в гостевом доме у Дмитрия, с конца августа до начала сентября, первоее впечатление сложилось уже с р впечатление..."
+        })
+      </div>
+      <a href="#" class="show-map show-640 all-no-image all-revs"><span class="wshow-map-span">Все отзывы <span>(18656)</span></span> <img src="img/arr-r-sale.svg" /></a>
+    </div>
+  </section>
+</main>
+@@include('var/_footer.html')
+</div><!--wrapper-->
+@@include('var/_scripts.html')
 </body>
 </html>
-
