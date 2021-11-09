@@ -32,18 +32,24 @@
         "title1": "Отдых в Кабардинке",          
         "title2": ""
       })
-
-
-
-
-
-
       <section class="all-ht section">
         <div class="contain">
           <div class="region-h-w">
             <div class="head-2">Где остановиться в Кабардинке</div>
             <a href="#" class="show-map"><span class="wshow-map-span">Показать на карте</span> <img src="img/show-map.svg"></a>
           </div>
+
+
+          <ul class="choice-btn-ul">
+            <li class="choice-btn-li"><a href="#" class="choice-btn-a"> Все объекты</a></li>
+            <li class="choice-btn-li"><a href="#" class="choice-btn-a"> Гостиницы</a></li>
+            <li class="choice-btn-li"><a href="#" class="choice-btn-a"> Гостевые дома</a></li>
+            <li class="choice-btn-li"><a href="#" class="choice-btn-a"> Квартиры</a></li>
+            <li class="choice-btn-li"><a href="#" class="choice-btn-a"> Дома</a></li>
+            <li class="choice-btn-li"><a href="#" class="choice-btn-a"> Частный сектор</a></li>
+          </ul>
+
+
           <div class="all-hts-row row10">
             <div class="all-hts-col col-25">
              @@include('var/_all-ht-it.html',{
@@ -241,100 +247,177 @@
       </div>
     </section>
 
-
-
-    <section class="artblock section">
+    <section class="section gal-3-section">
       <div class="contain">
-        <div class="artblock-w">
-          <div class="artblock-l">
-            <div class="head-2-2">Отдых в Крыму: Восточный Берег, Южный Берег, Западный Берег</div><p class="artblock-p">Отдых в Крыму был востребован и крайне интересен во все времена. Полуостров настолько насыщен уникальными природными и историческими достопримечательностями, что поездка сюда представляется настоящим событием. Разнообразие курортов, ландшафтов и пляжей, огромное количество достопримечательностей во всех уголках полуострова, — всё это сделает отдых в Крыму интересным и запоминающимся буквально на всю жизнь.
-            </p>
-            <p class="artblock-p">Отдых в Крыму был востребован и крайне интересен во все времена. Полуостров настолько насыщен уникальными природными и историческими достопримечательностями, что поездка сюда представляется настоящим событием. Разнообразие курортов, ландшафтов и пляжей, огромное количество достопримечательностей во всех уголках полуострова, — всё это сделает отдых в Крыму интересным и запоминающимся буквально на всю жизнь.
-            </p>
-            <a href="#" class="btn-gray w100 artblock-btn">Читать все</a>
-          </div>
-          <div class="artblock-r">
-            <div class="artblock-img-w">
-              <img src="img/artblock-img.jpg" class="artblock-img">
-            </div>
-          </div>
+        <div class="region-h-w region-h-w--center">
+          <div class="head-2">Фотогалерея Кабардинки:</div>
+
+          <ul class="choice-btn-ul choice-btn-ul--head">
+            <li class="choice-btn-li"><a href="#" class="choice-btn-a"> Пляжи</a></li>
+            <li class="choice-btn-li"><a href="#" class="choice-btn-a"> Развлечения</a></li>
+            <li class="choice-btn-li"><a href="#" class="choice-btn-a"> Кемпинги</a></li>
+          </ul>
+          
         </div>
+        <div class="gal-3-row row10">
+          <div class="gal-3-col col-33">
+            <a href="#" class="gal-3-item">
+              <img src="img/gal-3-img-1.jpg" class="gal-3-img">
+              <span class="gal-3-span">Дольмены в районе Геленджика</span>
+            </a>
+          </div><!--gal-3-col-->
+          <div class="gal-3-col col-33">
+            <a href="#" class="gal-3-item">
+              <img src="img/gal-3-img-2.jpg" class="gal-3-img">
+              <span class="gal-3-span">Гастрономический бар "Венский Двор"</span>
+            </a>
+          </div><!--gal-3-col-->
+          <div class="gal-3-col col-33">
+            <a href="#" class="gal-3-item">
+              <img src="img/gal-3-img-3.jpg" class="gal-3-img">
+              <span class="gal-3-span">Представляем программу "Культура Русской Бани"</span>
+            </a>
+          </div><!--gal-3-col-->
+        </div><!--gal-3-row-->
       </div>
     </section>
-    <section class="section rev">
+
+
+    <section class="section photogal-3">
       <div class="contain">
+
         <div class="region-h-w">
-          <div class="head-2">Отзывы о местах размещения</div>
-          <a href="#" class="show-map hide-640"><span class="wshow-map-span">Все отзывы <span>(18656)</span></span> <img src="img/arr-r-sale.svg" /></a>
+          <div class="head-2">Фотогалерея Кабардинки</div>
+          <a href="#" class="show-map hide-640"><span class="wshow-map-span">Все фото <span>(146)</span></span> <img src="img/arr-r-sale.svg"></a>
         </div>
-        <div class="rev-it-w rev-it-w-js">            
+        
+        <div class="photogal-w photogal-3-js">
+         @@include('var/_hotels-it-gal.html',{
+          "image": "photogal-3-1",
+          "name2": "Поездки в горы",
+          "name1": "142 фотографии"
+        })
 
+        @@include('var/_hotels-it-gal.html',{
+          "image": "photogal-3-2",
+          "name2": "Пляж ДЛ Смена",
+          "name1": "212 фотографий"
+        })
 
-          @@include('var/_rev-it.html',{
-            "class2": "",
-            "name1": "Гостевой дом",
-            "name2": "Семейный дворик",
-            "stars": "3,2",
-            "rewphoto1": "<a href='#' class='rev-photo'><img src='img/rev-1.jpg' class='rev-photo-img' /></a>",
-            "rewphoto2": "<a href='#' class='rev-photo'><img src='img/rev-2.jpg' class='rev-photo-img' /></a>",
-            "rewphoto3": "<a href='#' class='rev-photo'><img src='img/rev-3.jpg' class='rev-photo-img' /></a>",
-            "rewphoto4": "<a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>",
-            "name": "Николай",
-            "city": "Чебоксары",
-            "month": "(Август-Сентябрь)",
-            "text": "В этом году отдыхали в гостевом доме у Дмитрия, с конца августа до начала сентября, первоее впечатление сложилось уже с р впечатление..."
-          })
+        @@include('var/_hotels-it-gal.html',{
+          "image": "photogal-3-3",
+          "name2": "Дикие пляжи в сторону Новороссийска",
+          "name1": "49 фотографий"
+        })
 
-          @@include('var/_rev-it.html',{
-            "class2": "",
-            "name1": "Гостевой дом",
-            "name2": "Доля и Ко",
-            "stars": "6,4",
-            "rewphoto1": "<a href='#' class='rev-photo'><img src='img/rev-1.jpg' class='rev-photo-img' /></a>",
-            "rewphoto2": "<a href='#' class='rev-photo'><img src='img/rev-2.jpg' class='rev-photo-img' /></a>",
-            "rewphoto3": "<a href='#' class='rev-photo'><img src='img/rev-3.jpg' class='rev-photo-img' /></a>",
-            "rewphoto4": "<a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>",
-            "name": "Николай",
-            "city": "Чебоксары",
-            "month": "(Август-Сентябрь)",
-            "text": "В этом году отдыхали в гостевом доме у Дмитрия, с конца августа до начала сентября, первоее впечатление сложилось уже с р впечатление..."
-          })
+        @@include('var/_hotels-it-gal.html',{
+          "image": "photogal-3-4",
+          "name2": "Закаты",
+          "name1": "6 фотографий"
+        })
 
-          @@include('var/_rev-it.html',{
-            "class2": "",
-            "name1": "Гостевой дом",
-            "name2": "Оранж",
-            "stars": "9,2",
-            "rewphoto1": "<a href='#' class='rev-photo'><img src='img/rev-1.jpg' class='rev-photo-img' /></a>",
-            "rewphoto2": "<a href='#' class='rev-photo'><img src='img/rev-2.jpg' class='rev-photo-img' /></a>",
-            "rewphoto3": "<a href='#' class='rev-photo'><img src='img/rev-3.jpg' class='rev-photo-img' /></a>",
-            "rewphoto4": "<a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>",
-            "name": "Николай",
-            "city": "Чебоксары",
-            "month": "(Август-Сентябрь)",
-            "text": "В этом году отдыхали в гостевом доме у Дмитрия, с конца августа до начала сентября, первоее впечатление сложилось уже с р впечатление..."
-          })
-
-          @@include('var/_rev-it.html',{
-            "class2": "",
-            "name1": "Гостевой дом",
-            "name2": "Доля и Ко",
-            "stars": "6,4",
-            "rewphoto1": "<a href='#' class='rev-photo'><img src='img/rev-1.jpg' class='rev-photo-img' /></a>",
-            "rewphoto2": "<a href='#' class='rev-photo'><img src='img/rev-2.jpg' class='rev-photo-img' /></a>",
-            "rewphoto3": "<a href='#' class='rev-photo'><img src='img/rev-3.jpg' class='rev-photo-img' /></a>",
-            "rewphoto4": "<a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>",
-            "name": "Николай",
-            "city": "Чебоксары",
-            "month": "(Август-Сентябрь)",
-            "text": "В этом году отдыхали в гостевом доме у Дмитрия, с конца августа до начала сентября, первоее впечатление сложилось уже с р впечатление..."
-          })
-        </div>
-        <a href="#" class="show-map show-640 all-no-image all-revs"><span class="wshow-map-span">Все отзывы <span>(18656)</span></span> <img src="img/arr-r-sale.svg" /></a>
+        @@include('var/_hotels-it-gal.html',{
+          "image": "photogal-3-2",
+          "name2": "Пляж ДЛ Смена",
+          "name1": "212 фотографий"
+        })
       </div>
-    </section>
-  </main>
-  @@include('var/_footer.html')
+    </div>
+  </section>
+
+  <section class="artblock artblock-3 section">
+    <div class="contain">
+      <div class="artblock-w">
+        <div class="artblock-l">
+          <div class="head-2-2">Кабардинка лучшее места для семейного отдыха на море!</div>
+          <p class="artblock-p">Посёлок Кабардинка входит в состав большого Геленджика, находится в 15-ти км от города на северо-западном берегу Цемесской бухты. С севера Кабардинка окружена горными отрогами Маркотхского хребта. Данная местность один из наиболее комфортных по климатическим условиям районов черноморского побережья: здесь низкая влажность, максимальное количество солнечных дней в году. Во время курортного сезона море хорошо прогревается и купаться в Кабардинке можно с середины мая до середины октября. Кабардинка это детский и семейный курорт, здесь по сей день функционирует несколько детских лагерей и санаториев с лечением. С появлением в посёлке достаточного количества новых современных частных гостиниц Кабардинка заметно расширила круг своих почитателей.
+          </p>
+          <p class="artblock-p">Как и положено одному из самых популярных курортов Кабардинка это огромный выбор разнообразных вариантов жилья и заведений для организации отдыха. Прекрасная ухоженная набережная с ресторанчиками, аттракционами и развлечениями. Уникальный архитектурно-ландшафтный Старый Парк. Форелевое хозяйство, морские прогулки, рыбалка, полёты на парашюте, гидроциклы...
+          </p>
+          <a href="#" class="btn-gray w100 artblock-btn">Читать все</a>
+        </div>
+        <div class="artblock-r">
+          <div class="artblock-img-w">
+            <img src="img/artblock-img-3.jpg" class="artblock-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section rev">
+    <div class="contain">
+      <div class="region-h-w">
+        <div class="head-2">Отзывы о местах размещения</div>
+        <a href="#" class="show-map hide-640"><span class="wshow-map-span">Все отзывы <span>(18656)</span></span> <img src="img/arr-r-sale.svg" /></a>
+      </div>
+      <div class="rev-it-w rev-it-w-js">            
+
+
+        @@include('var/_rev-it.html',{
+          "class2": "",
+          "name1": "Гостевой дом",
+          "name2": "Семейный дворик",
+          "stars": "3,2",
+          "rewphoto1": "<a href='#' class='rev-photo'><img src='img/rev-1.jpg' class='rev-photo-img' /></a>",
+          "rewphoto2": "<a href='#' class='rev-photo'><img src='img/rev-2.jpg' class='rev-photo-img' /></a>",
+          "rewphoto3": "<a href='#' class='rev-photo'><img src='img/rev-3.jpg' class='rev-photo-img' /></a>",
+          "rewphoto4": "<a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>",
+          "name": "Николай",
+          "city": "Чебоксары",
+          "month": "(Август-Сентябрь)",
+          "text": "В этом году отдыхали в гостевом доме у Дмитрия, с конца августа до начала сентября, первоее впечатление сложилось уже с р впечатление..."
+        })
+
+        @@include('var/_rev-it.html',{
+          "class2": "",
+          "name1": "Гостевой дом",
+          "name2": "Доля и Ко",
+          "stars": "6,4",
+          "rewphoto1": "<a href='#' class='rev-photo'><img src='img/rev-1.jpg' class='rev-photo-img' /></a>",
+          "rewphoto2": "<a href='#' class='rev-photo'><img src='img/rev-2.jpg' class='rev-photo-img' /></a>",
+          "rewphoto3": "<a href='#' class='rev-photo'><img src='img/rev-3.jpg' class='rev-photo-img' /></a>",
+          "rewphoto4": "<a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>",
+          "name": "Николай",
+          "city": "Чебоксары",
+          "month": "(Август-Сентябрь)",
+          "text": "В этом году отдыхали в гостевом доме у Дмитрия, с конца августа до начала сентября, первоее впечатление сложилось уже с р впечатление..."
+        })
+
+        @@include('var/_rev-it.html',{
+          "class2": "",
+          "name1": "Гостевой дом",
+          "name2": "Оранж",
+          "stars": "9,2",
+          "rewphoto1": "<a href='#' class='rev-photo'><img src='img/rev-1.jpg' class='rev-photo-img' /></a>",
+          "rewphoto2": "<a href='#' class='rev-photo'><img src='img/rev-2.jpg' class='rev-photo-img' /></a>",
+          "rewphoto3": "<a href='#' class='rev-photo'><img src='img/rev-3.jpg' class='rev-photo-img' /></a>",
+          "rewphoto4": "<a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>",
+          "name": "Николай",
+          "city": "Чебоксары",
+          "month": "(Август-Сентябрь)",
+          "text": "В этом году отдыхали в гостевом доме у Дмитрия, с конца августа до начала сентября, первоее впечатление сложилось уже с р впечатление..."
+        })
+
+        @@include('var/_rev-it.html',{
+          "class2": "",
+          "name1": "Гостевой дом",
+          "name2": "Доля и Ко",
+          "stars": "6,4",
+          "rewphoto1": "<a href='#' class='rev-photo'><img src='img/rev-1.jpg' class='rev-photo-img' /></a>",
+          "rewphoto2": "<a href='#' class='rev-photo'><img src='img/rev-2.jpg' class='rev-photo-img' /></a>",
+          "rewphoto3": "<a href='#' class='rev-photo'><img src='img/rev-3.jpg' class='rev-photo-img' /></a>",
+          "rewphoto4": "<a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>",
+          "name": "Николай",
+          "city": "Чебоксары",
+          "month": "(Август-Сентябрь)",
+          "text": "В этом году отдыхали в гостевом доме у Дмитрия, с конца августа до начала сентября, первоее впечатление сложилось уже с р впечатление..."
+        })
+      </div>
+      <a href="#" class="show-map show-640 all-no-image all-revs"><span class="wshow-map-span">Все отзывы <span>(18656)</span></span> <img src="img/arr-r-sale.svg" /></a>
+    </div>
+  </section>
+</main>
+@@include('var/_footer.html')
 </div><!--wrapper-->
 @@include('var/_scripts.html')
 </body>

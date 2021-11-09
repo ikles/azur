@@ -25,7 +25,7 @@ jQuery(document).ready(function( $ ) {
 
   /************************************/
 
-/*$('.wrapper').prepend('<span class="eye-3"></span>');
+$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
@@ -36,8 +36,7 @@ $('.eye-3').click(function (e) {
   let pg = parseInt(document.location.pathname.match(/\d+/));
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
-
-});*/
+});
 
 /************************************/
 
@@ -205,6 +204,43 @@ if($('.hotels-w-js-2').length) {
   ]
 });
 }
+
+if ($('.photogal-3-js').length) {
+    $('.photogal-3-js').slick({  
+   dots: false,
+   infinite: false,
+   speed: 300,
+   slidesToShow: 4,   
+   responsive: [
+
+   {
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 3        
+    }
+  },
+  {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 2
+    }
+  },
+  {
+    breakpoint: 570,
+    settings: {
+      slidesToShow: 1
+    }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 2
+    }
+  },
+  ]
+});
+}
+
 
 
 if($('.sale-w-js').length) {
