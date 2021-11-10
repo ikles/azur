@@ -129,42 +129,42 @@ $('.accordion-header').toggleClass('inactive-header');
 
 
 
-if($('.hotels-w-js-1').length) {
+  if($('.hotels-w-js-1').length) {
 
-  $('.hotels-w-js-1').slick({  
-   dots: false,
-   infinite: false,
-   
-   speed: 300,
-   slidesToShow: 4,   
-   responsive: [
+    $('.hotels-w-js-1').slick({  
+     dots: false,
+     infinite: false,
 
-   {
-    breakpoint: 1200,
-    settings: {
-      slidesToShow: 3        
-    }
-  },
-  {
-    breakpoint: 768,
-    settings: {
-      slidesToShow: 2
-    }
-  },
-  {
-    breakpoint: 570,
-    settings: {
-      slidesToShow: 1
-    }
-  },
-  {
-    breakpoint: 480,
-    settings: {
-      slidesToShow: 3
-    }
-  },
-  ]
-});
+     speed: 300,
+     slidesToShow: 4,   
+     responsive: [
+
+     {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3        
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 570,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    ]
+  });
 
 }//if
 
@@ -206,7 +206,7 @@ if($('.hotels-w-js-2').length) {
 }
 
 if ($('.photogal-3-js').length) {
-    $('.photogal-3-js').slick({  
+  $('.photogal-3-js').slick({  
    dots: false,
    infinite: false,
    speed: 300,
@@ -240,6 +240,10 @@ if ($('.photogal-3-js').length) {
   ]
 });
 }
+
+
+
+
 
 
 
@@ -301,6 +305,88 @@ if($('.rev-it-w-js').length) {
 });
 }
 
+
+if ($('.gal-3-row').length) {
+  $('.gal-3-row').slick({  
+   dots: false,
+   infinite: false,
+   speed: 300,
+   slidesToShow: 3,   
+   responsive: [     
+   {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 2
+    }
+  }  
+  ]
+});
+}
+
+if ($('.photogal-w-3-js').length) {
+  $('.photogal-w-3-js').slick({  
+   dots: false,
+   infinite: false,
+   speed: 300,
+   slidesToShow: 4,   
+   responsive: [     
+   {
+    breakpoint: 992,
+    settings: {
+      slidesToShow: 3
+    }
+  },
+  {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 2
+    }
+  }, 
+  {
+    breakpoint: 571,
+    settings: {
+      slidesToShow: 3
+    }
+  }  
+  ]
+});
+}
+
+if ($('.specials-row-js-1').length) {
+  $('.specials-row-js-1').slick({  
+   dots: false,
+   infinite: false,
+   speed: 300,
+   slidesToShow: 6,   
+   responsive: [
+
+   {
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 5        
+    }
+  },
+  {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 4
+    }
+  },
+  {
+    breakpoint: 570,
+    settings: {
+      slidesToShow: 3
+    }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 3
+    }
+  },
+  ]
+});
+}
 
 
 /*

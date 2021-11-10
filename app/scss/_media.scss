@@ -32,7 +32,11 @@
     max-width: 100%;
     margin-left: 60px;
   }
-  
+  .all-hts-row {
+    .all-hts-col {
+      width: 33.333%;
+    }
+  }
 }
 
 
@@ -88,8 +92,7 @@
     font-size: 21px;
   }
   .section {
-    padding: 0;
-    margin-top: 60px;
+    padding: 0;    
   }
   .rev {
     padding-bottom: 80px;
@@ -138,7 +141,12 @@
   .artblock-img {
     max-width: 100%;
   }
-
+  .choice-btn-scroll {    
+    overflow-x: scroll;
+  }
+  .rev {
+    margin-top: 40px;
+  }
 } 
 
 /* Small Devices, Tablets */
@@ -372,6 +380,35 @@ a.resort-child-link {
   transform: translate(-50%, 0%);
   bottom: 102px;
 }
+.artblock-r {
+  display: none;
+}
+.all-hts-row {
+  .all-hts-col {
+    width: 50%;
+    display: none;
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+      display: block;
+    }  
+  }
+}
+.region-h-w {  
+  flex-wrap: wrap;
+  .show-map {
+    margin-top: 10px;
+  }
+} 
+.choice-btn-ul--head {
+  margin-top: 15px;
+}
+.gal-3-span {
+  font-size: 14px;
+  line-height: 17px;
+}
+
 }      
 
 @media only screen and (max-width : 640px) {
@@ -419,7 +456,7 @@ a.resort-child-link {
     margin-left: 15px;
   }
   .banner-2 {
-    
+
   }
   .banner-wrap-2 .bread {
     margin-bottom: 15px;
@@ -427,7 +464,19 @@ a.resort-child-link {
   .bread {
     li {
       font-size: 12px;
+      &:after {        
+                background-size: 5px;
+      }
     }
+  }
+
+  .choice-btn-label input[type="checkbox"] + span {
+    height: 36px;
+    padding: 0 12px;
+    font-size: 14px;
+  }
+  .sale {
+    margin-top: 20px;
   }
 } 
 
@@ -437,8 +486,100 @@ a.resort-child-link {
   .contain {
     width: 100%;
     max-width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .choice-btn-scroll {
+    margin-right: -20px;
+  }
+  .slick-arrow {
+    display: none !important;
+  }
+  .gal-3-row {
+    .slick-list {
+      width: 642px;
+    }
+  }
+  .choice-btn-scroll {
+    margin-bottom: 12px;
+  }
+  .all-ht-img-w {
+    height: 117px;
+  }
+  .all-ht-rating-txt {
+    display: none;
+  }
+  .all-ht-rating-span {
+    font-size: 12px;
+  }
+  .all-ht-rating {
+    bottom: 10px;
+    right: 10px;
+  }
+  .all-ht-rating-row {
+    > img {
+      width: 13px;
+      height: auto;
+    }
+  }
+  .all-ht-inf {
+    padding: 15px 10px 20px 10px;
+  }
+  .all-ht-inf-a {
+    font-size: 12px;
+  }
+  .all-ht-inf-txt-1 {
+    font-size: 14px;
+  }
+  .all-ht-inf-geo-span {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  .all-ht-inf-geo {
+    > img {
+      width: 12px;
+      height: auto;
+    }
+  }
+  .all-ht-inf-txt-3-span {
+    font-size: 14px;
+  }
+  .all-ht-inf-geo {
+    margin-bottom: 15px;
+  }
+  .all-ht-it {
+    margin-bottom: 10px;
+  }
+  .all-hts-row {
+    margin: 0 -5px;
+    .all-hts-col {
+      padding: 0 5px;
+    }
+  } 
+  .gal-3-item {
+    height: 207px;
+  }
+  .photogal-w {
+    
+    .hotels-it {
+      height: 153px;
+    }
+      .gal-3-txt-2 {
+    font-size: 12px;
+  }
+  .hotels-it-txt-1 {
+    font-size: 10px;    
+    margin-bottom: 0;
+  }
+  .slick-list {
+    margin: 0 -5px; 
+  }
+  .slick-slide {
+    padding: 0 5px;
+  }
+  }
+  .artblock-3 {
+    margin-top: 10px;
   }
 }
 
@@ -447,6 +588,7 @@ a.resort-child-link {
 @media only screen and (max-width : 480px) {
   .head-2 {
     font-size: 18px;
+    line-height: 22px;
   }
   .hotels-w-js-1 {    
     position: relative;
@@ -461,9 +603,7 @@ a.resort-child-link {
       padding: 0 5px;
     }
   }
-  .slick-arrow {
-    display: none !important;
-  }
+
   .hotels-w-js-1,
   .hotels-it {
     height: 179px;
@@ -498,7 +638,7 @@ a.resort-child-link {
     }  
   }
   .section {
-    margin-top: 60px;
+    
   }
 
 
@@ -867,6 +1007,34 @@ a.resort-child-link {
 .input-where-delete {
   display: none !important;
 }
+  .photogal-w {
+    .slick-list {
+      width: 479px;
+    }
+  }
+.banner-3 {
+  height: 120px;
+  .h1-wh {
+    font-size: 18px;
+  }
+  .bread {
+    margin-bottom: 18px;
+    min-height: 54px;
+  }
+}
+.banner-3 {
+.banner-wrap-2 {
+  top: 15px;
+}
+}
+
+.head-2-2 {
+  font-size: 18px;
+  line-height: 22px;
+}
+.sale {
+    margin-top: 40px;
+  }
 }
 
 @media only screen and (max-width : 375px) {
@@ -875,6 +1043,7 @@ a.resort-child-link {
       flex-grow: 1;
     }
   }
+
 }
 
 @media only screen and (max-width : 360px) {
@@ -892,6 +1061,9 @@ a.resort-child-link {
   }
   .btn-icon {
     margin-right: 5px;
+  }
+  .all-hts-row .all-hts-col {
+    width: 100%;
   }
 }
 

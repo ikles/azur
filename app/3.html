@@ -22,7 +22,7 @@
     <main class="main">
 
       @@include('var/_banner2.html',{
-        "class2": "",
+        "class2": " banner-3",
         "img": "banner2",          
         "bread1": "<li><a href='#'>Главная</a></li>",
         "bread2": "<li><a href='#'>Геленджик</a></li>",
@@ -39,16 +39,17 @@
             <a href="#" class="show-map"><span class="wshow-map-span">Показать на карте</span> <img src="img/show-map.svg"></a>
           </div>
 
+          <div class="choice-btn-scroll">
+            <div class="choice-btn-ul">
+              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span active"> Все объекты</span></label>
 
-          <ul class="choice-btn-ul">
-            <li class="choice-btn-li"><a href="#" class="choice-btn-a"> Все объекты</a></li>
-            <li class="choice-btn-li"><a href="#" class="choice-btn-a"> Гостиницы</a></li>
-            <li class="choice-btn-li"><a href="#" class="choice-btn-a"> Гостевые дома</a></li>
-            <li class="choice-btn-li"><a href="#" class="choice-btn-a"> Квартиры</a></li>
-            <li class="choice-btn-li"><a href="#" class="choice-btn-a"> Дома</a></li>
-            <li class="choice-btn-li"><a href="#" class="choice-btn-a"> Частный сектор</a></li>
-          </ul>
-
+              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Гостиницы</span></label>
+              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Гостевые дома</span></label>
+              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Квартиры</span></label>
+              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Дома</span></label>
+              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Частный сектор</span></label>
+            </div>
+          </div>
 
           <div class="all-hts-row row10">
             <div class="all-hts-col col-25">
@@ -250,29 +251,28 @@
     <section class="section gal-3-section">
       <div class="contain">
         <div class="region-h-w region-h-w--center">
-          <div class="head-2">Фотогалерея Кабардинки:</div>
-
-          <ul class="choice-btn-ul choice-btn-ul--head">
-            <li class="choice-btn-li"><a href="#" class="choice-btn-a"> Пляжи</a></li>
-            <li class="choice-btn-li"><a href="#" class="choice-btn-a"> Развлечения</a></li>
-            <li class="choice-btn-li"><a href="#" class="choice-btn-a"> Кемпинги</a></li>
-          </ul>
-          
+          <div class="head-2">Информация об отдыхе в Кабардинке:</div>
+          <div class="choice-btn-ul choice-btn-ul--head">              
+            <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Пляжи</span></label>
+            <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Развлечения</span></label>
+            <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Кемпинги</span></label>            
+          </div>
+        
         </div>
-        <div class="gal-3-row row10">
-          <div class="gal-3-col col-33">
+        <div class="gal-3-row">
+          <div class="gal-3-col">
             <a href="#" class="gal-3-item">
               <img src="img/gal-3-img-1.jpg" class="gal-3-img">
               <span class="gal-3-span">Дольмены в районе Геленджика</span>
             </a>
           </div><!--gal-3-col-->
-          <div class="gal-3-col col-33">
+          <div class="gal-3-col">
             <a href="#" class="gal-3-item">
               <img src="img/gal-3-img-2.jpg" class="gal-3-img">
               <span class="gal-3-span">Гастрономический бар "Венский Двор"</span>
             </a>
           </div><!--gal-3-col-->
-          <div class="gal-3-col col-33">
+          <div class="gal-3-col">
             <a href="#" class="gal-3-item">
               <img src="img/gal-3-img-3.jpg" class="gal-3-img">
               <span class="gal-3-span">Представляем программу "Культура Русской Бани"</span>
@@ -291,7 +291,7 @@
           <a href="#" class="show-map hide-640"><span class="wshow-map-span">Все фото <span>(146)</span></span> <img src="img/arr-r-sale.svg"></a>
         </div>
         
-        <div class="photogal-w photogal-3-js">
+        <div class="photogal-w photogal-w-3-js">
          @@include('var/_hotels-it-gal.html',{
           "image": "photogal-3-1",
           "name2": "Поездки в горы",
