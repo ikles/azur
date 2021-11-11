@@ -36,9 +36,9 @@
 
       <section class="section select-housing">
         <div class="contain">
-          <div class="col-w">
+          <div class="col-w housing-col-w">
             <div class="col-l">
-              <div class="col-1-filter-h">Фильтр</div>
+              <div class="col-1-filter-h hide-991">Фильтр</div>
               <div class="col-1-filter-w">
                 <div class="col-1-filter-h-2">Услуги</div>
                 <ul class="col-1-filter-labels">
@@ -140,7 +140,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-1-filter-map">
+            <a href="#" class="col-1-filter-map hide-991">
               <div class="col-1-filter-map-img-w">
                 <img src="img/map-ftr.jpg" class="col-1-filter-map-img" />
                 <div class="col-1-filter-map-lab"><img src="img/geo-map-ftr.png" /></div>
@@ -150,28 +150,46 @@
                   Показать на карте<span class="col-1-filter-map-txt-span"><img src="img/show-map.svg" /></span>
                 </div>
               </div>
-            </div>
-
+            </a>
           </div><!--col-l-->
           <div class="col-r">
             <div class="offer">
               <div class="offer-txt-1">1456 предложений</div>
-              <div class="offer-row">
+              <div class="show-991">
+                <span class="filter-action-pda">Фильтр <i></i></span>
+              </div>
+              <div class="offer-row hide-991">
                 <div class="offer-txt-2">Сортировать</div>
                 <a href="#" class="offer-choice">
                   По дате<span class="offer-choice-span"><img src="img/arr-dw-gr.svg" /></span>
                 </a>
               </div>
+
             </div><!---->
 
-            <div class="choice-btn-ul">
-              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span active"> Все объекты</span></label>
 
-              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Гостиницы</span></label>
-              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Гостевые дома</span></label>
-              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Квартиры</span></label>
-              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Дома</span></label>
-              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Частный сектор</span></label>
+            <a href="#" class="col-1-filter-map show-991">
+              <div class="col-1-filter-map-img-w">
+                <img src="img/map-ftr.jpg" class="col-1-filter-map-img" />
+                <div class="col-1-filter-map-lab"><img src="img/geo-map-ftr.png" /></div>
+              </div>
+              <div class="col-1-filter-map-txt-w">
+                <div class="col-1-filter-map-txt">
+                  Показать на карте<span class="col-1-filter-map-txt-span"><img src="img/show-map.svg" /></span>
+                </div>
+              </div>
+            </a>
+
+            <div class="choice-btn-scroll">
+              <div class="choice-btn-ul">
+                <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span active"> Все объекты</span></label>
+
+                <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Гостиницы</span></label>
+                <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Гостевые дома</span></label>
+                <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Квартиры</span></label>
+                <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Дома</span></label>
+                <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Частный сектор</span></label>
+              </div>
             </div>
 
 
@@ -381,7 +399,7 @@
         "stock": "",
         "sale": ""
       }) 
-       @@include('var/_hotels-it.html',{
+      @@include('var/_hotels-it.html',{
         "image": "hotel-23",
         "name1": "Гостевой дом",
         "name2": "Кристина",
@@ -411,16 +429,12 @@
     </div><!--specials-row-->
   </div>
 </section>
-
-
-
-
-
-
-
-
 </main>
 @@include('var/_footer.html')
+<div class="housing-actions-pda">
+  <span class="housing-action housing-action-filter"></span>
+  <span class="housing-action housing-action-map"></span>
+</div>
 </div><!--wrapper-->
 @@include('var/_scripts.html')
 </body>

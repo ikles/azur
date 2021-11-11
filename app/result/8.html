@@ -5,7 +5,7 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>4. Azur. Catalog</title>  
+  <title>8. Azur. Search</title>  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700&display=swap" rel="stylesheet">
@@ -710,17 +710,17 @@
     </header>    
     <main class="main">
 
-      <div class="banner banner-2 banner-3">
+      <div class="banner banner-2">
   <img src="img/banner2.jpg" class="banner-img" />
   <div class="banner-wrap-2">
     <div class="contain">
       <div class="bread bread-white">
         <ul class="bread-ul">
           <li><a href='#'>Главная</a></li>
-          <li><a href='#'>Геленджик</a></li>
-          <li><a href='#'>Кабардинка</a></li>
           
-          <li><span>Подбор жилья</span></li>
+          
+          
+          <li><span>Отдых в Кабардинке</span></li>
         </ul>
       </div>
       <div class="banner-txts">
@@ -731,14 +731,108 @@
   </div>
 </div><!--banner-->
 
+            <div class="filter">        
+        <div class="contain">
+          <div class="filter-w">
+            <span class="where-close-pda"></span>
+            <span class="where-persons-pda">Готово</span>
+            <div class="filer-form-block w-form">
+              <form class="filter-form">
+                <div class="filter-col filter-col-where">
+                  <span class="input-where-delete"></span>
+                  <input type="text" id="where_search" name="where_search" class="filter-input loc" autocomplete="off" placeholder="Где отдыхать" data-list=".filter-where-list"/>
+                  <span class="finput-line"></span>
+                  <ul class="filter-where-list">
+                    <li><b>Анапа</b></li>
+                    <li><b>Абакан</b></li>
+                    <li><b>Адлер,</b> Сочи</li>
+                    <li><b>Адыгейск,</b> Республика Хакасия</li>
+                    <li><b>Барнаул,</b> Алтайский край</li>
+                    <li><b>Бийск</b></li>
+                    <li><b>Владимир</b></li>
+                    <li><b>Новосибирск</b></li>
+                    <li><b>Норильск</b></li>
+                    <li><b>Москва</b></li>                    
+                  </ul>
+                </div><!--col-where-->
+                <div class="filter-col">
+                  <input type="text" readonly="readonly" id="filter_input_date" class="filter-input date" placeholder="Дата заезда/выезда"/>
+                  <span class="finput-line"></span>
+                </div>
+                <div class="filter-col filter-col-persons">
+                  <input type="text" class="filter-input persons" placeholder="Выберите из списка" />
+                  <span class="finput-line"></span>
+                  <div class="filter-persons-control-wrap">
+                    <div class="filter-persons-control-row">
+                      <div class="filter-persons-control-l">
+                        <div class="filter-persons-tit">Взрослые</div>
+                        <div class="filter-persons-info">от 13 лет</div>
+                      </div>
+                      <div class="filter-persons-control-r">
+                        <span class="filter-persons-control _minus dis"></span>
+                        <input class="filter-persons-input adults" name="adults" type="text" placeholder="0" value="0">
+                        <span class="filter-persons-control _plus"></span>
+                      </div>
+                    </div><!--row-->
+                    <div class="filter-persons-control-row">
+                      <div class="filter-persons-control-l">
+                        <div class="filter-persons-tit">Дети</div>
+                        <div class="filter-persons-info">от 2 до 12 лет</div>
+                      </div>
+                      <div class="filter-persons-control-r">
+                        <span class="filter-persons-control _minus dis"></span>
+                        <input class="filter-persons-input children" name="children" type="text" placeholder="0" value="0">
+                        <span class="filter-persons-control _plus"></span>
+                      </div>
+                    </div><!--row-->
+                    <div class="filter-persons-control-row">
+                      <div class="filter-persons-control-l">
+                        <div class="filter-persons-tit">Младенцы</div>
+                        <div class="filter-persons-info">до 2 лет</div>
+                      </div>
+                      <div class="filter-persons-control-r">
+                        <span class="filter-persons-control _minus dis"></span>
+                        <input class="filter-persons-input babies" name="babies" type="text" placeholder="0" value="0">
+                        <span class="filter-persons-control _plus"></span>
+                      </div>
+                    </div><!--row-->
+                  </div>                  
+                </div>
+                <input type="submit" value="Подобрать жилье" class="btn filter-btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div><!--filter-->
 
-
-      <section class="section select-housing">
+      <section class="section select-housing select-housing-2">
         <div class="contain">
           <div class="col-w housing-col-w">
             <div class="col-l">
               <div class="col-1-filter-h hide-991">Фильтр</div>
               <div class="col-1-filter-w">
+                <div class="col-1-filter-h-2">Подбор жилья</div>
+                <ul class="col-1-filter-labels">
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox" checked>
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Номера <span>4</span></span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox" checked>
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Дома <span>132</span></span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox" checked>
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Квартиры <span>42</span></span>
+                  </label>
+                </ul>
+                <ul class="col-1-filter-labels">
+                </ul>
                 <div class="col-1-filter-h-2">Услуги</div>
                 <ul class="col-1-filter-labels">
                   <label class="filter-label col-1-filter-label">
@@ -863,8 +957,569 @@
                   По дате<span class="offer-choice-span"><img src="img/arr-dw-gr.svg" /></span>
                 </a>
               </div>
-
             </div><!---->
+
+
+            <div class="search-row">
+
+
+              <div class="search-col">
+                <div class="room">
+  <div class="room-img-w">
+    <div class="room-img-slider">
+     <a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-pr-txt">
+        Стандарт одноместный однокомнатный корпус №1 <div class="room-nb">#75432</div>
+      </a> 
+      <a href="#" class="room-cont-project">
+        <span>Стандарт одноместный однокомнатный корпус №12</span>
+        <div class="all-ht-rating-row"><img src="img/star-hot.svg"><span class="all-ht-rating-span">7,8</span></div>
+      </a>                           
+    </div>
+    <div class="room-cont-pr hide-1320">
+      <span class="room-cont-pr-row-span-2">9400 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+  </div>
+  <div class="room-bk-row">
+    <div class="room-bk-l">
+      <div class="room-bk-l-chr"><img src="img/room-1.svg" /><span class="room-bk-l-chr-span">2 места</span></div>
+      <div class="room-bk-l-chr"><img src="img/room-2.svg" /><span class="room-bk-l-chr-span">18,4 м2</span></div>
+    </div>
+    <div class="room-cont-pr show-1320">
+      <span class="room-cont-pr-row-span-2">9400 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+    <div class="room-bk-r">
+<!--a href="#" class="room-bk-r-ab">
+О номере<span class="room-bk-r-ab-span"><img src="img/arr-dw-blue.svg" /></span>
+</a-->
+<a href="#" class="btn-o room-bk-r-btn-2">Подробнее</a>
+</div>
+</div>
+</div>
+</div><!--room-->
+              </div><!--col-->
+              <div class="search-col">
+                <div class="room">
+  <div class="room-img-w">
+    <div class="room-img-slider">
+     <a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-pr-txt">
+        Стандарт одноместный однокомнатный корпус №1 <div class="room-nb">#75432</div>
+      </a> 
+      <a href="#" class="room-cont-project">
+        <span>Стандарт одноместный однокомнатный корпус №12</span>
+        <div class="all-ht-rating-row"><img src="img/star-hot.svg"><span class="all-ht-rating-span">7,8</span></div>
+      </a>                           
+    </div>
+    <div class="room-cont-pr hide-1320">
+      <span class="room-cont-pr-row-span-2">12800 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+  </div>
+  <div class="room-bk-row">
+    <div class="room-bk-l">
+      <div class="room-bk-l-chr"><img src="img/room-1.svg" /><span class="room-bk-l-chr-span">2 места</span></div>
+      <div class="room-bk-l-chr"><img src="img/room-2.svg" /><span class="room-bk-l-chr-span">18,4 м2</span></div>
+    </div>
+    <div class="room-cont-pr show-1320">
+      <span class="room-cont-pr-row-span-2">12800 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+    <div class="room-bk-r">
+<!--a href="#" class="room-bk-r-ab">
+О номере<span class="room-bk-r-ab-span"><img src="img/arr-dw-blue.svg" /></span>
+</a-->
+<a href="#" class="btn-o room-bk-r-btn-2">Подробнее</a>
+</div>
+</div>
+</div>
+</div><!--room-->
+              </div><!--col-->
+              <div class="search-col">
+                <div class="room">
+  <div class="room-img-w">
+    <div class="room-img-slider">
+     <a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-pr-txt">
+        Стандарт одноместный однокомнатный корпус №1 <div class="room-nb">#75432</div>
+      </a> 
+      <a href="#" class="room-cont-project">
+        <span>Стандарт одноместный однокомнатный корпус №12</span>
+        <div class="all-ht-rating-row"><img src="img/star-hot.svg"><span class="all-ht-rating-span">7,8</span></div>
+      </a>                           
+    </div>
+    <div class="room-cont-pr hide-1320">
+      <span class="room-cont-pr-row-span-2">3800 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+  </div>
+  <div class="room-bk-row">
+    <div class="room-bk-l">
+      <div class="room-bk-l-chr"><img src="img/room-1.svg" /><span class="room-bk-l-chr-span">2 места</span></div>
+      <div class="room-bk-l-chr"><img src="img/room-2.svg" /><span class="room-bk-l-chr-span">18,4 м2</span></div>
+    </div>
+    <div class="room-cont-pr show-1320">
+      <span class="room-cont-pr-row-span-2">3800 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+    <div class="room-bk-r">
+<!--a href="#" class="room-bk-r-ab">
+О номере<span class="room-bk-r-ab-span"><img src="img/arr-dw-blue.svg" /></span>
+</a-->
+<a href="#" class="btn-o room-bk-r-btn-2">Подробнее</a>
+</div>
+</div>
+</div>
+</div><!--room-->
+              </div><!--col-->
+
+                     <div class="search-col">
+                <div class="room">
+  <div class="room-img-w">
+    <div class="room-img-slider">
+     <a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-pr-txt">
+        Стандарт одноместный однокомнатный корпус №1 <div class="room-nb">#75432</div>
+      </a> 
+      <a href="#" class="room-cont-project">
+        <span>Стандарт одноместный однокомнатный корпус №12</span>
+        <div class="all-ht-rating-row"><img src="img/star-hot.svg"><span class="all-ht-rating-span">7,8</span></div>
+      </a>                           
+    </div>
+    <div class="room-cont-pr hide-1320">
+      <span class="room-cont-pr-row-span-2">9400 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+  </div>
+  <div class="room-bk-row">
+    <div class="room-bk-l">
+      <div class="room-bk-l-chr"><img src="img/room-1.svg" /><span class="room-bk-l-chr-span">2 места</span></div>
+      <div class="room-bk-l-chr"><img src="img/room-2.svg" /><span class="room-bk-l-chr-span">18,4 м2</span></div>
+    </div>
+    <div class="room-cont-pr show-1320">
+      <span class="room-cont-pr-row-span-2">9400 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+    <div class="room-bk-r">
+<!--a href="#" class="room-bk-r-ab">
+О номере<span class="room-bk-r-ab-span"><img src="img/arr-dw-blue.svg" /></span>
+</a-->
+<a href="#" class="btn-o room-bk-r-btn-2">Подробнее</a>
+</div>
+</div>
+</div>
+</div><!--room-->
+              </div><!--col-->
+              <div class="search-col">
+                <div class="room">
+  <div class="room-img-w">
+    <div class="room-img-slider">
+     <a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-pr-txt">
+        Стандарт одноместный однокомнатный корпус №1 <div class="room-nb">#75432</div>
+      </a> 
+      <a href="#" class="room-cont-project">
+        <span>Стандарт одноместный однокомнатный корпус №12</span>
+        <div class="all-ht-rating-row"><img src="img/star-hot.svg"><span class="all-ht-rating-span">7,8</span></div>
+      </a>                           
+    </div>
+    <div class="room-cont-pr hide-1320">
+      <span class="room-cont-pr-row-span-2">12800 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+  </div>
+  <div class="room-bk-row">
+    <div class="room-bk-l">
+      <div class="room-bk-l-chr"><img src="img/room-1.svg" /><span class="room-bk-l-chr-span">2 места</span></div>
+      <div class="room-bk-l-chr"><img src="img/room-2.svg" /><span class="room-bk-l-chr-span">18,4 м2</span></div>
+    </div>
+    <div class="room-cont-pr show-1320">
+      <span class="room-cont-pr-row-span-2">12800 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+    <div class="room-bk-r">
+<!--a href="#" class="room-bk-r-ab">
+О номере<span class="room-bk-r-ab-span"><img src="img/arr-dw-blue.svg" /></span>
+</a-->
+<a href="#" class="btn-o room-bk-r-btn-2">Подробнее</a>
+</div>
+</div>
+</div>
+</div><!--room-->
+              </div><!--col-->
+              <div class="search-col">
+                <div class="room">
+  <div class="room-img-w">
+    <div class="room-img-slider">
+     <a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-pr-txt">
+        Стандарт одноместный однокомнатный корпус №1 <div class="room-nb">#75432</div>
+      </a> 
+      <a href="#" class="room-cont-project">
+        <span>Стандарт одноместный однокомнатный корпус №12</span>
+        <div class="all-ht-rating-row"><img src="img/star-hot.svg"><span class="all-ht-rating-span">7,8</span></div>
+      </a>                           
+    </div>
+    <div class="room-cont-pr hide-1320">
+      <span class="room-cont-pr-row-span-2">3800 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+  </div>
+  <div class="room-bk-row">
+    <div class="room-bk-l">
+      <div class="room-bk-l-chr"><img src="img/room-1.svg" /><span class="room-bk-l-chr-span">2 места</span></div>
+      <div class="room-bk-l-chr"><img src="img/room-2.svg" /><span class="room-bk-l-chr-span">18,4 м2</span></div>
+    </div>
+    <div class="room-cont-pr show-1320">
+      <span class="room-cont-pr-row-span-2">3800 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+    <div class="room-bk-r">
+<!--a href="#" class="room-bk-r-ab">
+О номере<span class="room-bk-r-ab-span"><img src="img/arr-dw-blue.svg" /></span>
+</a-->
+<a href="#" class="btn-o room-bk-r-btn-2">Подробнее</a>
+</div>
+</div>
+</div>
+</div><!--room-->
+              </div><!--col-->
+
+                     <div class="search-col">
+                <div class="room">
+  <div class="room-img-w">
+    <div class="room-img-slider">
+     <a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-pr-txt">
+        Стандарт одноместный однокомнатный корпус №1 <div class="room-nb">#75432</div>
+      </a> 
+      <a href="#" class="room-cont-project">
+        <span>Стандарт одноместный однокомнатный корпус №12</span>
+        <div class="all-ht-rating-row"><img src="img/star-hot.svg"><span class="all-ht-rating-span">7,8</span></div>
+      </a>                           
+    </div>
+    <div class="room-cont-pr hide-1320">
+      <span class="room-cont-pr-row-span-2">9400 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+  </div>
+  <div class="room-bk-row">
+    <div class="room-bk-l">
+      <div class="room-bk-l-chr"><img src="img/room-1.svg" /><span class="room-bk-l-chr-span">2 места</span></div>
+      <div class="room-bk-l-chr"><img src="img/room-2.svg" /><span class="room-bk-l-chr-span">18,4 м2</span></div>
+    </div>
+    <div class="room-cont-pr show-1320">
+      <span class="room-cont-pr-row-span-2">9400 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+    <div class="room-bk-r">
+<!--a href="#" class="room-bk-r-ab">
+О номере<span class="room-bk-r-ab-span"><img src="img/arr-dw-blue.svg" /></span>
+</a-->
+<a href="#" class="btn-o room-bk-r-btn-2">Подробнее</a>
+</div>
+</div>
+</div>
+</div><!--room-->
+              </div><!--col-->
+              <div class="search-col">
+                <div class="room">
+  <div class="room-img-w">
+    <div class="room-img-slider">
+     <a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-pr-txt">
+        Стандарт одноместный однокомнатный корпус №1 <div class="room-nb">#75432</div>
+      </a> 
+      <a href="#" class="room-cont-project">
+        <span>Стандарт одноместный однокомнатный корпус №12</span>
+        <div class="all-ht-rating-row"><img src="img/star-hot.svg"><span class="all-ht-rating-span">7,8</span></div>
+      </a>                           
+    </div>
+    <div class="room-cont-pr hide-1320">
+      <span class="room-cont-pr-row-span-2">12800 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+  </div>
+  <div class="room-bk-row">
+    <div class="room-bk-l">
+      <div class="room-bk-l-chr"><img src="img/room-1.svg" /><span class="room-bk-l-chr-span">2 места</span></div>
+      <div class="room-bk-l-chr"><img src="img/room-2.svg" /><span class="room-bk-l-chr-span">18,4 м2</span></div>
+    </div>
+    <div class="room-cont-pr show-1320">
+      <span class="room-cont-pr-row-span-2">12800 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+    <div class="room-bk-r">
+<!--a href="#" class="room-bk-r-ab">
+О номере<span class="room-bk-r-ab-span"><img src="img/arr-dw-blue.svg" /></span>
+</a-->
+<a href="#" class="btn-o room-bk-r-btn-2">Подробнее</a>
+</div>
+</div>
+</div>
+</div><!--room-->
+              </div><!--col-->
+              <div class="search-col">
+                <div class="room">
+  <div class="room-img-w">
+    <div class="room-img-slider">
+     <a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-pr-txt">
+        Стандарт одноместный однокомнатный корпус №1 <div class="room-nb">#75432</div>
+      </a> 
+      <a href="#" class="room-cont-project">
+        <span>Стандарт одноместный однокомнатный корпус №12</span>
+        <div class="all-ht-rating-row"><img src="img/star-hot.svg"><span class="all-ht-rating-span">7,8</span></div>
+      </a>                           
+    </div>
+    <div class="room-cont-pr hide-1320">
+      <span class="room-cont-pr-row-span-2">3800 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+  </div>
+  <div class="room-bk-row">
+    <div class="room-bk-l">
+      <div class="room-bk-l-chr"><img src="img/room-1.svg" /><span class="room-bk-l-chr-span">2 места</span></div>
+      <div class="room-bk-l-chr"><img src="img/room-2.svg" /><span class="room-bk-l-chr-span">18,4 м2</span></div>
+    </div>
+    <div class="room-cont-pr show-1320">
+      <span class="room-cont-pr-row-span-2">3800 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+    <div class="room-bk-r">
+<!--a href="#" class="room-bk-r-ab">
+О номере<span class="room-bk-r-ab-span"><img src="img/arr-dw-blue.svg" /></span>
+</a-->
+<a href="#" class="btn-o room-bk-r-btn-2">Подробнее</a>
+</div>
+</div>
+</div>
+</div><!--room-->
+              </div><!--col-->
+
+                     <div class="search-col">
+                <div class="room">
+  <div class="room-img-w">
+    <div class="room-img-slider">
+     <a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-pr-txt">
+        Стандарт одноместный однокомнатный корпус №1 <div class="room-nb">#75432</div>
+      </a> 
+      <a href="#" class="room-cont-project">
+        <span>Стандарт одноместный однокомнатный корпус №12</span>
+        <div class="all-ht-rating-row"><img src="img/star-hot.svg"><span class="all-ht-rating-span">7,8</span></div>
+      </a>                           
+    </div>
+    <div class="room-cont-pr hide-1320">
+      <span class="room-cont-pr-row-span-2">9400 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+  </div>
+  <div class="room-bk-row">
+    <div class="room-bk-l">
+      <div class="room-bk-l-chr"><img src="img/room-1.svg" /><span class="room-bk-l-chr-span">2 места</span></div>
+      <div class="room-bk-l-chr"><img src="img/room-2.svg" /><span class="room-bk-l-chr-span">18,4 м2</span></div>
+    </div>
+    <div class="room-cont-pr show-1320">
+      <span class="room-cont-pr-row-span-2">9400 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+    <div class="room-bk-r">
+<!--a href="#" class="room-bk-r-ab">
+О номере<span class="room-bk-r-ab-span"><img src="img/arr-dw-blue.svg" /></span>
+</a-->
+<a href="#" class="btn-o room-bk-r-btn-2">Подробнее</a>
+</div>
+</div>
+</div>
+</div><!--room-->
+              </div><!--col-->
+              <div class="search-col">
+                <div class="room">
+  <div class="room-img-w">
+    <div class="room-img-slider">
+     <a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-pr-txt">
+        Стандарт одноместный однокомнатный корпус №1 <div class="room-nb">#75432</div>
+      </a> 
+      <a href="#" class="room-cont-project">
+        <span>Стандарт одноместный однокомнатный корпус №12</span>
+        <div class="all-ht-rating-row"><img src="img/star-hot.svg"><span class="all-ht-rating-span">7,8</span></div>
+      </a>                           
+    </div>
+    <div class="room-cont-pr hide-1320">
+      <span class="room-cont-pr-row-span-2">12800 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+  </div>
+  <div class="room-bk-row">
+    <div class="room-bk-l">
+      <div class="room-bk-l-chr"><img src="img/room-1.svg" /><span class="room-bk-l-chr-span">2 места</span></div>
+      <div class="room-bk-l-chr"><img src="img/room-2.svg" /><span class="room-bk-l-chr-span">18,4 м2</span></div>
+    </div>
+    <div class="room-cont-pr show-1320">
+      <span class="room-cont-pr-row-span-2">12800 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+    <div class="room-bk-r">
+<!--a href="#" class="room-bk-r-ab">
+О номере<span class="room-bk-r-ab-span"><img src="img/arr-dw-blue.svg" /></span>
+</a-->
+<a href="#" class="btn-o room-bk-r-btn-2">Подробнее</a>
+</div>
+</div>
+</div>
+</div><!--room-->
+              </div><!--col-->
+              <div class="search-col">
+                <div class="room">
+  <div class="room-img-w">
+    <div class="room-img-slider">
+     <a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-pr-txt">
+        Стандарт одноместный однокомнатный корпус №1 <div class="room-nb">#75432</div>
+      </a> 
+      <a href="#" class="room-cont-project">
+        <span>Стандарт одноместный однокомнатный корпус №12</span>
+        <div class="all-ht-rating-row"><img src="img/star-hot.svg"><span class="all-ht-rating-span">7,8</span></div>
+      </a>                           
+    </div>
+    <div class="room-cont-pr hide-1320">
+      <span class="room-cont-pr-row-span-2">3800 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+  </div>
+  <div class="room-bk-row">
+    <div class="room-bk-l">
+      <div class="room-bk-l-chr"><img src="img/room-1.svg" /><span class="room-bk-l-chr-span">2 места</span></div>
+      <div class="room-bk-l-chr"><img src="img/room-2.svg" /><span class="room-bk-l-chr-span">18,4 м2</span></div>
+    </div>
+    <div class="room-cont-pr show-1320">
+      <span class="room-cont-pr-row-span-2">3800 ₽</span>
+      <div class="room-cont-peoples">
+        за 5 ночей,<br>  2 человек
+      </div>
+    </div>                    
+    <div class="room-bk-r">
+<!--a href="#" class="room-bk-r-ab">
+О номере<span class="room-bk-r-ab-span"><img src="img/arr-dw-blue.svg" /></span>
+</a-->
+<a href="#" class="btn-o room-bk-r-btn-2">Подробнее</a>
+</div>
+</div>
+</div>
+</div><!--room-->
+              </div><!--col-->
+
+            </div><!--search-wrap-->
 
 
             <a href="#" class="col-1-filter-map show-991">
@@ -879,351 +1534,21 @@
               </div>
             </a>
 
-            <div class="choice-btn-scroll">
-              <div class="choice-btn-ul">
-                <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span active"> Все объекты</span></label>
-
-                <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Гостиницы</span></label>
-                <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Гостевые дома</span></label>
-                <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Квартиры</span></label>
-                <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Дома</span></label>
-                <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Частный сектор</span></label>
-              </div>
-            </div>
 
 
 
-            <div class="housing-row">
-              <div class="housing-col">
-               <div class="all-ht-it">
-  <a href="#" class="all-ht-img-w">
-    <img src="img/hot-1.jpg" />
-    <div class="all-ht-rating">
-      <div class="all-ht-rating-row"><img src="img/star-hot.svg" /><span class="all-ht-rating-span">7,8</span></div>
-      <div class="all-ht-rating-txt"><span>146</span> отзывов</div>
-    </div>
-  </a>
-  <div class="all-ht-inf">
-    <a href="#" class="all-ht-inf-a">Гостиница</a>
-    <a href="#" class="all-ht-inf-txt-1">Атлант</a>
-    <div class="all-ht-inf-geo"><img src="img/geo-grey.svg" /><span class="all-ht-inf-geo-span">ул. Пролетарская, 103 А</span></div>
-    <div class="all-ht-inf-txt-3">от<span class='all-ht-inf-txt-3-span'>1200 ₽</span>/ в сутки</div>
-  </div>
-</div><!--it-->
-            </div>
-            <div class="housing-col">
-              <div class="all-ht-it">
-  <a href="#" class="all-ht-img-w">
-    <img src="img/hot-2.jpg" />
-    <div class="all-ht-rating">
-      <div class="all-ht-rating-row"><img src="img/star-hot.svg" /><span class="all-ht-rating-span">7,8</span></div>
-      <div class="all-ht-rating-txt"><span>146</span> отзывов</div>
-    </div>
-  </a>
-  <div class="all-ht-inf">
-    <a href="#" class="all-ht-inf-a">Гостиница</a>
-    <a href="#" class="all-ht-inf-txt-1">Akropolis</a>
-    <div class="all-ht-inf-geo"><img src="img/geo-grey.svg" /><span class="all-ht-inf-geo-span">ул. Пролетарская, 103 А</span></div>
-    <div class="all-ht-inf-txt-3">от<span class='all-ht-inf-txt-3-span'>1200 ₽</span>/ в сутки</div>
-  </div>
-</div><!--it-->
-            </div>
-            <div class="housing-col">
-              <div class="all-ht-it">
-  <a href="#" class="all-ht-img-w">
-    <img src="img/hot-3.jpg" />
-    <div class="all-ht-rating">
-      <div class="all-ht-rating-row"><img src="img/star-hot.svg" /><span class="all-ht-rating-span">7,8</span></div>
-      <div class="all-ht-rating-txt"><span>146</span> отзывов</div>
-    </div>
-  </a>
-  <div class="all-ht-inf">
-    <a href="#" class="all-ht-inf-a">Гостиница</a>
-    <a href="#" class="all-ht-inf-txt-1">Родос</a>
-    <div class="all-ht-inf-geo"><img src="img/geo-grey.svg" /><span class="all-ht-inf-geo-span">ул. Пролетарская, 103 А</span></div>
-    <div class="all-ht-inf-txt-3">от<span class='all-ht-inf-txt-3-span'>1200 ₽</span>/ в сутки</div>
-  </div>
-</div><!--it-->
-            </div>
-            <div class="housing-col">
-              <div class="all-ht-it">
-  <a href="#" class="all-ht-img-w">
-    <img src="img/hot-4.jpg" />
-    <div class="all-ht-rating">
-      <div class="all-ht-rating-row"><img src="img/star-hot.svg" /><span class="all-ht-rating-span">7,8</span></div>
-      <div class="all-ht-rating-txt"><span>146</span> отзывов</div>
-    </div>
-  </a>
-  <div class="all-ht-inf">
-    <a href="#" class="all-ht-inf-a">Гостиница</a>
-    <a href="#" class="all-ht-inf-txt-1">Родос-2</a>
-    <div class="all-ht-inf-geo"><img src="img/geo-grey.svg" /><span class="all-ht-inf-geo-span">ул. Пролетарская, 103 А</span></div>
-    <div class="all-ht-inf-txt-3">от<span class='all-ht-inf-txt-3-span'>1200 ₽</span>/ в сутки</div>
-  </div>
-</div><!--it-->
-            </div>
-            <div class="housing-col">
-              <div class="all-ht-it">
-  <a href="#" class="all-ht-img-w">
-    <img src="img/hot-5.jpg" />
-    <div class="all-ht-rating">
-      <div class="all-ht-rating-row"><img src="img/star-hot.svg" /><span class="all-ht-rating-span">7,8</span></div>
-      <div class="all-ht-rating-txt"><span>146</span> отзывов</div>
-    </div>
-  </a>
-  <div class="all-ht-inf">
-    <a href="#" class="all-ht-inf-a">Гостиница</a>
-    <a href="#" class="all-ht-inf-txt-1">Кристина</a>
-    <div class="all-ht-inf-geo"><img src="img/geo-grey.svg" /><span class="all-ht-inf-geo-span">ул. Пролетарская, 103 А</span></div>
-    <div class="all-ht-inf-txt-3">от<span class='all-ht-inf-txt-3-span'>1200 ₽</span>/ в сутки</div>
-  </div>
-</div><!--it-->
-            </div>
-            <div class="housing-col">
-              <div class="all-ht-it">
-  <a href="#" class="all-ht-img-w">
-    <img src="img/hot-6.jpg" />
-    <div class="all-ht-rating">
-      <div class="all-ht-rating-row"><img src="img/star-hot.svg" /><span class="all-ht-rating-span">7,8</span></div>
-      <div class="all-ht-rating-txt"><span>146</span> отзывов</div>
-    </div>
-  </a>
-  <div class="all-ht-inf">
-    <a href="#" class="all-ht-inf-a">Гостиница</a>
-    <a href="#" class="all-ht-inf-txt-1">Вега</a>
-    <div class="all-ht-inf-geo"><img src="img/geo-grey.svg" /><span class="all-ht-inf-geo-span">ул. Пролетарская, 103 А</span></div>
-    <div class="all-ht-inf-txt-3">от<span class='all-ht-inf-txt-3-span'>1200 ₽</span>/ в сутки</div>
-  </div>
-</div><!--it-->
-            </div>
-            <div class="housing-col">
-              <div class="all-ht-it">
-  <a href="#" class="all-ht-img-w">
-    <img src="img/hot-7.jpg" />
-    <div class="all-ht-rating">
-      <div class="all-ht-rating-row"><img src="img/star-hot.svg" /><span class="all-ht-rating-span">7,8</span></div>
-      <div class="all-ht-rating-txt"><span>146</span> отзывов</div>
-    </div>
-  </a>
-  <div class="all-ht-inf">
-    <a href="#" class="all-ht-inf-a">Гостиница</a>
-    <a href="#" class="all-ht-inf-txt-1">Castro</a>
-    <div class="all-ht-inf-geo"><img src="img/geo-grey.svg" /><span class="all-ht-inf-geo-span">ул. Пролетарская, 103 А</span></div>
-    <div class="all-ht-inf-txt-3">от<span class='all-ht-inf-txt-3-span'>1200 ₽</span>/ в сутки</div>
-  </div>
-</div><!--it-->
-            </div>
-            <div class="housing-col">
-              <div class="all-ht-it">
-  <a href="#" class="all-ht-img-w">
-    <img src="img/hot-8.jpg" />
-    <div class="all-ht-rating">
-      <div class="all-ht-rating-row"><img src="img/star-hot.svg" /><span class="all-ht-rating-span">7,8</span></div>
-      <div class="all-ht-rating-txt"><span>146</span> отзывов</div>
-    </div>
-  </a>
-  <div class="all-ht-inf">
-    <a href="#" class="all-ht-inf-a">Гостиница</a>
-    <a href="#" class="all-ht-inf-txt-1">Фрегат</a>
-    <div class="all-ht-inf-geo"><img src="img/geo-grey.svg" /><span class="all-ht-inf-geo-span">ул. Пролетарская, 103 А</span></div>
-    <div class="all-ht-inf-txt-3">от<span class='all-ht-inf-txt-3-span'>1200 ₽</span>/ в сутки</div>
-  </div>
-</div><!--it-->
-            </div>
-            <div class="housing-col">
-              <div class="all-ht-it">
-  <a href="#" class="all-ht-img-w">
-    <img src="img/hot-1.jpg" />
-    <div class="all-ht-rating">
-      <div class="all-ht-rating-row"><img src="img/star-hot.svg" /><span class="all-ht-rating-span">7,8</span></div>
-      <div class="all-ht-rating-txt"><span>146</span> отзывов</div>
-    </div>
-  </a>
-  <div class="all-ht-inf">
-    <a href="#" class="all-ht-inf-a">Гостиница</a>
-    <a href="#" class="all-ht-inf-txt-1">Атлант</a>
-    <div class="all-ht-inf-geo"><img src="img/geo-grey.svg" /><span class="all-ht-inf-geo-span">ул. Пролетарская, 103 А</span></div>
-    <div class="all-ht-inf-txt-3">от<span class='all-ht-inf-txt-3-span'>1200 ₽</span>/ в сутки</div>
-  </div>
-</div><!--it-->
-            </div>
-            <div class="housing-col">
-              <div class="all-ht-it">
-  <a href="#" class="all-ht-img-w">
-    <img src="img/hot-2.jpg" />
-    <div class="all-ht-rating">
-      <div class="all-ht-rating-row"><img src="img/star-hot.svg" /><span class="all-ht-rating-span">7,8</span></div>
-      <div class="all-ht-rating-txt"><span>146</span> отзывов</div>
-    </div>
-  </a>
-  <div class="all-ht-inf">
-    <a href="#" class="all-ht-inf-a">Гостиница</a>
-    <a href="#" class="all-ht-inf-txt-1">Akropolis</a>
-    <div class="all-ht-inf-geo"><img src="img/geo-grey.svg" /><span class="all-ht-inf-geo-span">ул. Пролетарская, 103 А</span></div>
-    <div class="all-ht-inf-txt-3">от<span class='all-ht-inf-txt-3-span'>1200 ₽</span>/ в сутки</div>
-  </div>
-</div><!--it-->
-            </div>
-            <div class="housing-col">
-              <div class="all-ht-it">
-  <a href="#" class="all-ht-img-w">
-    <img src="img/hot-3.jpg" />
-    <div class="all-ht-rating">
-      <div class="all-ht-rating-row"><img src="img/star-hot.svg" /><span class="all-ht-rating-span">7,8</span></div>
-      <div class="all-ht-rating-txt"><span>146</span> отзывов</div>
-    </div>
-  </a>
-  <div class="all-ht-inf">
-    <a href="#" class="all-ht-inf-a">Гостиница</a>
-    <a href="#" class="all-ht-inf-txt-1">Родос</a>
-    <div class="all-ht-inf-geo"><img src="img/geo-grey.svg" /><span class="all-ht-inf-geo-span">ул. Пролетарская, 103 А</span></div>
-    <div class="all-ht-inf-txt-3">от<span class='all-ht-inf-txt-3-span'>1200 ₽</span>/ в сутки</div>
-  </div>
-</div><!--it-->
-            </div>
-            <div class="housing-col">
-              <div class="all-ht-it">
-  <a href="#" class="all-ht-img-w">
-    <img src="img/hot-4.jpg" />
-    <div class="all-ht-rating">
-      <div class="all-ht-rating-row"><img src="img/star-hot.svg" /><span class="all-ht-rating-span">7,8</span></div>
-      <div class="all-ht-rating-txt"><span>146</span> отзывов</div>
-    </div>
-  </a>
-  <div class="all-ht-inf">
-    <a href="#" class="all-ht-inf-a">Гостиница</a>
-    <a href="#" class="all-ht-inf-txt-1">Родос-2</a>
-    <div class="all-ht-inf-geo"><img src="img/geo-grey.svg" /><span class="all-ht-inf-geo-span">ул. Пролетарская, 103 А</span></div>
-    <div class="all-ht-inf-txt-3">от<span class='all-ht-inf-txt-3-span'>1200 ₽</span>/ в сутки</div>
-  </div>
-</div><!--it-->
-            </div>
-          </div><!--housing-row-->
-          <a href="#" class="housing-btn btn-dia btn-gray">Показать еще <span>(24 из 1456)</span></a>
 
-        </div><!--col-r-->
+
+            <a href="#" class="housing-btn btn-dia btn-gray">Показать еще <span>(24 из 1456)</span></a>
+
+          </div><!--col-r-->
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
 
-
-
-  <section class="specials section">
-    <div class="contain">      
-      <div class="head-2">Спецпредложения</div>
-      <div class="specials-row specials-row-js-1">
-       <a href="#" class="hotels-it">
-  <img src="img/hotel-1.jpg" class="hotels-it-img" />
-  <div class="hotels-it-txt-w">
-    <div class="hotels-it-txt-1">Гостиница
-    <div class="hotels-it-stars">
-      <div class="hotels-it-star"></div>
-      <div class="hotels-it-star"></div>
-      <div class="hotels-it-star"></div>
-    </div>
-  </div>
-    <div class="hotels-it-txt-2">AsTerias</div>
-    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
-    <div class="hotels-it-txt-3"></div>
-  </div>
-  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
-  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
-</a>
-      <a href="#" class="hotels-it">
-  <img src="img/hotel-33.jpg" class="hotels-it-img" />
-  <div class="hotels-it-txt-w">
-    <div class="hotels-it-txt-1">Отель</div>
-    <div class="hotels-it-txt-2">Castro</div>
-    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
-    <div class="hotels-it-txt-3"></div>
-  </div>
-  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
-  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
-</a>
-      <a href="#" class="hotels-it">
-  <img src="img/hotel-23.jpg" class="hotels-it-img" />
-  <div class="hotels-it-txt-w">
-    <div class="hotels-it-txt-1">Гостевой дом</div>
-    <div class="hotels-it-txt-2">Коралл</div>
-    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span">Дивноморское</span></div>
-    <div class="hotels-it-txt-3">от <strong><span>1200</span>  ₽</strong></div>
-  </div>
-  <span class="hotels-it-lbl hotels-it-stock-span">Акция</span> 
-  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
-</a>
-      <a href="#" class="hotels-it">
-  <img src="img/hotel-4.jpg" class="hotels-it-img" />
-  <div class="hotels-it-txt-w">
-    <div class="hotels-it-txt-1">Гостиница
-    <div class="hotels-it-stars">
-      <div class="hotels-it-star"></div>
-      <div class="hotels-it-star"></div>
-      <div class="hotels-it-star"></div>
-    </div>
-  </div>
-    <div class="hotels-it-txt-2">Родос</div>
-    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
-    <div class="hotels-it-txt-3"></div>
-  </div>
-  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
-  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
-</a>
-      <a href="#" class="hotels-it">
-  <img src="img/hotel-33.jpg" class="hotels-it-img" />
-  <div class="hotels-it-txt-w">
-    <div class="hotels-it-txt-1">Гостевой дом</div>
-    <div class="hotels-it-txt-2">Ниагара</div>
-    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
-    <div class="hotels-it-txt-3"></div>
-  </div>
-  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
-  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
-</a> 
-      <a href="#" class="hotels-it">
-  <img src="img/hotel-23.jpg" class="hotels-it-img" />
-  <div class="hotels-it-txt-w">
-    <div class="hotels-it-txt-1">Гостевой дом</div>
-    <div class="hotels-it-txt-2">Кристина</div>
-    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
-    <div class="hotels-it-txt-3"></div>
-  </div>
-  <span class="hotels-it-lbl hotels-it-stock-span">Акция</span> 
-  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
-</a>
-      <a href="#" class="hotels-it">
-  <img src="img/hotel-33.jpg" class="hotels-it-img" />
-  <div class="hotels-it-txt-w">
-    <div class="hotels-it-txt-1">Гостевой дом</div>
-    <div class="hotels-it-txt-2">Мечта</div>
-    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
-    <div class="hotels-it-txt-3"></div>
-  </div>
-  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
-  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
-</a>
-      <a href="#" class="hotels-it">
-  <img src="img/hotel-4.jpg" class="hotels-it-img" />
-  <div class="hotels-it-txt-w">
-    <div class="hotels-it-txt-1">Гостиница
-    <div class="hotels-it-stars">
-      <div class="hotels-it-star"></div>
-      <div class="hotels-it-star"></div>
-      <div class="hotels-it-star"></div>
-    </div>
-  </div>
-    <div class="hotels-it-txt-2">Мечта</div>
-    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
-    <div class="hotels-it-txt-3"></div>
-  </div>
-  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
-  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
-</a>
-    </div><!--specials-row-->
-  </div>
-</section>
-</main>
-    <footer class="foot">
+  </main>
+      <footer class="foot">
       <div class="contain">
         <div class="foot-top">
           <div class="foot-top-cont">
@@ -1262,10 +1587,6 @@
       <a href="#top" class="arr-up"></a>
     </footer>
     <div class="overlay"></div>
-<div class="housing-actions-pda">
-  <span class="housing-action housing-action-filter"></span>
-  <span class="housing-action housing-action-map"></span>
-</div>
 </div><!--wrapper-->
 <script src="js/jquery-3.4.1.min.js"></script>      
   <script src="js/slick.js"></script>

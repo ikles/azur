@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>8. Azur. Search</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+
+    @@include('var/_header.html')    
+    <main class="main">
+
+      @@include('var/_banner2.html',{
+        "class2": "",
+        "img": "banner2",          
+        "bread1": "<li><a href='#'>Главная</a></li>",
+        "bread2": "",
+        "bread3": "",
+        "bread4": "",
+        "bread_last": "<li><span>Отдых в Кабардинке</span></li>",
+        "title1": "Отдых в Кабардинке",          
+        "title2": ""
+      })
+      @@include('var/_filter.html')
+
+      <section class="section select-housing select-housing-2">
+        <div class="contain">
+          <div class="col-w housing-col-w">
+            <div class="col-l">
+              <div class="col-1-filter-h hide-991">Фильтр</div>
+              <div class="col-1-filter-w">
+                <div class="col-1-filter-h-2">Подбор жилья</div>
+                <ul class="col-1-filter-labels">
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox" checked>
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Номера <span>4</span></span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox" checked>
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Дома <span>132</span></span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox" checked>
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Квартиры <span>42</span></span>
+                  </label>
+                </ul>
+                <ul class="col-1-filter-labels">
+                </ul>
+                <div class="col-1-filter-h-2">Услуги</div>
+                <ul class="col-1-filter-labels">
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox">
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Питание в отеле</span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox">
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Бассейн</span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox">
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Баня, Сауна</span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox">
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Парковка</span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox">
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Wi-Fi</span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox">
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Телевизор</span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox">
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Территория, двор</span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox">
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Работает круглогодично</span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox">
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Собственный пляж</span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox">
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Детская площадка</span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox">
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Конференц-зал</span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox">
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Проживание с животными</span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox">
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Дети любого возраста</span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox">
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Круглосуточная регистрация</span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox">
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Терминал</span>
+                  </label>
+
+                  <label class="filter-label col-1-filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox">
+                    <span class="filter-label-span"></span>
+                    <span class="label-span-txt">Кондиционер</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="col-1-filter-map hide-991">
+              <div class="col-1-filter-map-img-w">
+                <img src="img/map-ftr.jpg" class="col-1-filter-map-img" />
+                <div class="col-1-filter-map-lab"><img src="img/geo-map-ftr.png" /></div>
+              </div>
+              <div class="col-1-filter-map-txt-w">
+                <div class="col-1-filter-map-txt">
+                  Показать на карте<span class="col-1-filter-map-txt-span"><img src="img/show-map.svg" /></span>
+                </div>
+              </div>
+            </a>
+          </div><!--col-l-->
+          <div class="col-r">
+            <div class="offer">
+              <div class="offer-txt-1">1456 предложений</div>
+              <div class="show-991">
+                <span class="filter-action-pda">Фильтр <i></i></span>
+              </div>
+              <div class="offer-row hide-991">
+                <div class="offer-txt-2">Сортировать</div>
+                <a href="#" class="offer-choice">
+                  По дате<span class="offer-choice-span"><img src="img/arr-dw-gr.svg" /></span>
+                </a>
+              </div>
+            </div><!---->
+
+
+            <div class="search-row">
+
+
+              <div class="search-col">
+                @@include("var/_room.html",{
+                  "gal": "<a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a>",
+                  "name": "Стандарт одноместный однокомнатный корпус №1",
+                  "num": "#75432",
+                  "name2": "Гостевой дом Летняя беседка",
+                  "stars": "7,8",
+                  "price": "9400 ₽",
+                  "peoples": "за 5 ночей,<br>  2 человек",
+                  "places": "2 места"
+                })
+              </div><!--col-->
+              <div class="search-col">
+                @@include("var/_room.html",{
+                  "gal": "<a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
+                  "name": "Стандарт одноместный однокомнатный корпус №1",
+                  "num": "#75432",
+                  "name2": "Гостевой дом Летняя беседка",
+                  "stars": "7,8",
+                  "price": "12800 ₽",
+                  "peoples": "за 5 ночей,<br>  2 человек",
+                  "places": "2 места"
+                })
+              </div><!--col-->
+              <div class="search-col">
+                @@include("var/_room.html",{
+                  "gal": "<a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
+                  "name": "Стандарт одноместный однокомнатный корпус №1",
+                  "num": "#75432",
+                  "name2": "Гостевой дом Летняя беседка",
+                  "stars": "7,8",
+                  "price": "3800 ₽",
+                  "peoples": "за 5 ночей,<br>  2 человек",
+                  "places": "2 места"
+                })
+              </div><!--col-->
+
+                     <div class="search-col">
+                @@include("var/_room.html",{
+                  "gal": "<a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a>",
+                  "name": "Стандарт одноместный однокомнатный корпус №1",
+                  "num": "#75432",
+                  "name2": "Гостевой дом Летняя беседка",
+                  "stars": "7,8",
+                  "price": "9400 ₽",
+                  "peoples": "за 5 ночей,<br>  2 человек",
+                  "places": "2 места"
+                })
+              </div><!--col-->
+              <div class="search-col">
+                @@include("var/_room.html",{
+                  "gal": "<a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
+                  "name": "Стандарт одноместный однокомнатный корпус №1",
+                  "num": "#75432",
+                  "name2": "Гостевой дом Летняя беседка",
+                  "stars": "7,8",
+                  "price": "12800 ₽",
+                  "peoples": "за 5 ночей,<br>  2 человек",
+                  "places": "2 места"
+                })
+              </div><!--col-->
+              <div class="search-col">
+                @@include("var/_room.html",{
+                  "gal": "<a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
+                  "name": "Стандарт одноместный однокомнатный корпус №1",
+                  "num": "#75432",
+                  "name2": "Гостевой дом Летняя беседка",
+                  "stars": "7,8",
+                  "price": "3800 ₽",
+                  "peoples": "за 5 ночей,<br>  2 человек",
+                  "places": "2 места"
+                })
+              </div><!--col-->
+
+                     <div class="search-col">
+                @@include("var/_room.html",{
+                  "gal": "<a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a>",
+                  "name": "Стандарт одноместный однокомнатный корпус №1",
+                  "num": "#75432",
+                  "name2": "Гостевой дом Летняя беседка",
+                  "stars": "7,8",
+                  "price": "9400 ₽",
+                  "peoples": "за 5 ночей,<br>  2 человек",
+                  "places": "2 места"
+                })
+              </div><!--col-->
+              <div class="search-col">
+                @@include("var/_room.html",{
+                  "gal": "<a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
+                  "name": "Стандарт одноместный однокомнатный корпус №1",
+                  "num": "#75432",
+                  "name2": "Гостевой дом Летняя беседка",
+                  "stars": "7,8",
+                  "price": "12800 ₽",
+                  "peoples": "за 5 ночей,<br>  2 человек",
+                  "places": "2 места"
+                })
+              </div><!--col-->
+              <div class="search-col">
+                @@include("var/_room.html",{
+                  "gal": "<a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
+                  "name": "Стандарт одноместный однокомнатный корпус №1",
+                  "num": "#75432",
+                  "name2": "Гостевой дом Летняя беседка",
+                  "stars": "7,8",
+                  "price": "3800 ₽",
+                  "peoples": "за 5 ночей,<br>  2 человек",
+                  "places": "2 места"
+                })
+              </div><!--col-->
+
+                     <div class="search-col">
+                @@include("var/_room.html",{
+                  "gal": "<a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a>",
+                  "name": "Стандарт одноместный однокомнатный корпус №1",
+                  "num": "#75432",
+                  "name2": "Гостевой дом Летняя беседка",
+                  "stars": "7,8",
+                  "price": "9400 ₽",
+                  "peoples": "за 5 ночей,<br>  2 человек",
+                  "places": "2 места"
+                })
+              </div><!--col-->
+              <div class="search-col">
+                @@include("var/_room.html",{
+                  "gal": "<a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
+                  "name": "Стандарт одноместный однокомнатный корпус №1",
+                  "num": "#75432",
+                  "name2": "Гостевой дом Летняя беседка",
+                  "stars": "7,8",
+                  "price": "12800 ₽",
+                  "peoples": "за 5 ночей,<br>  2 человек",
+                  "places": "2 места"
+                })
+              </div><!--col-->
+              <div class="search-col">
+                @@include("var/_room.html",{
+                  "gal": "<a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
+                  "name": "Стандарт одноместный однокомнатный корпус №1",
+                  "num": "#75432",
+                  "name2": "Гостевой дом Летняя беседка",
+                  "stars": "7,8",
+                  "price": "3800 ₽",
+                  "peoples": "за 5 ночей,<br>  2 человек",
+                  "places": "2 места"
+                })
+              </div><!--col-->
+
+            </div><!--search-wrap-->
+
+
+            <a href="#" class="col-1-filter-map show-991">
+              <div class="col-1-filter-map-img-w">
+                <img src="img/map-ftr.jpg" class="col-1-filter-map-img" />
+                <div class="col-1-filter-map-lab"><img src="img/geo-map-ftr.png" /></div>
+              </div>
+              <div class="col-1-filter-map-txt-w">
+                <div class="col-1-filter-map-txt">
+                  Показать на карте<span class="col-1-filter-map-txt-span"><img src="img/show-map.svg" /></span>
+                </div>
+              </div>
+            </a>
+
+
+
+
+
+
+            <a href="#" class="housing-btn btn-dia btn-gray">Показать еще <span>(24 из 1456)</span></a>
+
+          </div><!--col-r-->
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  @@include('var/_footer.html')
+</div><!--wrapper-->
+@@include('var/_scripts.html')
+</body>
+</html>

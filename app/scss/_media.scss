@@ -3,7 +3,12 @@
   .contain {
     max-width: 970px
   }   
-
+  .hide-1320 {
+    display: none;
+  }
+  .show-1320 {
+    display: block;
+  }
   .resort-tit {
     margin-bottom: 20px;
   }
@@ -37,7 +42,99 @@
       width: 33.333%;
     }
   }
+  .housing-col {
+    width: 50%;
+  }
+  .col-r {
+    width: 600px;
+  }
+  .choice-btn-scroll {
+    overflow-x: scroll;
+  }
+  
+  .search-col {
+    width: 50%;
+    padding: 0 10px;
+  }
+  .search-row {
+    display: flex;    
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  .room {    
+    flex-direction: column;
+  }
+  .room-img-w {
+    height: 170px;
+    width: 100%;    
+    border-radius: 5px 5px 0 0;
+  }
+  .room-cont {
+    padding: 20px;    
+    border-radius: 0 0 5px 5px;
+  }
+  .room-cont-pr-row {    
+    flex-direction: column;
+  }
+  .room-cont-pr-txt {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .room-nb,
+  .room-cont-pr-txt .room-nb {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .room-bk-l {    
+    flex-direction: column;            
+    align-items: flex-start;
+  }
+  .room-bk-row {  
+    flex-wrap: wrap;
+    margin-top: 20px;    
+  }
+  .room-bk-r {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .room-bk-l-chr {
+    margin-right: 0;
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+  .room-bk-r-btn,
+  .room-bk-r-btn-2 {
+    height: 46px;
+    padding: 0 16px;
+    font-size: 14px;
+  }
+  .room-bk-r-ab {
+    font-size: 14px;
+  }
+  .room-cont-day {
+    display: none;
+  }
+  .room-cont-pr-row-span {
+    font-size: 24px;
+  }
+  .room-cont-peoples {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .room-cont-project .all-ht-rating-row {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;    
+    justify-content: flex-start;    
+  }
+  .room-bk-r-btn-2 {
+    width: 100%;
+  }
 }
+
+
+
 
 
 /* Medium Devices, Desktops */
@@ -146,6 +243,75 @@
   }
   .rev {
     margin-top: 40px;
+  }
+  .housing-col-w {    
+    flex-wrap: wrap;
+    .col-r {
+
+      margin-left: 0;
+    }
+    .col-l {
+      width: 100%;
+    }
+  }
+
+  .show-991 {
+    display: flex;
+  }
+  .hide-991 {
+    display: none;
+  }
+  .col-1-filter-w {
+    display: none;
+  }
+  .filter-action-pda {
+    display: flex;
+    font-size: 16px;
+    color: #3181F6;  
+    align-items: center;
+    i {
+      margin-left: 5px;
+      width: 17px;
+      height: 17px;
+      display: flex;  
+      align-items: center;
+      justify-content: center;
+      background: url("../img/filter-icon.svg") $nr center;
+    }  
+  }
+  .col-1-filter-map-img-w {
+    height: 56px;
+    width: 56px;
+  }
+  .col-1-filter-map-lab {
+    width: 18px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .col-1-filter-map-txt-w {
+    width: 100%;
+    text-align: center;
+  }
+  .col-1-filter-map {
+    margin-bottom: 30px;
+  }
+  .offer {
+    margin-bottom: 30px;
+  }
+  .housing-col-w {
+    position: relative;
+  }
+  .col-1-filter-w {
+    position: fixed;
+    left: 0;
+    top: 0;    
+    z-index: 15;        
+    border-radius: 0;
+    height: 100%;
+    -ms-overflow-y: scroll;
+    overflow-y: scroll;
   }
 } 
 
@@ -465,7 +631,7 @@ a.resort-child-link {
     li {
       font-size: 12px;
       &:after {        
-                background-size: 5px;
+        background-size: 5px;
       }
     }
   }
@@ -477,6 +643,9 @@ a.resort-child-link {
   }
   .sale {
     margin-top: 20px;
+  }
+  .col-r {
+    width: 100%;
   }
 } 
 
@@ -560,26 +729,29 @@ a.resort-child-link {
     height: 207px;
   }
   .photogal-w {
-    
+
     .hotels-it {
       height: 153px;
     }
-      .gal-3-txt-2 {
-    font-size: 12px;
-  }
-  .hotels-it-txt-1 {
-    font-size: 10px;    
-    margin-bottom: 0;
-  }
-  .slick-list {
-    margin: 0 -5px; 
-  }
-  .slick-slide {
-    padding: 0 5px;
-  }
+    .gal-3-txt-2 {
+      font-size: 12px;
+    }
+    .hotels-it-txt-1 {
+      font-size: 10px;    
+      margin-bottom: 0;
+    }
+    .slick-list {
+      margin: 0 -5px; 
+    }
+    .slick-slide {
+      padding: 0 5px;
+    }
   }
   .artblock-3 {
     margin-top: 10px;
+  }
+  .offer-txt-1 {
+    font-size: 18px;
   }
 }
 
@@ -638,7 +810,7 @@ a.resort-child-link {
     }  
   }
   .section {
-    
+
   }
 
 
@@ -1007,11 +1179,11 @@ a.resort-child-link {
 .input-where-delete {
   display: none !important;
 }
-  .photogal-w {
-    .slick-list {
-      width: 479px;
-    }
+.photogal-w {
+  .slick-list {
+    width: 479px;
   }
+}
 .banner-3 {
   height: 120px;
   .h1-wh {
@@ -1023,9 +1195,9 @@ a.resort-child-link {
   }
 }
 .banner-3 {
-.banner-wrap-2 {
-  top: 15px;
-}
+  .banner-wrap-2 {
+    top: 15px;
+  }
 }
 
 .head-2-2 {
@@ -1033,8 +1205,20 @@ a.resort-child-link {
   line-height: 22px;
 }
 .sale {
-    margin-top: 40px;
+  margin-top: 40px;
+}
+.specials-row {
+  .slick-list {
+    width: 630px;
   }
+}
+.housing-row {
+  margin-top: 0;
+  margin: 0 -10px;
+}
+.housing-col {
+  padding: 0 5px;
+}
 }
 
 @media only screen and (max-width : 375px) {
@@ -1062,8 +1246,12 @@ a.resort-child-link {
   .btn-icon {
     margin-right: 5px;
   }
-  .all-hts-row .all-hts-col {
+  .all-hts-row .all-hts-col,
+  .housing-col {
     width: 100%;
+  }
+  .col-1-filter-w {
+    max-width: 280px;
   }
 }
 

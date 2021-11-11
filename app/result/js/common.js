@@ -6,6 +6,7 @@ jQuery(document).ready(function( $ ) {
     return false;
   });
 
+  
   $('body').click(function () {
     if( $(".toggle-mnu").hasClass("on") ){
       $(".toggle-mnu").removeClass("on");
@@ -15,17 +16,18 @@ jQuery(document).ready(function( $ ) {
     $('.resort-open').fadeOut();
     $('.filter-where-list').hide();
     $('.filter-persons-control-wrap').hide();
+    
   });
 
 
-  $(".burger, .top-mnu, .resort-open, .filter-where-list, #where_search, .filter-persons-control-wrap, .filter-input.persons").click(function (e) {
+  $(".burger, .top-mnu, .resort-open, .filter-where-list, #where_search, .filter-persons-control-wrap, .filter-input.persons, .offer, .col-1-filter-w").click(function (e) {
     e.stopPropagation();
   });
 
 
   /************************************/
 
-$('.wrapper').prepend('<span class="eye-3"></span>');
+/*$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
@@ -36,7 +38,7 @@ $('.eye-3').click(function (e) {
   let pg = parseInt(document.location.pathname.match(/\d+/));
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
-});
+});*/
 
 /************************************/
 
@@ -106,22 +108,39 @@ $('.accordion-header').toggleClass('inactive-header');
   });
 
 
+  $('.room-img-slider').each(function () {
+    let slick_item = $(this);
 
 
 
-  /*$('[data-fancybox="gallery"]').fancybox({
-    arrows: true,
-    infobar: false,
-    smallBtn: false,
-    toolbar: false,
-    iframe : {
-      css : {
-        width : '950px'
-      }
-    },    
-    slideClass: "myClass",
-    baseClass: "myclass"
-  });*/
+    $(slick_item).slick({  
+     dots: true,
+     arrows: false,
+     infinite: false,
+     speed: 300,
+     slidesToShow: 1   
+   });
+
+
+    let fancy = $(this).find('[data-fancybox="gallery"]');
+    fancy.fancybox({
+      arrows: true,
+      infobar: false,
+      smallBtn: true,
+      toolbar: false,
+      iframe : {
+        css : {
+          width : '950px'
+        }
+      },    
+      slideClass: "myClass",
+      baseClass: "myclass"
+    });
+
+  }); //each
+
+
+  
 
 
 
@@ -323,6 +342,10 @@ if ($('.gal-3-row').length) {
 });
 }
 
+
+
+
+
 if ($('.photogal-w-3-js').length) {
   $('.photogal-w-3-js').slick({  
    dots: false,
@@ -361,32 +384,39 @@ if ($('.specials-row-js-1').length) {
    responsive: [
 
    {
-    breakpoint: 1200,
+    breakpoint: 1321,
     settings: {
       slidesToShow: 5        
     }
   },
   {
-    breakpoint: 768,
+    breakpoint: 992,
     settings: {
       slidesToShow: 4
     }
   },
   {
-    breakpoint: 570,
+    breakpoint: 768,
     settings: {
       slidesToShow: 3
     }
   },
   {
-    breakpoint: 480,
+    breakpoint: 571,
+    settings: {
+      slidesToShow: 2
+    }
+  },
+  {
+    breakpoint: 481,
     settings: {
       slidesToShow: 3
     }
-  },
+  }
   ]
 });
 }
+
 
 
 /*
@@ -402,6 +432,11 @@ if ($('.specials-row-js-1').length) {
   dots: true
   */
 
+  $('.filter-action-pda, .housing-action-filter').click(function () {    
+    $('.col-1-filter-w').fadeIn();
+    $('.overlay').fadeIn();
+  });
+
   $('.burger').click(function (e) {
     e.preventDefault();
     $(this).toggleClass('on');
@@ -416,6 +451,10 @@ if ($('.specials-row-js-1').length) {
   });
 
 
+  $('.overlay').click(function() {
+    $(this).hide();
+    $('.col-1-filter-w').hide();
+  });
   $('.pop-close, .modal-overlay').click(function(e) {
     e.preventDefault();
     $('.modal-overlay').fadeOut();
@@ -450,7 +489,18 @@ if ($('.specials-row-js-1').length) {
     });
   }
 
-
+  if ($('.housing-actions-pda').length) {
+    $(window).scroll(function(){
+      var wt = $(window).scrollTop();  
+      var wh = $(window).height();    
+      if (wt > 600) {
+        $('.housing-actions-pda').show(400);
+      }
+      else {
+       $('.housing-actions-pda').hide();
+     }
+   });  
+  }
   
 
   $('#where_search').on('input', function() { 
