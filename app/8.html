@@ -39,7 +39,7 @@
           <div class="col-w housing-col-w">
             <div class="col-l">
               <div class="col-1-filter-h hide-991">Фильтр</div>
-              <div class="col-1-filter-w">
+              <div class="col-1-filter-w col-1-filter-w-8">
                 <div class="col-1-filter-h-2">Подбор жилья</div>
                 <ul class="col-1-filter-labels">
                   <label class="filter-label col-1-filter-label">
@@ -61,6 +61,17 @@
                   </label>
                 </ul>
                 <ul class="col-1-filter-labels">
+                  <div class="col-1-filter-h-2 jcsb">Цена в сутки <span>₽</span></div>
+
+
+                  <div class="price">    
+                  <div class="price__range price__range--1"></div>                    
+                    <div class="price__inputs">
+                      <input id="price-start" type="text" class="input-2" autocomplete="off">
+                      <input id="price-end" type="text" class="input-2" autocomplete="off">                      
+                    </div>                                       
+                  </div>
+
                 </ul>
                 <div class="col-1-filter-h-2">Услуги</div>
                 <ul class="col-1-filter-labels">
@@ -161,30 +172,70 @@
                   </label>
                 </li>
               </ul>
+              <div class="col-1-filter-h-2">Удобства</div>
+              <ul class="col-1-filter-labels">
+                <label class="filter-label col-1-filter-label">
+                  <input type="checkbox" class="col-1-filter-checkbox">
+                  <span class="filter-label-span"></span>
+                  <span class="label-span-txt">Телевизор</span>
+                </label>
+                <label class="filter-label col-1-filter-label">
+                  <input type="checkbox" class="col-1-filter-checkbox">
+                  <span class="filter-label-span"></span>
+                  <span class="label-span-txt">Кондиционер</span>
+                </label>
+                <label class="filter-label col-1-filter-label">
+                  <input type="checkbox" class="col-1-filter-checkbox">
+                  <span class="filter-label-span"></span>
+                  <span class="label-span-txt">Фен</span>
+                </label>
+                <label class="filter-label col-1-filter-label">
+                  <input type="checkbox" class="col-1-filter-checkbox">
+                  <span class="filter-label-span"></span>
+                  <span class="label-span-txt">Душ</span>
+                </label>
+                <label class="filter-label col-1-filter-label">
+                  <input type="checkbox" class="col-1-filter-checkbox">
+                  <span class="filter-label-span"></span>
+                  <span class="label-span-txt">Кухня</span>
+                </label>
+                <label class="filter-label col-1-filter-label">
+                  <input type="checkbox" class="col-1-filter-checkbox">
+                  <span class="filter-label-span"></span>
+                  <span class="label-span-txt">Холодильник</span>
+                </label>
+                <label class="filter-label col-1-filter-label">
+                  <input type="checkbox" class="col-1-filter-checkbox">
+                  <span class="filter-label-span"></span>
+                  <span class="label-span-txt">Вентилятор</span>
+                </label>
+                <label class="filter-label col-1-filter-label">
+                  <input type="checkbox" class="col-1-filter-checkbox">
+                  <span class="filter-label-span"></span>
+                  <span class="label-span-txt">Стиральная машина</span>
+                </label>
+                <label class="filter-label col-1-filter-label">
+                  <input type="checkbox" class="col-1-filter-checkbox">
+                  <span class="filter-label-span"></span>
+                  <span class="label-span-txt">Сейф</span>
+                </label>
+                <label class="filter-label col-1-filter-label">
+                  <input type="checkbox" class="col-1-filter-checkbox">
+                  <span class="filter-label-span"></span>
+                  <span class="label-span-txt">Чайник</span>
+                </label>
+              </ul>
             </div>
-            <a href="#" class="col-1-filter-map hide-991">
-              <div class="col-1-filter-map-img-w">
-                <img src="img/map-ftr.jpg" class="col-1-filter-map-img" />
-                <div class="col-1-filter-map-lab"><img src="img/geo-map-ftr.png" /></div>
-              </div>
-              <div class="col-1-filter-map-txt-w">
-                <div class="col-1-filter-map-txt">
-                  Показать на карте<span class="col-1-filter-map-txt-span"><img src="img/show-map.svg" /></span>
-                </div>
-              </div>
-            </a>
+
           </div><!--col-l-->
           <div class="col-r">
-            <div class="offer">
-              <div class="offer-txt-1">1456 предложений</div>
+            <div class="offer offer-8">
+              <div class="offer-txt-1 offer-txt-8">1456 предложений</div>
               <div class="show-991">
                 <span class="filter-action-pda">Фильтр <i></i></span>
               </div>
               <div class="offer-row hide-991">
-                <div class="offer-txt-2">Сортировать</div>
-                <a href="#" class="offer-choice">
-                  По дате<span class="offer-choice-span"><img src="img/arr-dw-gr.svg" /></span>
-                </a>
+                @@include('var/_sort-date.html')                
               </div>
             </div><!---->
 
@@ -194,7 +245,7 @@
 
               <div class="search-col">
                 @@include("var/_room.html",{
-                  "gal": "<a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a>",
+                  "gal": "<a class='room-img-w' data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a>",
                   "name": "Стандарт одноместный однокомнатный корпус №1",
                   "num": "#75432",
                   "name2": "Гостевой дом Летняя беседка",
@@ -206,7 +257,7 @@
               </div><!--col-->
               <div class="search-col">
                 @@include("var/_room.html",{
-                  "gal": "<a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
+                  "gal": "<a class='room-img-w' data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
                   "name": "Стандарт одноместный однокомнатный корпус №1",
                   "num": "#75432",
                   "name2": "Гостевой дом Летняя беседка",
@@ -218,7 +269,7 @@
               </div><!--col-->
               <div class="search-col">
                 @@include("var/_room.html",{
-                  "gal": "<a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
+                  "gal": "<a class='room-img-w' data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
                   "name": "Стандарт одноместный однокомнатный корпус №1",
                   "num": "#75432",
                   "name2": "Гостевой дом Летняя беседка",
@@ -229,9 +280,9 @@
                 })
               </div><!--col-->
 
-                     <div class="search-col">
+              <div class="search-col">
                 @@include("var/_room.html",{
-                  "gal": "<a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a>",
+                  "gal": "<a class='room-img-w' data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a>",
                   "name": "Стандарт одноместный однокомнатный корпус №1",
                   "num": "#75432",
                   "name2": "Гостевой дом Летняя беседка",
@@ -243,7 +294,7 @@
               </div><!--col-->
               <div class="search-col">
                 @@include("var/_room.html",{
-                  "gal": "<a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
+                  "gal": "<a class='room-img-w' data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
                   "name": "Стандарт одноместный однокомнатный корпус №1",
                   "num": "#75432",
                   "name2": "Гостевой дом Летняя беседка",
@@ -255,7 +306,7 @@
               </div><!--col-->
               <div class="search-col">
                 @@include("var/_room.html",{
-                  "gal": "<a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
+                  "gal": "<a class='room-img-w' data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
                   "name": "Стандарт одноместный однокомнатный корпус №1",
                   "num": "#75432",
                   "name2": "Гостевой дом Летняя беседка",
@@ -266,9 +317,9 @@
                 })
               </div><!--col-->
 
-                     <div class="search-col">
+              <div class="search-col">
                 @@include("var/_room.html",{
-                  "gal": "<a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a>",
+                  "gal": "<a class='room-img-w' data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a>",
                   "name": "Стандарт одноместный однокомнатный корпус №1",
                   "num": "#75432",
                   "name2": "Гостевой дом Летняя беседка",
@@ -280,7 +331,7 @@
               </div><!--col-->
               <div class="search-col">
                 @@include("var/_room.html",{
-                  "gal": "<a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
+                  "gal": "<a class='room-img-w' data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
                   "name": "Стандарт одноместный однокомнатный корпус №1",
                   "num": "#75432",
                   "name2": "Гостевой дом Летняя беседка",
@@ -292,7 +343,7 @@
               </div><!--col-->
               <div class="search-col">
                 @@include("var/_room.html",{
-                  "gal": "<a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
+                  "gal": "<a class='room-img-w' data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
                   "name": "Стандарт одноместный однокомнатный корпус №1",
                   "num": "#75432",
                   "name2": "Гостевой дом Летняя беседка",
@@ -303,9 +354,9 @@
                 })
               </div><!--col-->
 
-                     <div class="search-col">
+              <div class="search-col">
                 @@include("var/_room.html",{
-                  "gal": "<a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a>",
+                  "gal": "<a class='room-img-w' data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a>",
                   "name": "Стандарт одноместный однокомнатный корпус №1",
                   "num": "#75432",
                   "name2": "Гостевой дом Летняя беседка",
@@ -317,7 +368,7 @@
               </div><!--col-->
               <div class="search-col">
                 @@include("var/_room.html",{
-                  "gal": "<a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
+                  "gal": "<a class='room-img-w' data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
                   "name": "Стандарт одноместный однокомнатный корпус №1",
                   "num": "#75432",
                   "name2": "Гостевой дом Летняя беседка",
@@ -329,7 +380,7 @@
               </div><!--col-->
               <div class="search-col">
                 @@include("var/_room.html",{
-                  "gal": "<a data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
+                  "gal": "<a class='room-img-w' data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-33.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
                   "name": "Стандарт одноместный однокомнатный корпус №1",
                   "num": "#75432",
                   "name2": "Гостевой дом Летняя беседка",
@@ -342,25 +393,7 @@
 
             </div><!--search-wrap-->
 
-
-            <a href="#" class="col-1-filter-map show-991">
-              <div class="col-1-filter-map-img-w">
-                <img src="img/map-ftr.jpg" class="col-1-filter-map-img" />
-                <div class="col-1-filter-map-lab"><img src="img/geo-map-ftr.png" /></div>
-              </div>
-              <div class="col-1-filter-map-txt-w">
-                <div class="col-1-filter-map-txt">
-                  Показать на карте<span class="col-1-filter-map-txt-span"><img src="img/show-map.svg" /></span>
-                </div>
-              </div>
-            </a>
-
-
-
-
-
-
-            <a href="#" class="housing-btn btn-dia btn-gray">Показать еще <span>(24 из 1456)</span></a>
+            <a href="#" class="housing-btn housing-btn-8 btn-dia btn-gray">Показать еще <span>(24 из 1456)</span></a>
 
           </div><!--col-r-->
         </div>
@@ -370,6 +403,10 @@
 
   </main>
   @@include('var/_footer.html')
+  <div class="housing-actions-pda">
+    <span class="housing-action housing-action-filter"></span>
+    <!--span class="housing-action housing-action-map"></span-->
+  </div>
 </div><!--wrapper-->
 @@include('var/_scripts.html')
 </body>

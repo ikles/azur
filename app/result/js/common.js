@@ -109,17 +109,16 @@ $('.accordion-header').toggleClass('inactive-header');
 
 
   $('.room-img-slider').each(function () {
-    let slick_item = $(this);
-
-
-
-    $(slick_item).slick({  
+    let slick_slider_item = $(this);
+    $(slick_slider_item).slick({  
      dots: true,
      arrows: false,
      infinite: false,
      speed: 300,
-     slidesToShow: 1   
+     slidesToShow: 1
    });
+
+    let slide_count =  $(this).slick("getSlick").slideCount;
 
 
     let fancy = $(this).find('[data-fancybox="gallery"]');
@@ -137,14 +136,9 @@ $('.accordion-header').toggleClass('inactive-header');
       baseClass: "myclass"
     });
 
+    fancy.append('<span class="slide-count">'+slide_count+' фото</span>');
+
   }); //each
-
-
-  
-
-
-
-
 
 
 
@@ -735,6 +729,75 @@ $('.where-close-pda, .filter-where-list li').click(function () {
 
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+
+
+
+
+
+
+
+
+function divideNumberByPieces(x, delimiter) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, delimiter || " ");
+}
+
+const priceSlider = document.querySelector('.price__range--1');
+if (priceSlider) {
+
+  let textFrom = priceSlider.getAttribute('data-from');
+  let textTo = priceSlider.getAttribute('data-to');
+
+  noUiSlider.create(priceSlider, {
+    start: [0, 7000],    
+    connect: true,
+    step: 500,
+    /*tooltips: [wNumb({ decimals: 2, prefix: '' + '' }), wNumb({ decimals: 2, prefix: '' + '' })],*/    
+    range: {
+      'min': [0],
+      'max': [13000]
+    },
+    /*format: wNumb({
+      decimals: 0,
+      thousand: ',',
+      suffix: ' (US $)'
+    })*/
+  });
+
+
+  const priceStart = document.getElementById('price-start');
+  const priceEnd = document.getElementById('price-end');
+  priceStart.addEventListener('change', setPriceValues);
+  priceEnd.addEventListener('change', setPriceValues);
+
+
+
+
+//Значения из ползунков в инпуты
+priceSlider.noUiSlider.on('update', function(values, handle) {
+  priceStart.value = Number(priceSlider.noUiSlider.get()[0]);
+  priceEnd.value = Number(priceSlider.noUiSlider.get()[1]);
+});
+
+
+
+function setPriceValues() {
+  let priceStartValue;
+  let priceEndValue;
+  if (priceStart.value != '') {
+    priceStartValue = priceStart.value;
+  }
+  if (priceEnd.value != '') {
+    priceEndValue = priceEnd.value;
+  }
+  priceSlider.noUiSlider.set([priceStartValue, priceEndValue]);
+
+
+  } //spV
+}// if priceSlider
+
+
+
 
 
 }); //ready

@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/litepicker.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/nouislider.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -734,9 +736,9 @@
 
       <section class="section select-housing">
         <div class="contain">
-          <div class="col-w">
+          <div class="col-w housing-col-w">
             <div class="col-l">
-              <div class="col-1-filter-h">Фильтр</div>
+              <div class="col-1-filter-h hide-991">Фильтр</div>
               <div class="col-1-filter-w">
                 <div class="col-1-filter-h-2">Услуги</div>
                 <ul class="col-1-filter-labels">
@@ -838,7 +840,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-1-filter-map">
+            <a href="#" class="col-1-filter-map hide-991">
               <div class="col-1-filter-map-img-w">
                 <img src="img/map-ftr.jpg" class="col-1-filter-map-img" />
                 <div class="col-1-filter-map-lab"><img src="img/geo-map-ftr.png" /></div>
@@ -848,28 +850,46 @@
                   Показать на карте<span class="col-1-filter-map-txt-span"><img src="img/show-map.svg" /></span>
                 </div>
               </div>
-            </div>
-
+            </a>
           </div><!--col-l-->
           <div class="col-r">
             <div class="offer">
               <div class="offer-txt-1">1456 предложений</div>
-              <div class="offer-row">
+              <div class="show-991">
+                <span class="filter-action-pda">Фильтр <i></i></span>
+              </div>
+              <div class="offer-row hide-991">
                 <div class="offer-txt-2">Сортировать</div>
                 <a href="#" class="offer-choice">
                   По дате<span class="offer-choice-span"><img src="img/arr-dw-gr.svg" /></span>
                 </a>
               </div>
+
             </div><!---->
 
-            <div class="choice-btn-ul">
-              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span active"> Все объекты</span></label>
 
-              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Гостиницы</span></label>
-              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Гостевые дома</span></label>
-              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Квартиры</span></label>
-              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Дома</span></label>
-              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Частный сектор</span></label>
+            <a href="#" class="col-1-filter-map show-991">
+              <div class="col-1-filter-map-img-w">
+                <img src="img/map-ftr.jpg" class="col-1-filter-map-img" />
+                <div class="col-1-filter-map-lab"><img src="img/geo-map-ftr.png" /></div>
+              </div>
+              <div class="col-1-filter-map-txt-w">
+                <div class="col-1-filter-map-txt">
+                  Показать на карте<span class="col-1-filter-map-txt-span"><img src="img/show-map.svg" /></span>
+                </div>
+              </div>
+            </a>
+
+            <div class="choice-btn-scroll">
+              <div class="choice-btn-ul">
+                <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span active"> Все объекты</span></label>
+
+                <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Гостиницы</span></label>
+                <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Гостевые дома</span></label>
+                <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Квартиры</span></label>
+                <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Дома</span></label>
+                <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Частный сектор</span></label>
+              </div>
             </div>
 
 
@@ -1080,7 +1100,7 @@
 </div><!--it-->
             </div>
           </div><!--housing-row-->
-<a href="#" class="housing-btn btn-dia btn-gray">Показать еще <span>(24 из 1456)</span></a>
+          <a href="#" class="housing-btn btn-dia btn-gray">Показать еще <span>(24 из 1456)</span></a>
 
         </div><!--col-r-->
       </div>
@@ -1090,20 +1110,119 @@
 
 
 
-  <section class=" section">
+  <section class="specials section">
     <div class="contain">      
       <div class="head-2">Спецпредложения</div>
-
+      <div class="specials-row specials-row-js-1">
+       <a href="#" class="hotels-it">
+  <img src="img/hotel-1.jpg" class="hotels-it-img" />
+  <div class="hotels-it-txt-w">
+    <div class="hotels-it-txt-1">Гостиница
+    <div class="hotels-it-stars">
+      <div class="hotels-it-star"></div>
+      <div class="hotels-it-star"></div>
+      <div class="hotels-it-star"></div>
     </div>
-  </section>
-
-
-
-
-
-
-
-
+  </div>
+    <div class="hotels-it-txt-2">AsTerias</div>
+    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
+    <div class="hotels-it-txt-3"></div>
+  </div>
+  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
+  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
+</a>
+      <a href="#" class="hotels-it">
+  <img src="img/hotel-33.jpg" class="hotels-it-img" />
+  <div class="hotels-it-txt-w">
+    <div class="hotels-it-txt-1">Отель</div>
+    <div class="hotels-it-txt-2">Castro</div>
+    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
+    <div class="hotels-it-txt-3"></div>
+  </div>
+  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
+  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
+</a>
+      <a href="#" class="hotels-it">
+  <img src="img/hotel-23.jpg" class="hotels-it-img" />
+  <div class="hotels-it-txt-w">
+    <div class="hotels-it-txt-1">Гостевой дом</div>
+    <div class="hotels-it-txt-2">Коралл</div>
+    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span">Дивноморское</span></div>
+    <div class="hotels-it-txt-3">от <strong><span>1200</span>  ₽</strong></div>
+  </div>
+  <span class="hotels-it-lbl hotels-it-stock-span">Акция</span> 
+  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
+</a>
+      <a href="#" class="hotels-it">
+  <img src="img/hotel-4.jpg" class="hotels-it-img" />
+  <div class="hotels-it-txt-w">
+    <div class="hotels-it-txt-1">Гостиница
+    <div class="hotels-it-stars">
+      <div class="hotels-it-star"></div>
+      <div class="hotels-it-star"></div>
+      <div class="hotels-it-star"></div>
+    </div>
+  </div>
+    <div class="hotels-it-txt-2">Родос</div>
+    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
+    <div class="hotels-it-txt-3"></div>
+  </div>
+  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
+  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
+</a>
+      <a href="#" class="hotels-it">
+  <img src="img/hotel-33.jpg" class="hotels-it-img" />
+  <div class="hotels-it-txt-w">
+    <div class="hotels-it-txt-1">Гостевой дом</div>
+    <div class="hotels-it-txt-2">Ниагара</div>
+    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
+    <div class="hotels-it-txt-3"></div>
+  </div>
+  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
+  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
+</a> 
+      <a href="#" class="hotels-it">
+  <img src="img/hotel-23.jpg" class="hotels-it-img" />
+  <div class="hotels-it-txt-w">
+    <div class="hotels-it-txt-1">Гостевой дом</div>
+    <div class="hotels-it-txt-2">Кристина</div>
+    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
+    <div class="hotels-it-txt-3"></div>
+  </div>
+  <span class="hotels-it-lbl hotels-it-stock-span">Акция</span> 
+  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
+</a>
+      <a href="#" class="hotels-it">
+  <img src="img/hotel-33.jpg" class="hotels-it-img" />
+  <div class="hotels-it-txt-w">
+    <div class="hotels-it-txt-1">Гостевой дом</div>
+    <div class="hotels-it-txt-2">Мечта</div>
+    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
+    <div class="hotels-it-txt-3"></div>
+  </div>
+  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
+  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
+</a>
+      <a href="#" class="hotels-it">
+  <img src="img/hotel-4.jpg" class="hotels-it-img" />
+  <div class="hotels-it-txt-w">
+    <div class="hotels-it-txt-1">Гостиница
+    <div class="hotels-it-stars">
+      <div class="hotels-it-star"></div>
+      <div class="hotels-it-star"></div>
+      <div class="hotels-it-star"></div>
+    </div>
+  </div>
+    <div class="hotels-it-txt-2">Мечта</div>
+    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
+    <div class="hotels-it-txt-3"></div>
+  </div>
+  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
+  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
+</a>
+    </div><!--specials-row-->
+  </div>
+</section>
 </main>
     <footer class="foot">
       <div class="contain">
@@ -1143,11 +1262,18 @@
       </div>
       <a href="#top" class="arr-up"></a>
     </footer>
+    <div class="overlay"></div>
+<div class="housing-actions-pda">
+  <span class="housing-action housing-action-filter"></span>
+  <span class="housing-action housing-action-map"></span>
+</div>
 </div><!--wrapper-->
 <script src="js/jquery-3.4.1.min.js"></script>      
   <script src="js/slick.js"></script>
   <script src="js/jquery.hideseek.js"></script>
   <script src="js/litepicker.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/nouislider.js"></script>
   <script src="js/common.js"></script>
   <div class="container__main_before container__main_before-1">Дата заезда/выезда</div>
   <div class="container__main_before container__main_before-2">Количество гостей</div>

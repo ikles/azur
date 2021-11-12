@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>12. Azur. Articles. Camping</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+
+    @@include('var/_header.html')    
+    <main class="main">
+
+      @@include('var/_banner4.html',{
+        "class2": " banner-12",
+        "img": "banner12",          
+        "bread1": "<li><a href='#'>Главная</a></li>",
+        "bread2": "<li><a href='#'>Геленджик</a></li>",
+        "bread3": "<li><a href='#'>Кабардинка</a></li>",
+        "bread4": "",        
+        "bread_last": "<li><span>Развлечения</span></li>",
+        "title1": "Кемпинги",          
+        "title2": "в Кабардинке"
+      })
+
+      <section class="section campings">
+        <div class="contain">
+          <div class="gal-3-row">
+            <div class="gal-3-col">
+              <a href="#" class="gal-3-item">
+                <img src="img/gal-3-img-4.jpg" class="gal-3-img">                
+                <span class="gal-3-span">
+                  <span class="gal-3-span-2">Кемпинг</span>
+                  Сосновка
+                </span>
+              </a>
+            </div><!--gal-3-col-->
+            <div class="gal-3-col">
+              <a href="#" class="gal-3-item">
+                <img src="img/gal-3-img-5.jpg" class="gal-3-img">
+                <span class="gal-3-span">
+                  <span class="gal-3-span-2">Кемпинг</span>
+                  Калипсо
+                </span>                
+              </a>
+            </div><!--gal-3-col-->
+            <div class="gal-3-col">
+              <a href="#" class="gal-3-item">
+                <img src="img/gal-3-img-6.jpg" class="gal-3-img">
+                <span class="gal-3-span">
+                  <span class="gal-3-span-2">Кемпинг</span>
+                  Под соснами
+                </span>
+              </a>
+            </div><!--gal-3-col-->
+          </div><!--gal-3-row-->
+        </div>
+      </section>
+
+      <section class="specials section">
+        <div class="contain">      
+          <div class="head-2">Спецпредложения</div>
+          <div class="specials-row specials-row-js-1">
+           @@include('var/_hotels-it-stars.html',{
+            "image": "hotel-1",
+            "name1": "Гостиница",
+            "name2": "AsTerias",
+            "geo": "",
+            "price": "",
+            "stock": "",
+            "sale": ""
+          })
+          @@include('var/_hotels-it.html',{
+            "image": "hotel-33",
+            "name1": "Отель",
+            "name2": "Castro",
+            "geo": "",
+            "price": "",
+            "stock": "",
+            "sale": ""
+          })
+          @@include('var/_hotels-it.html',{
+            "image": "hotel-23",
+            "name1": "Гостевой дом",
+            "name2": "Коралл",
+            "geo": "Дивноморское",
+            "price": "от <strong><span>1200</span>  ₽</strong>",
+            "stock": "Акция",
+            "sale": ""
+          })
+          @@include('var/_hotels-it-stars.html',{
+            "image": "hotel-4",
+            "name1": "Гостиница",
+            "name2": "Родос",
+            "geo": "",
+            "price": "",
+            "stock": "",
+            "sale": ""
+          })
+          @@include('var/_hotels-it.html',{
+            "image": "hotel-33",
+            "name1": "Гостевой дом",
+            "name2": "Ниагара",
+            "geo": "",
+            "price": "",
+            "stock": "",
+            "sale": ""
+          }) 
+          @@include('var/_hotels-it.html',{
+            "image": "hotel-23",
+            "name1": "Гостевой дом",
+            "name2": "Кристина",
+            "geo": "",
+            "price": "",
+            "stock": "Акция",
+            "sale": ""
+          })
+          @@include('var/_hotels-it.html',{
+            "image": "hotel-33",
+            "name1": "Гостевой дом",
+            "name2": "Мечта",
+            "geo": "",
+            "price": "",
+            "stock": "",
+            "sale": ""
+          })
+          @@include('var/_hotels-it-stars.html',{
+            "image": "hotel-4",
+            "name1": "Гостиница",
+            "name2": "Мечта",
+            "geo": "",
+            "price": "",
+            "stock": "",
+            "sale": ""
+          })
+        </div><!--specials-row-->
+      </div>
+    </section>
+    
+
+  </main>
+  @@include('var/_footer.html')
+  <div class="housing-actions-pda">
+    <span class="housing-action housing-action-filter"></span>
+    <span class="housing-action housing-action-map"></span>
+  </div>
+</div><!--wrapper-->
+@@include('var/_scripts.html')
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>10. Azur. Articles. Ver 2</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+
+    @@include('var/_header.html')    
+    <main class="main">
+
+      @@include('var/_banner4.html',{
+        "class2": "",
+        "img": "banner10",
+        "bread1": "<li><a href='#'>Главная</a></li>",
+        "bread2": "<li><a href='#'>Геленджик</a></li>",
+        "bread3": "<li><a href='#'>Кабардинка</a></li>",
+        "bread4": "",
+        "bread_last": "<li><span>Развлечения</span></li>",
+        "title1": "Развлечения",          
+        "title2": "в Кабардинке"
+      })
+      
+
+      <section class="section select-housing select-housing-10">
+        <div class="contain">
+          <div class="col-w article-col-w">
+            <div class="col-l">
+              <div class="col-1-filter-h">Категории</div>
+
+              <div class="lmnu-block">
+                <ul class="lmnu-ul">
+                  <li><a href="#">Достопримечательности</a></li>
+                  <li><a href="#">Экскурсии и туры</a></li>
+                  <li><a href="#">Морские прогулки</a></li>
+                  <li class="active"><a href="#">Пляжные развлечения</a></li>
+                  <li><a href="#">Столовые и бистро</a></li>
+                  <li><a href="#">Кафе и рестораны</a></li>
+                  <li><a href="#">Бары и пабы</a></li>
+                  <li><a href="#">Развлекательные центры</a></li>
+                  <li><a href="#">Детские развлечения</a></li>
+                  <li><a href="#">Активный отдых и спорт</a></li>
+                  <li><a href="#">Музеи и выставки</a></li>
+                  <li><a href="#">Дискотеки и клубы</a></li>
+                  <li><a href="#">Бани, Сауна, Спа</a></li>
+                  <li><a href="#">Здоровье и красота</a></li>
+                </ul>
+              </div>
+
+
+            </div><!--col-l-->
+            <div class="col-r">
+
+              <div class="offer offer-10">
+                <div class="offer-txt-1 offer-txt-8">Все статьи</div>
+                <div class="offer-row hide-480">
+                  @@include('var/_sort-date.html')
+                </div>
+
+              </div>
+
+
+              <div class="article-row-h">
+                <div class="article-col">
+                  @@include("var/_article.html",{
+                    "gal": "<a class='room-img-w' href='#'><img src='img/article-h-1.jpg' class='room-img' /></a>",
+                    "name": "Прогулки на водных велосипедах",
+                    "cat": "Пляжные развлечения",
+                    "views": "127",
+                    "desc": "Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра..."                    
+                  })
+                </div><!--col-->
+                <div class="article-col">
+                  @@include("var/_article.html",{
+                    "gal": "<a class='room-img-w' href='#'><img src='img/article-h-2.jpg' class='room-img' /></a>",
+                    "name": "Парашют",
+                    "cat": "Пляжные развлечения",
+                    "views": "127",
+                    "desc": "Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра..."                    
+                  })
+                </div><!--col-->
+                <div class="article-col">
+                  @@include("var/_article.html",{
+                    "gal": "<a class='room-img-w' href='#'><img src='img/article-h-3.jpg' class='room-img' /></a>",
+                    "name": "Прогулки на водных велосипедах",
+                    "cat": "Пляжные развлечения",
+                    "views": "127",
+                    "desc": "Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра..."                    
+                  })
+                </div><!--col-->
+                <div class="article-col">
+                  @@include("var/_article.html",{
+                    "gal": "<a class='room-img-w' href='#'><img src='img/article-h-4.jpg' class='room-img' /></a>",
+                    "name": "Прогулки на водных велосипедах",
+                    "cat": "Пляжные развлечения",
+                    "views": "127",
+                    "desc": "Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра..."                    
+                  })
+                </div><!--col-->
+                <div class="article-col">
+                  @@include("var/_article.html",{
+                    "gal": "<a class='room-img-w' href='#'><img src='img/article-h-5.jpg' class='room-img' /></a>",
+                    "name": "Прогулки на водных велосипедах",
+                    "cat": "Пляжные развлечения",
+                    "views": "127",
+                    "desc": "Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра..."                    
+                  })
+                </div><!--col-->
+                <div class="article-col">
+                  @@include("var/_article.html",{
+                    "gal": "<a class='room-img-w' href='#'><img src='img/article-h-6.jpg' class='room-img' /></a>",
+                    "name": "Прогулки на водных велосипедах",
+                    "cat": "Пляжные развлечения",
+                    "views": "127",
+                    "desc": "Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра..."                    
+                  })
+                </div><!--col-->
+                <div class="article-col">
+                  @@include("var/_article.html",{
+                    "gal": "<a class='room-img-w' href='#'><img src='img/article-h-7.jpg' class='room-img' /></a>",
+                    "name": "Прогулки на водных велосипедах",
+                    "cat": "Пляжные развлечения",
+                    "views": "127",
+                    "desc": "Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра..."                    
+                  })
+                </div><!--col-->
+                <div class="article-col">
+                  @@include("var/_article.html",{
+                    "gal": "<a class='room-img-w' href='#'><img src='img/article-h-8.jpg' class='room-img' /></a>",
+                    "name": "Прогулки на водных велосипедах",
+                    "cat": "Пляжные развлечения",
+                    "views": "127",
+                    "desc": "Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра..."                    
+                  })
+                </div><!--col-->
+                <div class="article-col">
+                  @@include("var/_article.html",{
+                    "gal": "<a class='room-img-w' href='#'><img src='img/article-h-9.jpg' class='room-img' /></a>",
+                    "name": "Прогулки на водных велосипедах",
+                    "cat": "Пляжные развлечения",
+                    "views": "127",
+                    "desc": "Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра..."                    
+                  })
+                </div><!--col-->
+              </div><!--article-row-h-->
+              <a href="#" class="housing-btn housing-btn-10 btn-dia btn-gray">Показать еще <span>(24 из 1456)</span></a>
+
+            </div><!--col-r-->
+          </div>
+        </div>
+      </section>
+
+      <section class="specials section">
+        <div class="contain">      
+          <div class="head-2">Спецпредложения</div>
+          <div class="specials-row specials-row-10 specials-row-js-1">
+           @@include('var/_hotels-it-stars.html',{
+            "image": "hotel-1",
+            "name1": "Гостиница",
+            "name2": "AsTerias",
+            "geo": "",
+            "price": "",
+            "stock": "",
+            "sale": ""
+          })
+          @@include('var/_hotels-it.html',{
+            "image": "hotel-33",
+            "name1": "Отель",
+            "name2": "Castro",
+            "geo": "",
+            "price": "",
+            "stock": "",
+            "sale": ""
+          })
+          @@include('var/_hotels-it.html',{
+            "image": "hotel-23",
+            "name1": "Гостевой дом",
+            "name2": "Коралл",
+            "geo": "Дивноморское",
+            "price": "от <strong><span>1200</span>  ₽</strong>",
+            "stock": "Акция",
+            "sale": ""
+          })
+          @@include('var/_hotels-it-stars.html',{
+            "image": "hotel-4",
+            "name1": "Гостиница",
+            "name2": "Родос",
+            "geo": "",
+            "price": "",
+            "stock": "",
+            "sale": ""
+          })
+          @@include('var/_hotels-it.html',{
+            "image": "hotel-33",
+            "name1": "Гостевой дом",
+            "name2": "Ниагара",
+            "geo": "",
+            "price": "",
+            "stock": "",
+            "sale": ""
+          }) 
+          @@include('var/_hotels-it.html',{
+            "image": "hotel-23",
+            "name1": "Гостевой дом",
+            "name2": "Кристина",
+            "geo": "",
+            "price": "",
+            "stock": "Акция",
+            "sale": ""
+          })
+          @@include('var/_hotels-it.html',{
+            "image": "hotel-33",
+            "name1": "Гостевой дом",
+            "name2": "Мечта",
+            "geo": "",
+            "price": "",
+            "stock": "",
+            "sale": ""
+          })
+          @@include('var/_hotels-it-stars.html',{
+            "image": "hotel-4",
+            "name1": "Гостиница",
+            "name2": "Мечта",
+            "geo": "",
+            "price": "",
+            "stock": "",
+            "sale": ""
+          })
+        </div><!--specials-row-->
+      </div>
+    </section>
+
+  </main>
+  @@include('var/_footer.html')  
+</div><!--wrapper-->
+@@include('var/_scripts.html')
+</body>
+</html>

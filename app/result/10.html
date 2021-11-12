@@ -5,7 +5,7 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>1. Azur. Home Page</title>  
+  <title>10. Azur. Articles. Ver 2</title>  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700&display=swap" rel="stylesheet">
@@ -711,108 +711,350 @@
     </header>    
     <main class="main">
 
-      <div class="banner">
-        <img src="img/banner.jpg" class="banner-img" />
-        <div class="banner-wrap">
-          <div class="contain">
-            <div class="banner-txts">
-              <h1 class="h1-wh">Отдых на море</h1>
-              <div class="banner-subtitle">в Крыму, Абхазии и Краснодарском крае</div>
-            </div>
-          </div>
-        </div>
+      <div class="banner banner-4">
+  <img src="img/banner10.jpg" class="banner-img" />
+  <div class="banner-wrap-2">
+    <div class="contain">
+      <div class="bread bread-white">
+        <ul class="bread-ul">
+          <li><a href='#'>Главная</a></li>
+          <li><a href='#'>Геленджик</a></li>
+          <li><a href='#'>Кабардинка</a></li>
+          
+          <li><span>Развлечения</span></li>
+        </ul>
       </div>
-            <div class="filter">        
+      <div class="banner-txts">
+        <h1 class="h1-wh">Развлечения</h1>
+        <div class="banner-subtitle">в Кабардинке</div>
+      </div>
+    </div>
+  </div>
+</div><!--banner-->
+
+      
+
+      <section class="section select-housing select-housing-10">
         <div class="contain">
-          <div class="filter-w">
-            <span class="where-close-pda"></span>
-            <span class="where-persons-pda">Готово</span>
-            <div class="filer-form-block w-form">
-              <form class="filter-form">
-                <div class="filter-col filter-col-where">
-                  <span class="input-where-delete"></span>
-                  <input type="text" id="where_search" name="where_search" class="filter-input loc" autocomplete="off" placeholder="Где отдыхать" data-list=".filter-where-list"/>
-                  <span class="finput-line"></span>
-                  <ul class="filter-where-list">
-                    <li><b>Анапа</b></li>
-                    <li><b>Абакан</b></li>
-                    <li><b>Адлер,</b> Сочи</li>
-                    <li><b>Адыгейск,</b> Республика Хакасия</li>
-                    <li><b>Барнаул,</b> Алтайский край</li>
-                    <li><b>Бийск</b></li>
-                    <li><b>Владимир</b></li>
-                    <li><b>Новосибирск</b></li>
-                    <li><b>Норильск</b></li>
-                    <li><b>Москва</b></li>                    
-                  </ul>
-                </div><!--col-where-->
-                <div class="filter-col">
-                  <input type="text" readonly="readonly" id="filter_input_date" class="filter-input date" placeholder="Дата заезда/выезда"/>
-                  <span class="finput-line"></span>
+          <div class="col-w article-col-w">
+            <div class="col-l">
+              <div class="col-1-filter-h">Категории</div>
+
+              <div class="lmnu-block">
+                <ul class="lmnu-ul">
+                  <li><a href="#">Достопримечательности</a></li>
+                  <li><a href="#">Экскурсии и туры</a></li>
+                  <li><a href="#">Морские прогулки</a></li>
+                  <li class="active"><a href="#">Пляжные развлечения</a></li>
+                  <li><a href="#">Столовые и бистро</a></li>
+                  <li><a href="#">Кафе и рестораны</a></li>
+                  <li><a href="#">Бары и пабы</a></li>
+                  <li><a href="#">Развлекательные центры</a></li>
+                  <li><a href="#">Детские развлечения</a></li>
+                  <li><a href="#">Активный отдых и спорт</a></li>
+                  <li><a href="#">Музеи и выставки</a></li>
+                  <li><a href="#">Дискотеки и клубы</a></li>
+                  <li><a href="#">Бани, Сауна, Спа</a></li>
+                  <li><a href="#">Здоровье и красота</a></li>
+                </ul>
+              </div>
+
+
+            </div><!--col-l-->
+            <div class="col-r">
+
+              <div class="offer offer-10">
+                <div class="offer-txt-1 offer-txt-8">Все статьи</div>
+                <div class="offer-row hide-480">
+                    <div class="offer-txt-2">Сортировать</div>
+  <a href="#" class="offer-choice">
+    По дате<span class="offer-choice-span"><img src="img/arr-dw-gr.svg"></span>
+  </a>
                 </div>
-                <div class="filter-col filter-col-persons">
-                  <input type="text" class="filter-input persons" placeholder="Выберите из списка" />
-                  <span class="finput-line"></span>
-                  <div class="filter-persons-control-wrap">
-                    <div class="filter-persons-control-row">
-                      <div class="filter-persons-control-l">
-                        <div class="filter-persons-tit">Взрослые</div>
-                        <div class="filter-persons-info">от 13 лет</div>
-                      </div>
-                      <div class="filter-persons-control-r">
-                        <span class="filter-persons-control _minus dis"></span>
-                        <input class="filter-persons-input adults" name="adults" type="text" placeholder="0" value="0">
-                        <span class="filter-persons-control _plus"></span>
-                      </div>
-                    </div><!--row-->
-                    <div class="filter-persons-control-row">
-                      <div class="filter-persons-control-l">
-                        <div class="filter-persons-tit">Дети</div>
-                        <div class="filter-persons-info">от 2 до 12 лет</div>
-                      </div>
-                      <div class="filter-persons-control-r">
-                        <span class="filter-persons-control _minus dis"></span>
-                        <input class="filter-persons-input children" name="children" type="text" placeholder="0" value="0">
-                        <span class="filter-persons-control _plus"></span>
-                      </div>
-                    </div><!--row-->
-                    <div class="filter-persons-control-row">
-                      <div class="filter-persons-control-l">
-                        <div class="filter-persons-tit">Младенцы</div>
-                        <div class="filter-persons-info">до 2 лет</div>
-                      </div>
-                      <div class="filter-persons-control-r">
-                        <span class="filter-persons-control _minus dis"></span>
-                        <input class="filter-persons-input babies" name="babies" type="text" placeholder="0" value="0">
-                        <span class="filter-persons-control _plus"></span>
-                      </div>
-                    </div><!--row-->
-                  </div>                  
-                </div>
-                <input type="submit" value="Подобрать жилье" class="btn filter-btn" />
-              </form>
-            </div>
+
+              </div>
+
+
+              <div class="article-row-h">
+                <div class="article-col">
+                  <div class="room article-it-h">
+  <div class="room-img-left">
+    <div class="room-img-w">    
+     <a class='room-img-w' href='#'><img src='img/article-h-1.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont room-cont-art">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-cat">Пляжные развлечения</a> 
+      <a href="#" class="room-cont-pr-txt">Прогулки на водных велосипедах</a> 
+      <div class="room-cont-desc">
+        Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра...        
+      </div>
+      <a class="room-cont-desc-more" href="#">Подробнее</a>
+    </div>
+    <div class="room-cont-pr">
+      <div class="room-cont-views">
+        127
+      </div>
+    </div>                    
+  </div>
+
+</div>
+</div><!--room-->
+                </div><!--col-->
+                <div class="article-col">
+                  <div class="room article-it-h">
+  <div class="room-img-left">
+    <div class="room-img-w">    
+     <a class='room-img-w' href='#'><img src='img/article-h-2.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont room-cont-art">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-cat">Пляжные развлечения</a> 
+      <a href="#" class="room-cont-pr-txt">Парашют</a> 
+      <div class="room-cont-desc">
+        Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра...        
+      </div>
+      <a class="room-cont-desc-more" href="#">Подробнее</a>
+    </div>
+    <div class="room-cont-pr">
+      <div class="room-cont-views">
+        127
+      </div>
+    </div>                    
+  </div>
+
+</div>
+</div><!--room-->
+                </div><!--col-->
+                <div class="article-col">
+                  <div class="room article-it-h">
+  <div class="room-img-left">
+    <div class="room-img-w">    
+     <a class='room-img-w' href='#'><img src='img/article-h-3.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont room-cont-art">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-cat">Пляжные развлечения</a> 
+      <a href="#" class="room-cont-pr-txt">Прогулки на водных велосипедах</a> 
+      <div class="room-cont-desc">
+        Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра...        
+      </div>
+      <a class="room-cont-desc-more" href="#">Подробнее</a>
+    </div>
+    <div class="room-cont-pr">
+      <div class="room-cont-views">
+        127
+      </div>
+    </div>                    
+  </div>
+
+</div>
+</div><!--room-->
+                </div><!--col-->
+                <div class="article-col">
+                  <div class="room article-it-h">
+  <div class="room-img-left">
+    <div class="room-img-w">    
+     <a class='room-img-w' href='#'><img src='img/article-h-4.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont room-cont-art">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-cat">Пляжные развлечения</a> 
+      <a href="#" class="room-cont-pr-txt">Прогулки на водных велосипедах</a> 
+      <div class="room-cont-desc">
+        Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра...        
+      </div>
+      <a class="room-cont-desc-more" href="#">Подробнее</a>
+    </div>
+    <div class="room-cont-pr">
+      <div class="room-cont-views">
+        127
+      </div>
+    </div>                    
+  </div>
+
+</div>
+</div><!--room-->
+                </div><!--col-->
+                <div class="article-col">
+                  <div class="room article-it-h">
+  <div class="room-img-left">
+    <div class="room-img-w">    
+     <a class='room-img-w' href='#'><img src='img/article-h-5.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont room-cont-art">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-cat">Пляжные развлечения</a> 
+      <a href="#" class="room-cont-pr-txt">Прогулки на водных велосипедах</a> 
+      <div class="room-cont-desc">
+        Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра...        
+      </div>
+      <a class="room-cont-desc-more" href="#">Подробнее</a>
+    </div>
+    <div class="room-cont-pr">
+      <div class="room-cont-views">
+        127
+      </div>
+    </div>                    
+  </div>
+
+</div>
+</div><!--room-->
+                </div><!--col-->
+                <div class="article-col">
+                  <div class="room article-it-h">
+  <div class="room-img-left">
+    <div class="room-img-w">    
+     <a class='room-img-w' href='#'><img src='img/article-h-6.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont room-cont-art">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-cat">Пляжные развлечения</a> 
+      <a href="#" class="room-cont-pr-txt">Прогулки на водных велосипедах</a> 
+      <div class="room-cont-desc">
+        Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра...        
+      </div>
+      <a class="room-cont-desc-more" href="#">Подробнее</a>
+    </div>
+    <div class="room-cont-pr">
+      <div class="room-cont-views">
+        127
+      </div>
+    </div>                    
+  </div>
+
+</div>
+</div><!--room-->
+                </div><!--col-->
+                <div class="article-col">
+                  <div class="room article-it-h">
+  <div class="room-img-left">
+    <div class="room-img-w">    
+     <a class='room-img-w' href='#'><img src='img/article-h-7.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont room-cont-art">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-cat">Пляжные развлечения</a> 
+      <a href="#" class="room-cont-pr-txt">Прогулки на водных велосипедах</a> 
+      <div class="room-cont-desc">
+        Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра...        
+      </div>
+      <a class="room-cont-desc-more" href="#">Подробнее</a>
+    </div>
+    <div class="room-cont-pr">
+      <div class="room-cont-views">
+        127
+      </div>
+    </div>                    
+  </div>
+
+</div>
+</div><!--room-->
+                </div><!--col-->
+                <div class="article-col">
+                  <div class="room article-it-h">
+  <div class="room-img-left">
+    <div class="room-img-w">    
+     <a class='room-img-w' href='#'><img src='img/article-h-8.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont room-cont-art">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-cat">Пляжные развлечения</a> 
+      <a href="#" class="room-cont-pr-txt">Прогулки на водных велосипедах</a> 
+      <div class="room-cont-desc">
+        Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра...        
+      </div>
+      <a class="room-cont-desc-more" href="#">Подробнее</a>
+    </div>
+    <div class="room-cont-pr">
+      <div class="room-cont-views">
+        127
+      </div>
+    </div>                    
+  </div>
+
+</div>
+</div><!--room-->
+                </div><!--col-->
+                <div class="article-col">
+                  <div class="room article-it-h">
+  <div class="room-img-left">
+    <div class="room-img-w">    
+     <a class='room-img-w' href='#'><img src='img/article-h-9.jpg' class='room-img' /></a> 
+   </div>
+ </div>
+ <div class="room-cont room-cont-art">
+  <div class="room-cont-pr-row">
+    <div class="room-cont-pr-left">
+      <a href="#" class="room-cont-cat">Пляжные развлечения</a> 
+      <a href="#" class="room-cont-pr-txt">Прогулки на водных велосипедах</a> 
+      <div class="room-cont-desc">
+        Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра...        
+      </div>
+      <a class="room-cont-desc-more" href="#">Подробнее</a>
+    </div>
+    <div class="room-cont-pr">
+      <div class="room-cont-views">
+        127
+      </div>
+    </div>                    
+  </div>
+
+</div>
+</div><!--room-->
+                </div><!--col-->
+              </div><!--article-row-h-->
+              <a href="#" class="housing-btn housing-btn-10 btn-dia btn-gray">Показать еще <span>(24 из 1456)</span></a>
+
+            </div><!--col-r-->
           </div>
         </div>
-      </div><!--filter-->
-      
-      <section class="section hotels">
-        <div class="contain">
-          <div class="head-2">Гостиницы для отдыха на море</div>
-          <div class="hotels-w hotels-w-js hotels-w-js-1">
+      </section>
+
+      <section class="specials section">
+        <div class="contain">      
+          <div class="head-2">Спецпредложения</div>
+          <div class="specials-row specials-row-10 specials-row-js-1">
            <a href="#" class="hotels-it">
   <img src="img/hotel-1.jpg" class="hotels-it-img" />
   <div class="hotels-it-txt-w">
-    <div class="hotels-it-txt-1">Гостевой дом
+    <div class="hotels-it-txt-1">Гостиница
     <div class="hotels-it-stars">
       <div class="hotels-it-star"></div>
       <div class="hotels-it-star"></div>
       <div class="hotels-it-star"></div>
     </div>
   </div>
-    <div class="hotels-it-txt-2">Мечта</div>
-    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span">Дивноморское</span></div>
-    <div class="hotels-it-txt-3">от <strong><span>1200</span>  ₽</strong></div>
+    <div class="hotels-it-txt-2">AsTerias</div>
+    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
+    <div class="hotels-it-txt-3"></div>
+  </div>
+  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
+  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
+</a>
+          <a href="#" class="hotels-it">
+  <img src="img/hotel-33.jpg" class="hotels-it-img" />
+  <div class="hotels-it-txt-w">
+    <div class="hotels-it-txt-1">Отель</div>
+    <div class="hotels-it-txt-2">Castro</div>
+    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
+    <div class="hotels-it-txt-3"></div>
   </div>
   <span class="hotels-it-lbl hotels-it-stock-span"></span> 
   <span class="hotels-it-lbl hotels-it-sale-span"></span> 
@@ -821,9 +1063,48 @@
   <img src="img/hotel-23.jpg" class="hotels-it-img" />
   <div class="hotels-it-txt-w">
     <div class="hotels-it-txt-1">Гостевой дом</div>
-    <div class="hotels-it-txt-2">Мечта</div>
+    <div class="hotels-it-txt-2">Коралл</div>
     <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span">Дивноморское</span></div>
     <div class="hotels-it-txt-3">от <strong><span>1200</span>  ₽</strong></div>
+  </div>
+  <span class="hotels-it-lbl hotels-it-stock-span">Акция</span> 
+  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
+</a>
+          <a href="#" class="hotels-it">
+  <img src="img/hotel-4.jpg" class="hotels-it-img" />
+  <div class="hotels-it-txt-w">
+    <div class="hotels-it-txt-1">Гостиница
+    <div class="hotels-it-stars">
+      <div class="hotels-it-star"></div>
+      <div class="hotels-it-star"></div>
+      <div class="hotels-it-star"></div>
+    </div>
+  </div>
+    <div class="hotels-it-txt-2">Родос</div>
+    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
+    <div class="hotels-it-txt-3"></div>
+  </div>
+  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
+  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
+</a>
+          <a href="#" class="hotels-it">
+  <img src="img/hotel-33.jpg" class="hotels-it-img" />
+  <div class="hotels-it-txt-w">
+    <div class="hotels-it-txt-1">Гостевой дом</div>
+    <div class="hotels-it-txt-2">Ниагара</div>
+    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
+    <div class="hotels-it-txt-3"></div>
+  </div>
+  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
+  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
+</a> 
+          <a href="#" class="hotels-it">
+  <img src="img/hotel-23.jpg" class="hotels-it-img" />
+  <div class="hotels-it-txt-w">
+    <div class="hotels-it-txt-1">Гостевой дом</div>
+    <div class="hotels-it-txt-2">Кристина</div>
+    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
+    <div class="hotels-it-txt-3"></div>
   </div>
   <span class="hotels-it-lbl hotels-it-stock-span">Акция</span> 
   <span class="hotels-it-lbl hotels-it-sale-span"></span> 
@@ -833,8 +1114,8 @@
   <div class="hotels-it-txt-w">
     <div class="hotels-it-txt-1">Гостевой дом</div>
     <div class="hotels-it-txt-2">Мечта</div>
-    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span">Дивноморское</span></div>
-    <div class="hotels-it-txt-3">от <strong><span>1200</span>  ₽</strong></div>
+    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
+    <div class="hotels-it-txt-3"></div>
   </div>
   <span class="hotels-it-lbl hotels-it-stock-span"></span> 
   <span class="hotels-it-lbl hotels-it-sale-span"></span> 
@@ -850,266 +1131,18 @@
     </div>
   </div>
     <div class="hotels-it-txt-2">Мечта</div>
-    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span">Дивноморское</span></div>
-    <div class="hotels-it-txt-3">от <strong><span>1200</span>  ₽</strong></div>
+    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span"></span></div>
+    <div class="hotels-it-txt-3"></div>
   </div>
   <span class="hotels-it-lbl hotels-it-stock-span"></span> 
   <span class="hotels-it-lbl hotels-it-sale-span"></span> 
 </a>
-          <a href="#" class="hotels-it">
-  <img src="img/hotel-33.jpg" class="hotels-it-img" />
-  <div class="hotels-it-txt-w">
-    <div class="hotels-it-txt-1">Гостевой дом</div>
-    <div class="hotels-it-txt-2">Мечта</div>
-    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span">Дивноморское</span></div>
-    <div class="hotels-it-txt-3">от <strong><span>1200</span>  ₽</strong></div>
-  </div>
-  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
-  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
-</a>           
-        </div>
+        </div><!--specials-row-->
       </div>
     </section>
 
-
-    <section class="section region">
-      <div class="contain">
-        <div class="region-h-w">
-          <div class="head-2">Регионы для отдыха на море</div>
-          <a href="#" class="show-map hide-640"><span class="wshow-map-span">Показать на карте</span> <img src="img/show-map.svg" /></a>
-        </div>
-        <div class="region-it-w">
-                    <a href="#" class="region-it"><img src="img/region-1.jpg" class="region-img" /><span class="region-span">Крым</span></a><a href="#" class="region-it"><img src="img/region-2.jpg" class="region-img" /><span class="region-span">Тамань</span></a>
-          <a href="#" class="region-it"><img src="img/region-3.jpg" class="region-img" /><span class="region-span">Анапа</span></a><a href="#" class="region-it"><img src="img/region-4.jpg" class="region-img" /><span class="region-span">Новороссийск</span></a>
-          <a href="#" class="region-it"><img src="img/region-5.jpg" class="region-img" /><span class="region-span">Геленджик</span></a><a href="#" class="region-it"><img src="img/region-6.jpg" class="region-img" /><span class="region-span">Туапсе </span></a>
-          <a href="#" class="region-it"><img src="img/region-7.jpg" class="region-img" /><span class="region-span">Сочи</span></a><a href="#" class="region-it"><img src="img/region-8.jpg" class="region-img" /><span class="region-span">Абхазия</span></a>
-          <a href="#" class="region-it"><img src="img/region-9.jpg" class="region-img" /><span class="region-span">Ейск</span></a>
-        </div>
-        <a href="#" class="show-map show-640"><span class="wshow-map-span">Показать на карте</span><img src="img/show-map.svg" /></a>
-      </div>
-    </section>
-
-    <section class="section new-objects">
-      <div class="contain">
-        <div class="head-2">Новые объекты</div>
-        <div class="hotels-w hotels-w-js hotels-w-js-2">
-         <a href="#" class="hotels-it">
-  <img src="img/nw-obj-1.jpg" class="hotels-it-img" />
-  <div class="hotels-it-txt-w">
-    <div class="hotels-it-txt-1">Гостевой дом</div>
-    <div class="hotels-it-txt-2">Доля и Ко</div>
-    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span">Витязево</span></div>
-    <div class="hotels-it-txt-3"></div>
-  </div>
-  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
-  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
-</a>
-
-        <a href="#" class="hotels-it">
-  <img src="img/nw-obj-2.jpg" class="hotels-it-img" />
-  <div class="hotels-it-txt-w">
-    <div class="hotels-it-txt-1">Отель</div>
-    <div class="hotels-it-txt-2">Маяк</div>
-    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span">Витязево</span></div>
-    <div class="hotels-it-txt-3"></div>
-  </div>
-  <span class="hotels-it-lbl hotels-it-stock-span">Акция</span> 
-  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
-</a>
-
-        <a href="#" class="hotels-it">
-  <img src="img/nw-obj-3.jpg" class="hotels-it-img" />
-  <div class="hotels-it-txt-w">
-    <div class="hotels-it-txt-1">Отель</div>
-    <div class="hotels-it-txt-2">Оранж</div>
-    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span">Витязево</span></div>
-    <div class="hotels-it-txt-3"></div>
-  </div>
-  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
-  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
-</a>
-
-        <a href="#" class="hotels-it">
-  <img src="img/nw-obj-4.jpg" class="hotels-it-img" />
-  <div class="hotels-it-txt-w">
-    <div class="hotels-it-txt-1"></div>
-    <div class="hotels-it-txt-2">Квартира</div>
-    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span">Витязево</span></div>
-    <div class="hotels-it-txt-3"></div>
-  </div>
-  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
-  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
-</a>
-
-        <a href="#" class="hotels-it">
-  <img src="img/nw-obj-3.jpg" class="hotels-it-img" />
-  <div class="hotels-it-txt-w">
-    <div class="hotels-it-txt-1">Отель</div>
-    <div class="hotels-it-txt-2">Оранж</div>
-    <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span">Витязево</span></div>
-    <div class="hotels-it-txt-3"></div>
-  </div>
-  <span class="hotels-it-lbl hotels-it-stock-span"></span> 
-  <span class="hotels-it-lbl hotels-it-sale-span"></span> 
-</a>
-      </div>
-    </div>
-  </section>
-  <section class="section sale">
-    <div class="contain">
-      <div class="region-h-w">
-        <div class="head-2">Акции и скидки</div>
-        <a href="#" class="show-map hide-640"><span class="wshow-map-span">Все акции <span>(146)</span></span> <img src="img/arr-r-sale.svg" /></a>
-      </div>
-      <div class="sale-w sale-w-js">
-        <div class="sale-it-w">
-  <a href="#" class="sale-it">
-    <img src="img/sale-1.jpg" class="sale-it-img" />
-    <div class="hotels-it-txt-w">
-      <div class="hotels-it-txt-1">Гостевой дом</div>
-      <div class="hotels-it-txt-2">ВояЖ</div>
-      <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span">Витязево</span></div>
-    </div>
-  </a>
-  <div class="sale-txt-w">
-    <div class="sale-txt-1">Постоянным клиентам скидка 10%</div>
-    <div class="sale-txt-2">до 30 сентября</div>
-  </div>
-</div>            
-<div class="sale-it-w">
-  <a href="#" class="sale-it">
-    <img src="img/sale-2.jpg" class="sale-it-img" />
-    <div class="hotels-it-txt-w">
-      <div class="hotels-it-txt-1">Гостевой дом</div>
-      <div class="hotels-it-txt-2">ВояЖ</div>
-      <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span">Витязево</span></div>
-    </div>
-  </a>
-  <div class="sale-txt-w">
-    <div class="sale-txt-1">10% скидка при заселении от 10 дней</div>
-    <div class="sale-txt-2">до 31 октября</div>
-  </div>
-</div>
-<div class="sale-it-w">
-  <a href="#" class="sale-it">
-    <img src="img/sale-1.jpg" class="sale-it-img" />
-    <div class="hotels-it-txt-w">
-      <div class="hotels-it-txt-1">Гостевой дом</div>
-      <div class="hotels-it-txt-2">ВояЖ</div>
-      <div class="hotels-it-txt-1-w"><img src="img/geo.svg" /> <span class="hotels-it-txt-1-span">Витязево</span></div>
-    </div>
-  </a>
-  <div class="sale-txt-w">
-    <div class="sale-txt-1">Постоянным клиентам скидка 10%</div>
-    <div class="sale-txt-2">до 30 сентября</div>
-  </div>
-</div>   
-      </div>
-      <a href="#" class="show-map show-640 all-no-image all-promo"><span class="wshow-map-span">Все акции <span>(146)</span></span> <img src="img/arr-r-sale.svg" /></a>
-    </div>
-  </section>
-  <section class="section rev">
-    <div class="contain">
-      <div class="region-h-w">
-        <div class="head-2">Отзывы о местах размещения</div>
-        <a href="#" class="show-map hide-640"><span class="wshow-map-span">Все отзывы <span>(18656)</span></span> <img src="img/arr-r-sale.svg" /></a>
-      </div>
-      <div class="rev-it-w rev-it-w-js">            
-
-
-                <div class="rev-it">
-          <div class="rev-it-top">
-            <div class="rev-it-top-txt">Гостевой дом</div>
-            <div class="rev-top-star"><span class="rev-star-span"></span>3,2</div>
-          </div>
-          <div class="rev-txt-1">Семейный дворик</div>
-          <div class="rev-photo-row">
-            <a href='#' class='rev-photo'><img src='img/rev-1.jpg' class='rev-photo-img' /></a>
-            <a href='#' class='rev-photo'><img src='img/rev-2.jpg' class='rev-photo-img' /></a>
-            <a href='#' class='rev-photo'><img src='img/rev-3.jpg' class='rev-photo-img' /></a>
-            <a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>                        
-          </div>
-          <div class="rev-com-wh">
-            <div class="rev-com-wh-txt-1">Николай</div>
-            <div class="rev-com-wh-txt-2">Чебоксары</div> <span class="rev-com-wh-txt-3">(Август-Сентябрь)</span>
-          </div>
-          <div class="rev-com">
-            <div class="rev-com-txt">В этом году отдыхали в гостевом доме у Дмитрия, с конца августа до начала сентября, первоее впечатление сложилось уже с р впечатление...</div>
-            <a href="#" class="rev-com-a">Подробнее <span class="rev-com-span"></span></a>
-          </div>
-        </div>
-
-                <div class="rev-it">
-          <div class="rev-it-top">
-            <div class="rev-it-top-txt">Гостевой дом</div>
-            <div class="rev-top-star"><span class="rev-star-span"></span>6,4</div>
-          </div>
-          <div class="rev-txt-1">Доля и Ко</div>
-          <div class="rev-photo-row">
-            <a href='#' class='rev-photo'><img src='img/rev-1.jpg' class='rev-photo-img' /></a>
-            <a href='#' class='rev-photo'><img src='img/rev-2.jpg' class='rev-photo-img' /></a>
-            <a href='#' class='rev-photo'><img src='img/rev-3.jpg' class='rev-photo-img' /></a>
-            <a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>                        
-          </div>
-          <div class="rev-com-wh">
-            <div class="rev-com-wh-txt-1">Николай</div>
-            <div class="rev-com-wh-txt-2">Чебоксары</div> <span class="rev-com-wh-txt-3">(Август-Сентябрь)</span>
-          </div>
-          <div class="rev-com">
-            <div class="rev-com-txt">В этом году отдыхали в гостевом доме у Дмитрия, с конца августа до начала сентября, первоее впечатление сложилось уже с р впечатление...</div>
-            <a href="#" class="rev-com-a">Подробнее <span class="rev-com-span"></span></a>
-          </div>
-        </div>
-
-                <div class="rev-it">
-          <div class="rev-it-top">
-            <div class="rev-it-top-txt">Гостевой дом</div>
-            <div class="rev-top-star"><span class="rev-star-span"></span>9,2</div>
-          </div>
-          <div class="rev-txt-1">Оранж</div>
-          <div class="rev-photo-row">
-            <a href='#' class='rev-photo'><img src='img/rev-1.jpg' class='rev-photo-img' /></a>
-            <a href='#' class='rev-photo'><img src='img/rev-2.jpg' class='rev-photo-img' /></a>
-            <a href='#' class='rev-photo'><img src='img/rev-3.jpg' class='rev-photo-img' /></a>
-            <a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>                        
-          </div>
-          <div class="rev-com-wh">
-            <div class="rev-com-wh-txt-1">Николай</div>
-            <div class="rev-com-wh-txt-2">Чебоксары</div> <span class="rev-com-wh-txt-3">(Август-Сентябрь)</span>
-          </div>
-          <div class="rev-com">
-            <div class="rev-com-txt">В этом году отдыхали в гостевом доме у Дмитрия, с конца августа до начала сентября, первоее впечатление сложилось уже с р впечатление...</div>
-            <a href="#" class="rev-com-a">Подробнее <span class="rev-com-span"></span></a>
-          </div>
-        </div>
-
-                <div class="rev-it">
-          <div class="rev-it-top">
-            <div class="rev-it-top-txt">Гостевой дом</div>
-            <div class="rev-top-star"><span class="rev-star-span"></span>6,4</div>
-          </div>
-          <div class="rev-txt-1">Доля и Ко</div>
-          <div class="rev-photo-row">
-            <a href='#' class='rev-photo'><img src='img/rev-1.jpg' class='rev-photo-img' /></a>
-            <a href='#' class='rev-photo'><img src='img/rev-2.jpg' class='rev-photo-img' /></a>
-            <a href='#' class='rev-photo'><img src='img/rev-3.jpg' class='rev-photo-img' /></a>
-            <a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>                        
-          </div>
-          <div class="rev-com-wh">
-            <div class="rev-com-wh-txt-1">Николай</div>
-            <div class="rev-com-wh-txt-2">Чебоксары</div> <span class="rev-com-wh-txt-3">(Август-Сентябрь)</span>
-          </div>
-          <div class="rev-com">
-            <div class="rev-com-txt">В этом году отдыхали в гостевом доме у Дмитрия, с конца августа до начала сентября, первоее впечатление сложилось уже с р впечатление...</div>
-            <a href="#" class="rev-com-a">Подробнее <span class="rev-com-span"></span></a>
-          </div>
-        </div>
-      </div>
-      <a href="#" class="show-map show-640 all-no-image all-revs"><span class="wshow-map-span">Все отзывы <span>(18656)</span></span> <img src="img/arr-r-sale.svg" /></a>
-    </div>
-  </section>
-</main>
-    <footer class="foot">
+  </main>
+      <footer class="foot">
       <div class="contain">
         <div class="foot-top">
           <div class="foot-top-cont">
@@ -1147,7 +1180,7 @@
       </div>
       <a href="#top" class="arr-up"></a>
     </footer>
-    <div class="overlay"></div>
+    <div class="overlay"></div>  
 </div><!--wrapper-->
 <script src="js/jquery-3.4.1.min.js"></script>      
   <script src="js/slick.js"></script>
