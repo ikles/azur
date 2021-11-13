@@ -141,6 +141,18 @@ $('.accordion-header').toggleClass('inactive-header');
   }); //each
 
 
+  $('.room-more-item').each(function () {
+    let self = $(this);
+    let link = $(this).find('.room-bk-r-ab');
+    let less = $(this).find('.room-less');
+    link.click(function (e) {
+      $(this).toggleClass('rotate');
+      e.preventDefault();
+    //self.toggleClass('_open');
+    less.slideToggle();
+  });
+  });
+
 
   if($('.hotels-w-js-1').length) {
 
@@ -180,6 +192,47 @@ $('.accordion-header').toggleClass('inactive-header');
   });
 
 }//if
+
+
+if($('.nearby-row-js-1').length) {
+
+  $('.nearby-row-js-1').slick({  
+   dots: false,
+   infinite: false,
+
+   speed: 300,
+   slidesToShow: 4,   
+   responsive: [
+
+   {
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 3        
+    }
+  },
+  {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 2
+    }
+  },
+  {
+    breakpoint: 570,
+    settings: {
+      slidesToShow: 1
+    }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 3
+    }
+  },
+  ]
+});
+
+}//if
+
 
 
 if($('.hotels-w-js-2').length) {

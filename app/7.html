@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>7. Azur. Apartment. Form</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="body-7">
+
+  <div class="wrapper wrapper-7">
+
+    @@include('var/_header.html')    
+    <main class="main">
+
+
+      <div class="bread bread-7">
+        <div class="contain">
+          <ul class="bread-ul">
+            <li><a href="#">Главная</a></li>              
+            <li><a href="#">Лоо</a></li>              
+            <li><a href="#">Гостиницы</a></li>              
+            <li><a href="#">Лоо-Арена</a></li>              
+            <li><span>Бронирование</span></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <section class="section section-registr">
+        <div class="contain">
+
+          <div class="col-w col-w-inverse registr-col-w">            
+            <div class="col-r"> 
+
+              <form class="registr-form">
+                <div class="registr-head">Бронирование</div>
+                <div class="registr-p">Ваша заявка на бронирование будет отправлена напрямую владельцу или администратору.</div>
+                <div class="registr-inputs-row">
+                  <div class="filter-col">
+                    <input type="text" readonly="readonly" id="filter_input_date" class="filter-input date" placeholder="Дата заезда/выезда"/>
+                    <span class="finput-line"></span>
+                  </div>
+                  <div class="filter-col filter-col-persons">
+                    <input type="text" class="filter-input persons" placeholder="Выберите из списка" />
+                    <span class="finput-line"></span>
+                    <div class="filter-persons-control-wrap">
+                      <div class="filter-persons-control-row">
+                        <div class="filter-persons-control-l">
+                          <div class="filter-persons-tit">Взрослые</div>
+                          <div class="filter-persons-info">от 13 лет</div>
+                        </div>
+                        <div class="filter-persons-control-r">
+                          <span class="filter-persons-control _minus dis"></span>
+                          <input class="filter-persons-input adults" name="adults" type="text" placeholder="0" value="0">
+                          <span class="filter-persons-control _plus"></span>
+                        </div>
+                      </div><!--row-->
+                      <div class="filter-persons-control-row">
+                        <div class="filter-persons-control-l">
+                          <div class="filter-persons-tit">Дети</div>
+                          <div class="filter-persons-info">от 2 до 12 лет</div>
+                        </div>
+                        <div class="filter-persons-control-r">
+                          <span class="filter-persons-control _minus dis"></span>
+                          <input class="filter-persons-input children" name="children" type="text" placeholder="0" value="0">
+                          <span class="filter-persons-control _plus"></span>
+                        </div>
+                      </div><!--row-->
+                      <div class="filter-persons-control-row">
+                        <div class="filter-persons-control-l">
+                          <div class="filter-persons-tit">Младенцы</div>
+                          <div class="filter-persons-info">до 2 лет</div>
+                        </div>
+                        <div class="filter-persons-control-r">
+                          <span class="filter-persons-control _minus dis"></span>
+                          <input class="filter-persons-input babies" name="babies" type="text" placeholder="0" value="0">
+                          <span class="filter-persons-control _plus"></span>
+                        </div>
+                      </div><!--row-->
+                    </div>                  
+                  </div>   
+                </div>
+                <div class="registr-tit">Ваши данные</div>
+                <input type="text" class="filter-input name" placeholder="Ваше полное имя *" required> 
+                <div class="registr-inputs-row-2">
+                  <div class="filter-col">
+                  <div class="filter-col-bord filter-col-lang">
+                    <input type="text" class="filter-input-nobord filter-input phone" placeholder="Ваш телефон * " required>
+                    <select class="filter-col-select">
+                      <option value="Ru">Ru</option>
+                      <option value="Ua">Ua</option>
+                    </select>
+                  </div>
+                  </div>
+                  <div class="filter-col">
+                    <input type="text" class="filter-input email" placeholder="Ваш e-mail * " required> 
+                  </div>
+                </div>
+                <textarea class="registr-textarea" placeholder="Ваше сообщение владельцу * " required></textarea>
+                <div class="registr-bot">
+                  <label class="registr-label filter-label">
+                    <input type="checkbox" class="col-1-filter-checkbox" checked>
+                    <span class="registr-label-span"></span>
+                    <span class="registr-label-span-txt">Отправляя форму, я соглашаюсь с <a href="#" class="registr-lebel-a">политикой конфиденциальности</a> Azur.ru</span>
+                  </label>
+                  <button class="btn">Забронировать</button>
+                </div>
+              </form>
+
+
+            </div><!--col-r-->
+
+            <div class="col-l"> 
+
+
+
+
+              @@include("var/_room-vert.html",{
+                "gal": "<a class='room-img-w' data-fancybox='gallery' href='img/hot-33.jpg'><img src='img/hot-333.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-22.jpg'><img src='img/hot-22.jpg' class='room-img' /></a><a class='room-img-w' data-fancybox='gallery' href='img/hot-44.jpg'><img src='img/hot-44.jpg' class='room-img' /></a>",
+                "name": "Стандарт одноместный однокомнатный корпус №1",
+                "num": "#75432",                
+                "price": "12800 ₽",
+                "peoples": "за 5 ночей,  2 человек",
+                "places": "2 места"
+              })
+
+
+
+              <div class="col-2-2-conts">
+
+
+                <div class="col-2-2-cont-inf">
+                  <div class="col-2-2-cont-inf-txt-w">
+                    <div class="col-2-2-cont-inf-txt">Марина</div>
+                    <div class="col-2-2-cont-inf-row">
+                      <a href="tel:+79780356958" class="col-2-2-cont-inf-ph">+7 (978) 035-69-58</a>
+                      <div class="col-2-2-cont-calls-w col-2-2-cont-calls-w-100">
+                        <a href="#" class="call-s"><img src="img/call-s-1.svg" /> <span>WhatsApp</span></a>
+                        <a href="#" class="call-s"><img src="img/call-s-2.svg" /> <span>Viber</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="btn-gray col-2-2-btn">Все номера</a>
+                </div>
+              </div>  
+
+
+
+
+
+
+            </div><!--col-l-->
+          </div>
+        </div>
+      </section>
+
+
+
+    </main>  
+  </div><!--wrapper-->
+  @@include('var/_scripts.html')
+</body>
+</html>
