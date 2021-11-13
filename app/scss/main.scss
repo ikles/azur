@@ -3212,9 +3212,9 @@ select {
 }  
 
 
-.col-2-2-btn {
-  margin-top: 30px;
+.col-2-2-btn {  
   width: 100%;
+  margin-top: 25px;
 }
 
 .col-2-2-conts {
@@ -3290,12 +3290,23 @@ select {
   margin-right: 10px;
 }
 
+.col-2-2-cont-phones {
+  max-height: 48px;
+  overflow: hidden;  
+          transition: 0.5s;
+  &._open {
+    max-height: 250px;
+  }
+}
+
 .col-2-2-cont-inf {
-  padding: 25px 20px 20px;
+  padding: 25px 20px 20px;  
 }
 
 .col-2-2-cont-inf-txt-w {
-
+&:not(:last-child) {
+  margin-bottom: 25px;
+}
 }
 
 .col-2-2-cont-inf-txt {
