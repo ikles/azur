@@ -3304,8 +3304,9 @@ select {
 }
 
 .col-2-2-cont-inf-txt-w {
-&:not(:last-child) {
   margin-bottom: 25px;
+&:last-child {
+  margin-bottom: 15px;
 }
 }
 

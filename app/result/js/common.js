@@ -156,6 +156,7 @@ $('.accordion-header').toggleClass('inactive-header');
 $('.col-2-2-btn').click(function (e) {
   e.preventDefault();
   $('.col-2-2-cont-phones').addClass('_open');
+  $(this).hide();
 });
 
 

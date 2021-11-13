@@ -3944,8 +3944,10 @@ select {
 .col-2-2-cont-inf {
   padding: 25px 20px 20px; }
 
-.col-2-2-cont-inf-txt-w:not(:last-child) {
+.col-2-2-cont-inf-txt-w {
   margin-bottom: 25px; }
+  .col-2-2-cont-inf-txt-w:last-child {
+    margin-bottom: 15px; }
 
 .col-2-2-cont-inf-txt {
   font-weight: 500;
