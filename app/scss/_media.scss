@@ -29,7 +29,7 @@
   .rev-com-wh-txt-2 {
     line-height: 1.3;
   }
-  .rev {
+  .main {
     padding-bottom: 130px;
   }
   .artblock-r {
@@ -156,6 +156,33 @@
 .promo-col {
   width: 100%;
 }
+.article-col-l {
+  max-width: 635px;
+}
+.article-col-r {
+  margin-left: 30px;
+}
+.col-1-ph-g-gal-col {  
+}
+.col-1-ph-g-gal-it {
+  height: 140px;
+}
+.article-revs,
+.article-col-1-ph-g {
+  margin-top: 50px;
+}
+.article-col-1-ph-g .col-1-ph-g-gal {
+  margin-bottom: 20px;
+}
+.col-1-ph-g-resp-txt-2 {
+  line-height: 1.4;
+}
+.col-1-ph-g-resp-txt-w {
+  max-width: 50%;
+}
+.article-col-l .rat-eva-col {
+   width: 180px;
+ }
 }
 
 
@@ -186,6 +213,7 @@
      display: none;
    }
  }  
+ 
 }
 
 @media only screen and (max-width : 991px) {
@@ -241,7 +269,7 @@
   .section {
     padding: 0;    
   }
-  .rev {
+  .main {
     padding-bottom: 80px;
   }
   .sale-txt-w {
@@ -291,8 +319,8 @@
   .choice-btn-scroll {    
     overflow-x: scroll;
   }
-  .rev {
-    margin-top: 40px;
+  .main {
+    
   }
   .housing-col-w {    
     flex-wrap: wrap;
@@ -364,7 +392,7 @@
     overflow-y: scroll;
   }
   .select-housing-2 {
-    padding-bottom: 80px;
+    
   }
   .col-1-filter-w {
     max-width: 280px;
@@ -385,7 +413,7 @@
     }
   }
   .promo-section {
-    padding-bottom: 80px;
+    
   }
   .registr-col-w {    
     flex-wrap: wrap;
@@ -417,7 +445,33 @@
   .registr-tit {
     margin-bottom: 15px;
   }
-
+.artblock {
+   padding-bottom: 43px;
+ }
+ .article-section {
+   margin-top: 40px;
+ }
+ .article-h2 {
+   margin-top: 20px;
+ }
+ .article-col-l {
+   max-width: 100%;
+ }
+ .article-col-r {
+   margin-left: 0;
+ }
+ .article-col-l .rat-eva-col {
+   width: 218px;
+ }
+ .art-col-1-ph-g-resp {
+   margin-top: 40px;
+ }
+ .article-col-r {
+   margin-top: 40px;
+ }
+ .specials-13 {
+   margin-top: 60px;
+ }
 } 
 
 /* Small Devices, Tablets */
@@ -481,6 +535,13 @@
       margin-bottom: 0;
     }
   }
+  .region-it-w-2 {
+    .region-it {    
+    &:last-child {
+      width: calc(50% - 10px);
+    }
+  }
+}
   .foot-cont-txt-w {  
     &:last-child {
       margin-bottom: 0;
@@ -686,6 +747,13 @@ a.resort-child-link {
     width: 100%;
   }
 } 
+.article-col-l .rat-eva-col {
+  width: 169px;
+}
+.slide_1-img-w,
+.slider_1:before {
+  height: 327px;
+}
 }      
 
 @media only screen and (max-width : 640px) {
@@ -776,6 +844,21 @@ a.resort-child-link {
               width: 100%;
             }
   }
+  .col-1-ph-g-gal-it {
+    height: 110px;
+  }
+  .article-col-l {
+    .rat-eva-all {      
+              flex-wrap: wrap;
+    }
+    .rat-eva-col {
+    width: 100%;
+  }
+  }
+.rat._open .rat-open {
+  max-height: 860px;
+}
+   
 } 
 
 
@@ -904,6 +987,29 @@ a.resort-child-link {
   .registr-form {
     padding: 30px 20px;
   }
+  .article-p {
+    font-size: 16px;
+  }
+  .article-h2 {
+    margin-bottom: 20px;
+  }
+  .slide_1-img-w, .slider_1:before {
+    height: 241px;
+  }
+  .slider_1 {
+    margin: 30px 0;
+  }
+  .rat-eva {
+    margin-bottom: 20px;
+  }
+  .art-col-1-ph-g-resp {    
+            flex-wrap: wrap;
+  }
+  .col-1-ph-g-resp-txt-w {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
 }
 
 
@@ -912,6 +1018,12 @@ a.resort-child-link {
   .head-2 {
     font-size: 18px;
     line-height: 22px;
+  }
+  .stock-l-txt {
+    font-size: 18px;
+  }
+  .article-col-1-ph-g .col-1-ph-g-gal {
+    margin-top: 25px;
   }
   .hotels-w-js-1 {    
     position: relative;
@@ -1071,7 +1183,7 @@ a.resort-child-link {
     height: 12px;  
     background-size: 12px;
   }
-  .rev {
+  .main {
     padding-bottom: 139px;
   }
   .foot {
@@ -1377,7 +1489,7 @@ a.resort-child-link {
   margin-bottom: 18px;
 }
 .promo-section {
-  padding-bottom: 40px;
+  
 }
 input[type="text"].filter-input,
 .registr-textarea {
@@ -1392,6 +1504,19 @@ input[type="text"].filter-input,
 }
 .registr-col-w {
   margin-top: 20px;
+}
+.rat._open .rat-open {
+  max-height: 950px;
+}
+.col-1-ph-g-gal-col {
+  padding: 0 5px;
+}
+.article-col-1-ph-g .col-1-ph-g-gal {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.col-1-ph-g-gal-it {
+  height: 75px;
 }
 }
 
@@ -1426,6 +1551,21 @@ input[type="text"].filter-input,
   }
   .lmnu-block {  
     max-width: 100%;
+  }
+  .rat._open .rat-open {
+    max-height: 1050px;
+  }
+  .rat {
+    padding: 20px;
+  }
+  .col-1-ph-g-gal-it {
+    height: 61px;
+  }
+  .head-2 {
+    margin-bottom: 20px;
+  }
+  .article-col-r {
+    width: 100%;
   }
 }
 

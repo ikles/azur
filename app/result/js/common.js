@@ -141,6 +141,26 @@ $('.accordion-header').toggleClass('inactive-header');
   }); //each
 
 
+  $('.slider_1').each(function () {
+    let slick_slider_item = $(this);
+    $(slick_slider_item).slick({  
+     dots: true,
+     arrows: true,
+     infinite: false,
+     speed: 300,
+     slidesToShow: 1
+   });
+
+}); 
+
+
+  
+
+
+
+
+
+
   $('.room-more-item').each(function () {
     let self = $(this);
     let link = $(this).find('.room-bk-r-ab');
@@ -153,11 +173,28 @@ $('.accordion-header').toggleClass('inactive-header');
   });
   });
 
-$('.col-2-2-btn').click(function (e) {
-  e.preventDefault();
-  $('.col-2-2-cont-phones').addClass('_open');
-  $(this).hide();
-});
+  $('.rat').each(function () {
+    let self = $(this);
+    let link = $(this).find('.roll');    
+    let txt = $(this).find('.roll .txt');    
+    link.click(function (e) {
+      $(this).toggleClass('rotate');
+      e.preventDefault();
+      if (txt.text() == 'Свернуть') {
+        txt.text('Подробнее');
+      }
+      else if (txt.text() == 'Подробнее') {
+        txt.text('Свернуть');
+      }
+      self.toggleClass('_open');
+    });
+  });
+
+  $('.col-2-2-btn').click(function (e) {
+    e.preventDefault();
+    $('.col-2-2-cont-phones').addClass('_open');
+    $(this).hide();
+  });
 
 
   if($('.hotels-w-js-1').length) {
@@ -523,6 +560,15 @@ if ($('.specials-row-js-1').length) {
     $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination - 85}, 1100);
     return false;
   });
+
+  if ($('.lmnu-block-scroll').length) {
+    $(".lmnu-block-scroll").mCustomScrollbar({
+      axis: "y",
+      theme: "dark-3",
+      mouseWheel: 1,
+      scrollInertia: '230'
+    });
+  }
 
 
   $(window).scroll(function(){

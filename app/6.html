@@ -73,17 +73,27 @@
             <div class="rooms-list-w">
               <div class="rooms-list">
                 @@include("var/_room_more.html",{
-                  "gal": "<a class='room-img-w' href='#'><img src='img/hot-44.jpg' class='room-img' /></a>",
-                  "name": "Стандарт одноместный однокомнатный корпус №1",
-                  "num": "#75432",
-                  "name2": "Гостевой дом Летняя беседка",
-                  "stars": "7,8",
-                  "price": "9400 ₽",
-                  "peoples": "за 5 ночей,<br>  2 человек",
-                  "places": "2 места"
+                  "gal": "<a class='room-img-w' href='#'><img src='img/hot-44.jpg' class='room-img' /></a>",                  
+                  "price": "9400 ₽"                  
+                })
+                @@include("var/_room_more.html",{
+                  "gal": "<a class='room-img-w' href='#'><img src='img/hot-33.jpg' class='room-img' /></a>",                  
+                  "price": "2400 ₽"                  
+                })
+                @@include("var/_room_more.html",{
+                  "gal": "<a class='room-img-w' href='#'><img src='img/hot-22.jpg' class='room-img' /></a>",                  
+                  "price": "1200 ₽"                  
+                })
+                @@include("var/_room_more.html",{
+                  "gal": "<a class='room-img-w' href='#'><img src='img/hot-11.jpg' class='room-img' /></a>",                  
+                  "price": "2400 ₽"                  
+                })
+                @@include("var/_room_more.html",{
+                  "gal": "<a class='room-img-w' href='#'><img src='img/hot-33.jpg' class='room-img' /></a>",                  
+                  "price": "2200 ₽"                  
                 })
               </div><!--rooms-list-->
-              <a href="#" class="rooms-list-btn btn-gray">Показать еще <span>(24 из 1456)</span></a>
+              <a href="#" class="rooms-list-btn btn-gray">Показать еще <span>(5 из 14)</span></a>
             </div><!--rooms-list-w-->
 
             <div class="stock-w">
@@ -179,14 +189,45 @@
                 <a href="#" class="col-1-ph-g-gal-it"><img src="img/ph-g-1.jpg" /></a><a href="#" class="col-1-ph-g-gal-it"><img src="img/ph-g-2.jpg" /></a><a href="#" class="col-1-ph-g-gal-it"><img src="img/ph-g-3.jpg" /></a>
                 <a href="#" class="col-1-ph-g-gal-it"><img src="img/ph-g-4.jpg" /></a><a href="#" class="col-1-ph-g-gal-it-bl"><img src="img/ph-g-black.jpg" /><span class="wcol-1-ph-g-gal-it-bl-span">42+</span></a>
               </div>
-              <div class="col-1-ph-g-resp">
-                <div class="col-1-ph-g-resp-txt-w">
-                  <div class="col-1-ph-g-resp-txt-1">Отдыхали здесь?</div>
-                  <div class="col-1-ph-g-resp-txt-2">Поделитесь мнением с другими потенциальными гостями!</div>
-                </div>
-                <a href="#" class="btn col-1-ph-g-resp-btn">Написать отзыв</a>
-              </div>
             </div>
+
+
+            <div class="reviews-hor">
+              <div class="contain">
+                <div class="head-2">Отзывы гостей</div>
+                <div class="reviews-hor-row">
+
+                  @@include('var/_rat.html',{
+                    "name":"Николай",
+                    "rate":"7,8",
+                    "photos": "<a href='#' class='rev-photo'><img src='img/rev-1.jpg' class='rev-photo-img' /></a><a href='#' class='rev-photo'><img src='img/rev-2.jpg' class='rev-photo-img' /></a><a href='#' class='rev-photo'><img src='img/rev-3.jpg' class='rev-photo-img' /></a><a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>"
+                  })
+
+                  @@include('var/_rat.html',{
+                    "name":"Анна",
+                    "rate":"3,8",
+                    "photos": "<a href='#' class='rev-photo'><img src='img/rev-4.jpg' class='rev-photo-img' /></a><a href='#' class='rev-photo'><img src='img/rev-5.jpg' class='rev-photo-img' /></a><a href='#' class='rev-photo'><img src='img/rev-6.jpg' class='rev-photo-img' /></a><a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>"
+                  })
+
+                  @@include('var/_rat.html',{
+                    "name":"Сергей",
+                    "rate":"8,8",
+                    "photos": "<a href='#' class='rev-photo'><img src='img/rev-7.jpg' class='rev-photo-img' /></a><a href='#' class='rev-photo'><img src='img/rev-8.jpg' class='rev-photo-img' /></a><a href='#' class='rev-photo'><img src='img/rev-9.jpg' class='rev-photo-img' /></a><a href='#' class='rev-photo rev-photo-more'><img src='img/rev-3.jpg' class='rev-photo-img' /><span class='rev-photo-img-span'>2+</span></a>"
+                  })
+
+                </div><!--reviews-hor-row-->
+                <a href="#" class="rat-btn btn-gray">Показать еще <span>(3 из 4)</span></a>
+              </div>
+            </div><!--reviews-hor-->
+
+            <div class="col-1-ph-g-resp">
+              <div class="col-1-ph-g-resp-txt-w">
+                <div class="col-1-ph-g-resp-txt-1">Отдыхали здесь?</div>
+                <div class="col-1-ph-g-resp-txt-2">Поделитесь мнением с другими потенциальными гостями!</div>
+              </div>
+              <a href="#" class="btn col-1-ph-g-resp-btn">Написать отзыв</a>
+            </div>
+
           </div><!--col-r-->
 
           <div class="col-l"> 
@@ -200,7 +241,100 @@
                 </div>
                 <div class="grade-txt-2">На основе 143 отзывов </div>
               </div>
-              <div class="grade-numb">8,6</div>
+              <div class="grade-numb">
+                <span>8,6</span>
+                <div class="grade-numb-pop">
+                  <div class="grade-numb-pop-inn">
+
+
+
+                    <div class="rat-eva-it">
+                      <div class="rat-eva-n">
+                        <div class="rat-eva-n-txt-1">Автостоянка</div>
+                        <div class="rat-eva-n-txt-2">10</div>
+                      </div>
+                      <div class="rat-eva-it-sc"><span style="width: 100%;" class="rat-eva-it-sc-span"></span></div>
+                    </div>
+                    <div class="rat-eva-it">
+                      <div class="rat-eva-n">
+                        <div class="rat-eva-n-txt-1">Wi-Fi</div>
+                        <div class="rat-eva-n-txt-2">8</div>
+                      </div>
+                      <div class="rat-eva-it-sc"><span style="width: 80%;" class="rat-eva-it-sc-span"></span></div>
+                    </div>
+                    <div class="rat-eva-it">
+                      <div class="rat-eva-n">
+                        <div class="rat-eva-n-txt-1">Территория, двор</div>
+                        <div class="rat-eva-n-txt-2">
+                          3
+                        </div>
+                      </div>
+                      <div class="rat-eva-it-sc"><span style="width: 30%;" class="rat-eva-it-sc-span"></span></div>
+                    </div>
+                    <div class="rat-eva-it">
+                      <div class="rat-eva-n">
+                        <div class="rat-eva-n-txt-1">Детская площадка</div>
+                        <div class="rat-eva-n-txt-2">1</div>
+                      </div>
+                      <div class="rat-eva-it-sc"><span style="width: 10%;" class="rat-eva-it-sc-span"></span></div>
+                    </div>
+
+                    <div class="rat-eva-it">
+                      <div class="rat-eva-n">
+                        <div class="rat-eva-n-txt-1">Цена/Качество</div>
+                        <div class="rat-eva-n-txt-2">2</div>
+                      </div>
+                      <div class="rat-eva-it-sc"><span style="width: 20%;" class="rat-eva-it-sc-span"></span></div>
+                    </div>
+                    <div class="rat-eva-it">
+                      <div class="rat-eva-n">
+                        <div class="rat-eva-n-txt-1">Расположение</div>
+                        <div class="rat-eva-n-txt-2">5</div>
+                      </div>
+                      <div class="rat-eva-it-sc"><span style="width: 50%;" class="rat-eva-it-sc-span"></span></div>
+                    </div>
+                    <div class="rat-eva-it">
+                      <div class="rat-eva-n">
+                        <div class="rat-eva-n-txt-1">Чистота</div>
+                        <div class="rat-eva-n-txt-2">1</div>
+                      </div>
+                      <div class="rat-eva-it-sc"><span style="width: 10%;" class="rat-eva-it-sc-span"></span></div>
+                    </div>
+                    <div class="rat-eva-it">
+                      <div class="rat-eva-n">
+                        <div class="rat-eva-n-txt-1">Качество сна</div>
+                        <div class="rat-eva-n-txt-2">3</div>
+                      </div>
+                      <div class="rat-eva-it-sc"><span style="width: 30%;" class="rat-eva-it-sc-span"></span></div>
+                    </div>
+
+                    <div class="rat-eva-it">
+                      <div class="rat-eva-n">
+                        <div class="rat-eva-n-txt-1">Гостеприимство</div>
+                        <div class="rat-eva-n-txt-2">10</div>
+                      </div>
+                      <div class="rat-eva-it-sc"><span style="width: 100%;" class="rat-eva-it-sc-span"></span></div>
+                    </div>
+                    <div class="rat-eva-it">
+                      <div class="rat-eva-n">
+                        <div class="rat-eva-n-txt-1">Звукоизоляция</div>
+                        <div class="rat-eva-n-txt-2">6</div>
+                      </div>
+                      <div class="rat-eva-it-sc"><span style="width: 60%;" class="rat-eva-it-sc-span"></span></div>
+                    </div>
+                    <div class="rat-eva-it">
+                      <div class="rat-eva-n">
+                        <div class="rat-eva-n-txt-1">Санузлы</div>
+                        <div class="rat-eva-n-txt-2">1</div>
+                      </div>
+                      <div class="rat-eva-it-sc"><span style="width: 10%;" class="rat-eva-it-sc-span"></span></div>
+                    </div>
+
+
+
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="col-2-2-conts">
@@ -223,7 +357,7 @@
                 </a>
               </div>
               <div class="col-2-2-cont-inf">
-                
+
                 <div class="col-2-2-cont-phones">
                   <div class="col-2-2-cont-inf-txt-w">
                     <div class="col-2-2-cont-inf-txt">Марина</div>
@@ -361,6 +495,10 @@
       </div>
     </div>
   </section>
+
+
+
+
 
 
 
