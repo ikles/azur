@@ -5,7 +5,7 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>6. Azur. Apartment</title>  
+  <title>9. Azur. Apartment. Item card</title>  
   @@include('var/_styless.html')
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,9 +26,8 @@
         <div class="contain">
           <ul class="bread-ul">
             <li><a href="#">Главная</a></li>              
-            <li><a href="#">Лоо</a></li>              
-            <li><a href="#">Гостиницы</a></li>                          
-            <li><span>Лоо-Арена</span></li>
+            <li><a href="#">Отдых в Кабардинке</a></li>
+            <li><span>Квартира-студия с двориком</span></li>
           </ul>
         </div>
       </div>
@@ -44,15 +43,10 @@
               <div class="card-name-row">
                 <div class="card-name-tit">
                   <div class="card-name">
-                    <div class="card-name-h">Комплекс "Лоо-Арена"</div>
-                    <div class="card-name-star-w">
-                      <div class="card-name-star"><img src="img/star-black.svg" /></div>
-                      <div class="card-name-star"><img src="img/star-black.svg" /></div>
-                      <div class="card-name-star"><img src="img/star-black.svg" /></div>
-                    </div>
+                    <div class="card-name-h">Квартира-студия с двориком</div>                    
                   </div>
                   <div class="card-name-add">
-                    <span class="card-name-add-span"><img src="img/geo-grey.svg" /></span> Лоо, ул. Разина 18/15
+                    <span class="card-name-add-span"><img src="img/geo-grey.svg" /></span>Анапа, ул. Ленинградская, 108
                   </div>
                 </div>
                 <label class="card-name-like">
@@ -61,194 +55,141 @@
                 </label>
               </div>
               <div class="card-gal">
-                <a href="#" class="card-gal-img-b-w"><img src="img/card-b.jpg" class="card-gal-img-b" /></a>
+                <a href="#" class="card-gal-img-b-w"><img src="img/card-b-1.jpg" class="card-gal-img-b" /></a>
                 <div class="card-gal-m-w">
-                  <a href="#" class="card-gal-img-m-w"><img src="img/card-m.jpg" class="card-gal-img-m" /></a>
-                  <a href="#" class="card-gal-img-m-w _more"><img src="img/card-m-bl.jpg" class="card-gal-img-m" /><span class="card-gal-img-span">24+</span></a>
+                  <a href="#" class="card-gal-img-m-w"><img src="img/card-m-1.jpg" class="card-gal-img-m" /></a>
+                  <a href="#" class="card-gal-img-m-w _more"><img src="img/card-m-bl-1.jpg" class="card-gal-img-m" /><span class="card-gal-img-span">24+</span></a>
                 </div>
-              </div>
-            </div>
-            <div class="grade-show show-991">
-              <div class="grade grade-pda">
-                <div class="grade-numb grade-numb-pda">
-                  <span>8,6</span>
-                </div>
-                <div class="grade-txt-w">
-                  <div class="grade-txt-1">                    
-                    Оценка гостей
-                  </div>
-                  <div class="grade-txt-2">На основе 143 отзывов </div>
-                </div>                
-              </div>
-              <div class="call-pda-row">
-                <div class="call-pda-btn btn">
-                  <img src="img/phone-pda.svg" class="btn-icon" alt="">
-                  <div>Позвонить</div>
-                </div>
-                <div class="pda-mess pda-vib"><img src="img/vib.svg" alt=""></div>
-                <div class="pda-mess pda-whats"><img src="img/whats.svg" alt=""></div>
               </div>
             </div>
             @@include('var/_filter2.html')
-            <div class="rooms-list-w">
-              <div class="rooms-list">
-                <div class="room-more-col">
-                  @@include("var/_room_more.html",{
-                    "gal": "<a class='room-img-w' href='#'><img src='img/hot-44.jpg' class='room-img' /></a>",                  
-                    "price": "9400 ₽"                  
-                  })
+
+            <div class="pr-w">
+              <div class="pr-row">
+                <div class="pr-r-txt-w">
+                  <div class="pr-r-txt-1">Цена</div>
+                  <div class="pr-r-txt-2">за 3 ночи, 2 человек</div>
                 </div>
-                <div class="room-more-col">
-                  @@include("var/_room_more.html",{
-                    "gal": "<a class='room-img-w' href='#'><img src='img/hot-33.jpg' class='room-img' /></a>",                  
-                    "price": "2400 ₽"                  
-                  })
-                </div>
-                <div class="room-more-col">
-                  @@include("var/_room_more.html",{
-                    "gal": "<a class='room-img-w' href='#'><img src='img/hot-22.jpg' class='room-img' /></a>",                  
-                    "price": "1200 ₽"                  
-                  })
-                </div>
-                <div class="room-more-col">
-                  @@include("var/_room_more.html",{
-                    "gal": "<a class='room-img-w' href='#'><img src='img/hot-11.jpg' class='room-img' /></a>",                  
-                    "price": "2400 ₽"                  
-                  })
-                </div>
-                <div class="room-more-col">
-                  @@include("var/_room_more.html",{
-                    "gal": "<a class='room-img-w' href='#'><img src='img/hot-33.jpg' class='room-img' /></a>",                  
-                    "price": "2200 ₽"                  
-                  })
-                </div><!--rooms-list-->
+                <div class="pr-l-txt">12800 ₽</div>
               </div>
-              <a href="#" class="rooms-list-btn btn-gray">Показать еще <span>(5 из 14)</span></a>
-            </div><!--rooms-list-w-->
+            </div>
+
+
+
 
             <div class="stock-w">
-              <div class="stock-l">
-                <div class="stock-l-txt">
-                  Акции<span class="stock-l-txt-span"><img src="img/percent.svg" /></span>
-                </div>
-              </div>
-              <div class="stock-r">
-                <div class="stock-r-txt-w">
-                  <div class="stock-r-txt-1">Акция раннего бронирования: при бронировании от 7 дней — скидка 10%, от 14 дней — скидка 20%. На период до 10 июня и после 20 сентября действует специальная цена(-50%).</div>
-                  <div class="stock-r-txt-2">до 30 сентября</div>
-                </div>
-                <div class="stock-r-txt-w">
-                  <div class="stock-r-txt-1">Скидка 10% при проживании от 10 дней.</div>
-                  <div class="stock-r-txt-2">до 30 сентября</div>
-                </div>
-              </div>
-            </div>
-            <div class="stock-w">
-              <div class="stock-l"><div class="stock-l-txt">Удобства</div></div>
-              <div class="stock-r">
-                <div class="stock-r-ul-w">
+
+              <div class="room-less-row room-less-row-0">
+                <div class="room-less-l room-less-l-2">
+                  <div class="room-less-tit">Удобства</div>
                   <ul class="stock-r-ul">
                     <li class="stock-r-li">
-                      <span class="stock-r-span"><img src="img/facil-1.svg" /></span>Питание в отеле
+                      <span class="stock-r-span"><img src="img/facil-1.svg"></span>Питание в отеле
                     </li>
                     <li class="stock-r-li">
-                      <span class="stock-r-span"><img src="img/facil-2.svg" /></span>Бассейн
+                      <span class="stock-r-span"><img src="img/facil-2.svg"></span>Бассейн
                     </li>
                     <li class="stock-r-li">
-                      <span class="stock-r-span"><img src="img/facil-3.svg" /></span>Баня, Сауна
+                      <span class="stock-r-span"><img src="img/facil-3.svg"></span>Баня, Сауна
                     </li>
                     <li class="stock-r-li">
-                      <span class="stock-r-span"><img src="img/facil-4.svg" /></span>Парковка
+                      <span class="stock-r-span"><img src="img/facil-4.svg"></span>Парковка
                     </li>
                     <li class="stock-r-li">
-                      <span class="stock-r-span"><img src="img/facil-5.svg" /></span>Wi-Fi
+                      <span class="stock-r-span"><img src="img/facil-5.svg"></span>Wi-Fi
                     </li>
                     <li class="stock-r-li">
-                      <span class="stock-r-span"><img src="img/facil-6.svg" /></span>Телевизор
+                      <span class="stock-r-span"><img src="img/facil-6.svg"></span>Телевизор
                     </li>
                     <li class="stock-r-li">
-                      <span class="stock-r-span"><img src="img/facil-7.svg" /></span>Территория, двор
-                    </li>
-                    <li class="stock-r-li">
-                      <span class="stock-r-span"><img src="img/facil-8.svg" /></span>Работает круглогодично
+                      <span class="stock-r-span"><img src="img/facil-7.svg"></span>Территория, двор
                     </li>
                   </ul>
-                  <ul class="stock-r-ul">
-                    <li class="stock-r-li">
-                      <span class="stock-r-span"><img src="img/facil-9.svg" /></span>Собственный пляж
-                    </li>
-                    <li class="stock-r-li">
-                      <span class="stock-r-span"><img src="img/facil-10.svg" /></span>Детская площадка
-                    </li>
-                    <li class="stock-r-li">
-                      <span class="stock-r-span"><img src="img/facil-11.svg" /></span>Конференц-зал
-                    </li>
-                    <li class="stock-r-li">
-                      <span class="stock-r-span"><img src="img/facil-12.svg" /></span>Проживание с животными
-                    </li>
-                    <li class="stock-r-li">
-                      <span class="stock-r-span"><img src="img/facil-13.svg" /></span>Дети любого возраста
-                    </li>
-                    <li class="stock-r-li">
-                      <span class="stock-r-span"><img src="img/facil-14.svg" /></span>Круглосуточная регистрация
-                    </li>
-                    <li class="stock-r-li">
-                      <span class="stock-r-span"><img src="img/facil-15.svg" /></span>Терминал
-                    </li>
-                    <li class="stock-r-li">
-                      <span class="stock-r-span"><img src="img/facil-16.svg" /></span>Кондиционер
-                    </li>
-                  </ul>
+                </div><!--l-->
+                <div class="room-less-r">
+                  <div class="room-less-tit">Описание</div>
+                  
+                  <div class="room-bk-l room-bk-card">
+                    <div class="room-bk-l-chr"><img src="img/room-1.svg"><span class="room-bk-l-chr-span">2 места</span></div>
+                    <div class="room-bk-l-chr"><img src="img/room-2.svg"><span class="room-bk-l-chr-span">18,4 м2</span></div>
+                  </div>
+
+                  <div class="stock-r-txt">
+                    Номер состоит из одной комнаты, санузла, прихожей. В номере имеются 2 кровати, 0/1/2 кресло-кровать стул, стол туалетный с зеркалом; 2 прикроватных тумбочки, 2 прикроватных бра, телевизор, приставка ТВ, холодильник, телефон, сейф, шкаф. Санузел оснащен душевой кабиной, умывальником, унитазом, зеркалом с подсветкой, феном. В прихожей багажная тумба, настенная вешалка для верхней одежды. Площадь номера от 17,0 м2.
+                  </div>
+                  <div class="room-less-options">
+                    <ul class="room-less-options-ul">
+                      <li class="room-less-options-li">Завтрак и обед</li>
+                      <li class="room-less-options-li">Телевизор</li>
+                      <li class="room-less-options-li">Стиральная машина</li>
+                      <li class="room-less-options-li">Мебель</li>
+                      <li class="room-less-options-li">Фен</li>
+                      <li class="room-less-options-li">Сейф</li>
+                      <li class="room-less-options-li">Туалет</li>
+                      <li class="room-less-options-li">Чайник</li>
+                      <li class="room-less-options-li">Вентилятор</li>
+                    </ul>
+                  </div>
+
+                  <div class="room-less-prices">
+                    <div class="room-less-tit">Цены</div>
+                    <table class="room-less-prices-table">
+                      <thead>
+                        <tr>
+                          <td>Период </td>
+                          <td>Цена за 2 чел.</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1 мая - 20 мая</td>
+                          <td><strong>8200 ₽</strong></td>
+                        </tr>
+                        <tr>
+                          <td>21 мая - 2 июня</td>
+                          <td><strong>8200 ₽</strong></td>
+                        </tr>
+                        <tr>
+                          <td>3 июня - 31 июля</td>
+                          <td><strong>7400 ₽</strong></td>
+                        </tr>
+                        <tr>
+                          <td>12 августа - 2 сентября</td>
+                          <td><strong>3800 ₽</strong></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+
                 </div>
               </div>
-            </div>
-            <div class="stock-w">
-              <div class="stock-l"><div class="stock-l-txt">Описание</div></div>
-              <div class="stock-r">
-                <div class="stock-r-txt">
-                  Описание Гостиница комплекса Лоо - Арена 3 предлагает гостям 115 уютных номера, которые располагают к полноценному отдыху. В каждом номере функциональная мебель, современная техника и контроль температурного режима, Wi-Fi,
-                  гигиенические принадлежности. Комплекс «ЛОО – АРЕНА» предлагает гостям программы активного отдыха, которые превратят спортивный отдых в энергичное и приятное времяпрепровождение. Гостям Комплекса помимо основных услуг
-                  предлагаются дополнительные услуги: организация личных торжеств и мероприятий, услуги прачечной, гладильные комнаты, бесплатный Wi-Fi, камера хранения багажа.
-                  <a href="#" class="stock-r-btn btn-gray">Читать дальше</a>
-                </div>
-              </div>
-            </div>
-            <div class="show-480 show-map-pda">
-              <a href="#" class="col-1-filter-map">
-              <div class="col-1-filter-map-img-w">
-                <img src="img/map-ftr.jpg" class="col-1-filter-map-img">
-                <div class="col-1-filter-map-lab"><img src="img/geo-map-ftr.png"></div>
-              </div>
-              <div class="col-1-filter-map-txt-w">
-                <div class="col-1-filter-map-txt">
-                  Показать на карте<span class="col-1-filter-map-txt-span"><img src="img/show-map.svg"></span>
-                </div>
-              </div>
-            </a>
+
             </div>
             <div class="col-1-ph-g">
               <div class="stock-l-txt">Фотографии гостей</div>
               <div class="col-1-ph-g-gal col-1-ph-g-gal-107">
                 <div class="col-1-ph-g-gal-col">
-                  <a href="#" class="col-1-ph-g-gal-it"><img src="img/ph-g-1.jpg"></a>
+                  <a href="#" class="col-1-ph-g-gal-it"><img src="img/ph-g-1.jpg" /></a>
                 </div>
                 <div class="col-1-ph-g-gal-col">
-                  <a href="#" class="col-1-ph-g-gal-it"><img src="img/ph-g-2.jpg"></a>
+                  <a href="#" class="col-1-ph-g-gal-it"><img src="img/ph-g-2.jpg" /></a>
                 </div>
                 <div class="col-1-ph-g-gal-col">
-                  <a href="#" class="col-1-ph-g-gal-it"><img src="img/ph-g-3.jpg"></a>
+                  <a href="#" class="col-1-ph-g-gal-it"><img src="img/ph-g-3.jpg" /></a>
                 </div>
                 <div class="col-1-ph-g-gal-col">
-                  <a href="#" class="col-1-ph-g-gal-it"><img src="img/ph-g-4.jpg"></a>
+                  <a href="#" class="col-1-ph-g-gal-it"><img src="img/ph-g-4.jpg" /></a>
                 </div>
                 <div class="col-1-ph-g-gal-col-last">
-                  <a href="#" class="col-1-ph-g-gal-it col-1-ph-g-gal-it-bl"><img src="img/ph-g-black.jpg"><span class="wcol-1-ph-g-gal-it-bl-span">42+</span></a>
+                  <a href="#" class="col-1-ph-g-gal-it-bl"><img src="img/ph-g-black.jpg" /><span class="wcol-1-ph-g-gal-it-bl-span">42+</span></a>
                 </div>
               </div>
             </div>
 
 
-            <div class="reviews-hor">              
+            <div class="reviews-hor">
+              <div class="contain">
                 <div class="head-2">Отзывы гостей</div>
                 <div class="reviews-hor-row">
 
@@ -271,7 +212,8 @@
                   })
 
                 </div><!--reviews-hor-row-->
-                <a href="#" class="rat-btn btn-gray">Показать еще <span>(3 из 4)</span></a>              
+                <a href="#" class="rat-btn btn-gray">Показать еще <span>(3 из 4)</span></a>
+              </div>
             </div><!--reviews-hor-->
 
             <div class="col-1-ph-g-resp">
@@ -392,12 +334,12 @@
             </div>
 
             <div class="col-2-2-conts">
-              <div class="col-2-2-cont-nms">
+              <div class="col-2-2-cont-nms col-2-2-cont-nms-0">
                 <div class="col-2-2-conts-nm">
-                  <div class="col-2-2-conts-nm-ava"><img src="img/ava-card.png"></div>
+                  <div class="col-2-2-conts-nm-ava"><img src="img/ava-card-1.jpg"></div>
                   <div class="col-2-2-conts-nm-txt-w">
-                    <div class="col-2-2-conts-nm-txt-1">Лоо-Арена</div>
-                    <div class="col-2-2-conts-nm-txt-2">Комплекс</div>
+                    <div class="col-2-2-conts-nm-txt-1">Александа</div>
+                    <div class="col-2-2-conts-nm-txt-2">Геленджик</div>
                   </div>
                 </div>
                 <a href="#" class="col-2-2-conts-link">
@@ -405,11 +347,7 @@
                   на сайт AZUR.RU
                 </a>
               </div>
-              <div class="col-2-2-cont-st-w">
-                <a href="#" class="col-2-2-cont-st">
-                  <span class="col-2-2-cont-st-span"><img src="img/site.svg"></span>loo-arena.ru
-                </a>
-              </div>
+
               <div class="col-2-2-cont-inf">
 
                 <div class="col-2-2-cont-phones">
@@ -441,8 +379,8 @@
                     </div>
                   </div>
                 </div>
-
                 <a href="#" class="btn-gray col-2-2-btn">Все номера</a>
+                <a href="#" class="btn col-2-2-btn-2">Отправить заявку</a>
               </div>
             </div>
 

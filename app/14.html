@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>14. Azur. Feedback</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    @@include('var/_header.html')
+    <main class="main">
+
+      <section class="section promo-section">
+
+        <div class="contain">
+
+
+          <div class="bread">
+            <ul class="bread-ul">
+              <li><a href="#">Главная</a></li>              
+              <li><a href="#">Геленджик</a></li>                            
+              <li><span>Отзывы</span></li>
+            </ul>
+          </div>
+
+          <div class="head-1-w">
+            <h1 class="head-1">Отзывы геленджика<sup class="sup">2119</sup></h1>            
+          </div>
+
+          <div class="sort-tags-row">
+
+            <div class="choice-btn-ul">
+
+              <label class="choice-btn-label"><input type="checkbox" checked><span class="choice-btn-span">Все отзывы</span></label>
+              <label class="choice-btn-label"><input type="checkbox"><span class="choice-btn-span"> Только с фото</span></label>              
+            </div>
+
+            <div class="offer">
+              @@include('var/_regions-cities-sort.html')
+            </div>
+          </div><!--row-->
+
+          <div class="rats-row">
+
+            <div class="rats-col">            
+              @@include('var/_rat2-open.html',{                
+                "photos": "<a href='#' class='hot-inf-gal-b'><img src='img/hot-inf-11.jpg' /></a><div class='hot-inf-gal-m-w'><a href='#' class='hot-inf-gal-m'><img src='img/hot-inf-22.jpg' /></a><a href='#' class='hot-inf-gal-m rev-photo-more'><img src='img/hot-inf-22.jpg' /><span class='hot-inf-gal-m-span'>14+</span></a></div>",
+                "name": "Семейный дворик",
+                "namme": "Николай"
+              })
+            </div>
+            <div class="rats-col">            
+              @@include('var/_rat2.html',{                
+                "photos": "<a href='#' class='hot-inf-gal-b'><img src='img/hot-inf-1.jpg' /></a><div class='hot-inf-gal-m-w'><a href='#' class='hot-inf-gal-m'><img src='img/hot-inf-2.jpg' /></a><a href='#' class='hot-inf-gal-m rev-photo-more'><img src='img/hot-inf-2.jpg' /><span class='hot-inf-gal-m-span'>14+</span></a></div>",
+                "name": "AsTerias",
+                "namme": "Анна"
+              })
+            </div>
+          </div>
+          
+        </div><!--cont-->
+
+      </section>
+
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+  @@include('var/_scripts.html')
+</body>
+
+</html>

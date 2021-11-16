@@ -190,6 +190,24 @@ $('.accordion-header').toggleClass('inactive-header');
     });
   });
 
+    $('.hot-inf-w').each(function () {
+    let self = $(this);
+    let link = $(this).find('.roll2');    
+    let txt = $(this).find('.roll2 .txt');    
+    link.click(function (e) {
+      $(this).toggleClass('rotate');
+      e.preventDefault();
+      if (txt.text() == 'Свернуть') {
+        txt.text('Подробнее');
+      }
+      else if (txt.text() == 'Подробнее') {
+        txt.text('Свернуть');
+      }
+      self.toggleClass('_open');
+    });
+  });
+
+
   $('.col-2-2-btn').click(function (e) {
     e.preventDefault();
     $('.col-2-2-cont-phones').addClass('_open');
@@ -268,7 +286,7 @@ if($('.nearby-row-js-1').length) {
   {
     breakpoint: 480,
     settings: {
-      slidesToShow: 3
+      slidesToShow: 2
     }
   },
   ]
