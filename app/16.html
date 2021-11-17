@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>16. Azur. Photo Gallery</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+
+    @@include('var/_header.html')    
+    <main class="main">
+
+
+      <div class="bread bread-7">
+        <div class="contain">
+          <ul class="bread-ul">
+            <li><a href="#">Главная</a></li>              
+            <li><a href="#">Геленджик</a></li>            
+            <li><span>Фотогалерея</span></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="photogal-block">
+        <div class="contain">
+
+          <div class="col-w col-w-inverse photogal-col-w-1">
+            <div class="col-r">
+              <h1>Фотогалерея Геленджика</h1>
+            </div><!--col-r-->
+
+            <div class="col-l"> 
+              <div class="right-block-tit">Разделы</div>
+            </div><!--col-l-->
+          </div>
+          
+          <div class="col-w col-w-inverse photogal-col-w">
+            <div class="col-r">
+
+
+
+
+
+<!--              <div class="gal-w">
+              <div class="gal-col">
+                <div class="gal-m"><img src="img/gal-m-1.jpg" class="gal-m-img" /></div>
+                <div class="gal-b"><img src="img/gal-b-1.jpg" class="gal-m-img" /></div>
+                <div class="gal-b"><img src="img/gal-b-2.jpg" class="gal-m-img" /></div>
+                <div class="gal-m"><img src="img/gal-m-4.jpg" class="gal-m-img" /></div>
+              </div>
+              <div class="gal-col">
+                <div class="gal-b"><img src="img/gal-b-3.jpg" class="gal-m-img" /></div>
+                <div class="gal-b"><img src="img/gal-b-4.jpg" class="gal-m-img" /></div>
+                <div class="gal-mid"><img src="img/gal-mid.jpg" class="gal-m-img" /></div>
+              </div>
+              <div class="gal-col">
+                <div class="gal-m"><img src="img/gal-m-2.jpg" class="gal-m-img" /></div>
+                <div class="gal-v-b"><img src="img/gal-v-b.jpg" class="gal-m-img" /></div>
+                <div class="gal-m"><img src="img/gal-m-3.jpg" class="gal-m-img" /></div>
+                <div class="gal-m"><img src="img/gal-m-5.jpg" class="gal-m-img" /></div>
+                <div class="gal-m"><img src="img/gal-m-6.jpg" class="gal-m-img" /></div>
+              </div>
+            </div> -->
+
+          </div><!--col-r-->
+
+          <div class="col-l">
+
+
+            <div class="ab _open">
+              <div class="ab-w">
+                <div class="ab-h">
+                  <div class="ab-h-n">
+                    <div class="ab-h-n-img-w"><img src="img/ab-1.jpg" class="ab-h-n-img" /></div>
+                    <div class="ab-h-n-txt">
+                      Курорт<br />
+                      Геленджика
+                    </div>
+                  </div>
+                  <a href="#" class="arr-w"><img src="img/arr-up-bl.svg" /></a>
+                </div>
+              </div>
+              <ul class="ab-ul">
+                <li class="ab-li">
+                  <a href="#" class="ab-a">Виды курорта<span class="ab-a-span">42</span></a>
+                </li>
+                <li class="ab-li">
+                  <a href="#" class="ab-a act">Набережная<span class="ab-a-span">123</span></a>
+                </li>
+                <li class="ab-li">
+                  <a href="#" class="ab-a">Прогулка по городу<span class="ab-a-span">43</span></a>
+                </li>
+                <li class="ab-li">
+                  <a href="#" class="ab-a">Памятники и скульптуры<span class="ab-a-span">12</span></a>
+                </li>
+                <li class="ab-li">
+                  <a href="#" class="ab-a">Исторические фото<span class="ab-a-span">62</span></a>
+                </li>
+                <li class="ab-li">
+                  <a href="#" class="ab-a">Платоновая аллея<span class="ab-a-span">11</span></a>
+                </li>
+                <li class="ab-li">
+                  <a href="#" class="ab-a">Фонтаны<span class="ab-a-span">73</span></a>
+                </li>
+                <li class="ab-li">
+                  <a href="#" class="ab-a">Вечерний и ночной курорт<span class="ab-a-span">23</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="ab">
+              <div class="ab-w">
+                <div class="ab-h">
+                  <div class="ab-h-n">
+                    <div class="ab-h-n-img-w"><img src="img/ab-2.jpg" class="ab-h-n-img" /></div>
+                    <div class="ab-h-n-txt">
+                      Пляжи<br />
+                      Геленджика
+                    </div>
+                  </div>
+                  <a href="#" class="arr-w"><img src="img/arr-dw-gr.svg" /></a>
+                </div>
+              </div>
+            </div>
+            <div class="ab">
+              <div class="ab-w">
+                <div class="ab-h">
+                  <div class="ab-h-n">
+                    <div class="ab-h-n-img-w"><img src="img/ab-3.jpg" class="ab-h-n-img" /></div>
+                    <div class="ab-h-n-txt">
+                      Природа<br />
+                      и времена года
+                    </div>
+                  </div>
+                  <a href="#" class="arr-w"><img src="img/arr-dw-gr.svg" /></a>
+                </div>
+              </div>
+            </div>
+            <div class="ab">
+              <div class="ab-w">
+                <div class="ab-h">
+                  <div class="ab-h-n">
+                    <div class="ab-h-n-img-w"><img src="img/ab-4.jpg" class="ab-h-n-img" /></div>
+                    <div class="ab-h-n-txt">Люди и события</div>
+                  </div>
+                  <a href="#" class="arr-w"><img src="img/arr-dw-gr.svg" /></a>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div><!--col-l-->
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </main>
+  @@include('var/_footer.html')  
+</div><!--wrapper-->
+@@include('var/_scripts.html')
+</body>
+</html>

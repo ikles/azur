@@ -151,7 +151,7 @@ $('.accordion-header').toggleClass('inactive-header');
      slidesToShow: 1
    });
 
-}); 
+  }); 
 
 
   
@@ -190,7 +190,7 @@ $('.accordion-header').toggleClass('inactive-header');
     });
   });
 
-    $('.hot-inf-w').each(function () {
+  $('.hot-inf-w').each(function () {
     let self = $(this);
     let link = $(this).find('.roll2');    
     let txt = $(this).find('.roll2 .txt');    
@@ -206,6 +206,23 @@ $('.accordion-header').toggleClass('inactive-header');
       self.toggleClass('_open');
     });
   });
+
+
+  let link = $(this).find('.roll3');    
+  let txt = $(this).find('.roll3 .txt');    
+  link.click(function (e) {
+
+   $(this).toggleClass('rotate');
+   e.preventDefault();
+   if (txt.text() == 'Все номера') {
+    txt.text('Скрыть');
+  }
+  else if (txt.text() == 'Скрыть') {
+    txt.text('Все номера');
+  }
+  $('.call-popup-bot-phone-open').slideToggle();      
+});
+  
 
 
   $('.col-2-2-btn').click(function (e) {
@@ -657,31 +674,31 @@ if ($('.specials-row-js-1').length) {
 
 
 
-
-  new Litepicker({
-    element: document.getElementById('filter_input_date'),
-    singleMode: false,
-    delimiter: ' - ',
-    lang: "ru-RU",
-    format: 'DD MMM',
-    numberOfMonths: 2,
-    setup: (picker) => {
-      picker.on('hide', () => {
-        $('.container__main_before-1').removeClass('on');
-      });
-    },
-    tooltipText: {
-      one: 'night',
-      other: 'nights'
-    },
-    tooltipNumber: (totalDays) => {
-      return totalDays - 1;
-    },
-    lockDaysFilter: (date1, date2, pickedDates) => {
-      return allowedDates.includes(date1.format('YYYY-MM-DD'));
-    }
-  });
-
+  if ($('#filter_input_date').length) {
+    new Litepicker({
+      element: document.getElementById('filter_input_date'),
+      singleMode: false,
+      delimiter: ' - ',
+      lang: "ru-RU",
+      format: 'DD MMM',
+      numberOfMonths: 2,
+      setup: (picker) => {
+        picker.on('hide', () => {
+          $('.container__main_before-1').removeClass('on');
+        });
+      },
+      tooltipText: {
+        one: 'night',
+        other: 'nights'
+      },
+      tooltipNumber: (totalDays) => {
+        return totalDays - 1;
+      },
+      lockDaysFilter: (date1, date2, pickedDates) => {
+        return allowedDates.includes(date1.format('YYYY-MM-DD'));
+      }
+    });
+  }
 
   
 
@@ -814,6 +831,21 @@ filter_input_persons.val(total);
 
   });
  }
+
+ $('.container__main_before-3').click(function () {  
+  $('.call-popup').removeClass('_open');
+  $('body').removeClass('ohi');
+});
+
+
+ $('.call-pda-btn').click(function (e) {
+  e.preventDefault();
+  $('html, body').animate({
+    scrollTop: 0
+  });
+  $('.call-popup').addClass('_open');
+  $('body').addClass('ohi');
+});
 
 
  $(window).resize(function() {

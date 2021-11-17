@@ -1,3 +1,18 @@
+@media only screen and (max-width : 1366px) {
+.err-l {
+  padding: 0 40px;
+}  
+.err-l-inf-txt-1 {
+  font-size: 42px;
+}
+.err-l-inf-txt-2 {
+  font-size: 22px;
+}
+.err-l-inf-txt-3 {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+}
 
 @media only screen and (max-width : 1320px) {
   .contain {
@@ -285,7 +300,9 @@ h1, .head-1 {
            flex-wrap: wrap;
            margin-top: -20px;
  }
-
+.err-l {
+  width: 35.3%;
+}
 }
 
 @media only screen and (max-width : 991px) {
@@ -576,6 +593,7 @@ h1, .head-1 {
   width: 56px;
   height: 56px;
   display: flex;
+  flex: none;
   align-items: center;
   justify-content: center;
   border-radius: 6px;
@@ -650,6 +668,18 @@ h1, .head-1 {
   margin-bottom: 22px;
 }
 .hot-inf-w {  
+}
+.err-r-inf {
+  padding: 0 30px;
+}
+.err-l {
+  padding: 0 20px;
+}
+.err-l-inf-txt-2 {
+  font-size: 19px;
+}
+.err-l-inf-txt-3 {
+  font-size: 13px;
 }
 } 
 
@@ -986,6 +1016,9 @@ a.resort-child-link {
 .sort-tags-row {
   margin-top: 0;
 }
+.err-l-inf-btn {
+  height: 46px;
+}
 }      
 
 @media only screen and (max-width : 640px) {
@@ -1109,6 +1142,21 @@ a.resort-child-link {
 h1, .head-1 {
   font-size: 35px;
 }
+.err-w {  
+          flex-direction: column;          
+          -ms-overflow-y: scroll;
+              overflow-y: scroll;
+}
+.err-l {
+  width: 100%;
+  padding-bottom: 40px;
+  padding-top: 18px;
+}
+.err-l-logo {
+  position: static;
+  margin-bottom: 25px;
+}
+
 } 
 
 
@@ -2010,6 +2058,12 @@ display: none;
 .rats-row {
   margin-top: 10px;
 }
+.container__main_before-3 {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 }
 
 @media only screen and (max-width : 375px) {
@@ -2018,7 +2072,9 @@ display: none;
       flex-grow: 1;
     }
   }
-
+.call-pda-btn {
+  padding: 0 15px;
+}
 }
 
 @media only screen and (max-width : 360px) {
