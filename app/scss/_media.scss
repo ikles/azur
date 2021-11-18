@@ -1,18 +1,31 @@
 @media only screen and (max-width : 1366px) {
-.err-l {
-  padding: 0 40px;
-}  
-.err-l-inf-txt-1 {
-  font-size: 42px;
+  .err-l {
+    padding: 0 40px;
+  }  
+  .err-l-inf-txt-1 {
+    font-size: 42px;
+  }
+  .err-l-inf-txt-2 {
+    font-size: 22px;
+  }
+  .err-l-inf-txt-3 {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .col-1-filter-geo-h-w {
+    margin-bottom: 20px;
+    padding-bottom: 20px;  
+  }
+  .col-1-filter-w2 {
+    padding: 25px 20px 25px 20px;
+  }
+  .all-ht-it-onmap {
+    .all-ht-img-w {
+      height: 180px;
+    }
+  }
 }
-.err-l-inf-txt-2 {
-  font-size: 22px;
-}
-.err-l-inf-txt-3 {
-  font-size: 14px;
-  margin-bottom: 30px;
-}
-}
+
 
 @media only screen and (max-width : 1320px) {
   .contain {
@@ -297,10 +310,10 @@ h1, .head-1 {
    }
  }  
  .sort-tags-row {  
-           flex-wrap: wrap;
-           margin-top: -20px;
+   flex-wrap: wrap;
+   margin-top: -20px;
  }
-.err-l {
+ .err-l {
   width: 35.3%;
 }
 }
@@ -622,9 +635,9 @@ h1, .head-1 {
  background-size: 46px;
 }
 .grade-txt-1 {  
-          justify-content: flex-start;
-          font-size: 14px;
-          margin-bottom: 5px;
+  justify-content: flex-start;
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 .grade-txt-2 {
   text-align: left;
@@ -658,7 +671,7 @@ h1, .head-1 {
   display: none;
 }
 .hot-inf-w {  
-          flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .hot-inf-gal {
   margin-right: 0;
@@ -680,6 +693,50 @@ h1, .head-1 {
 }
 .err-l-inf-txt-3 {
   font-size: 13px;
+}
+.col-1-filter-w2 {
+  position: absolute;
+  display: block;
+  height: auto;
+  overflow-y: hidden;
+  left: 20px;
+  top: 80px;
+  padding: 25px 20px 25px 20px;
+  border-radius: 10px;
+  max-width: 304px;
+}
+.all-ht-it-onmap-w {
+
+  padding-right: 20px;
+  max-width: 260px;
+  .all-ht-it {
+    margin-bottom: 0;
+  }
+}
+.col-1-filter-w2 {    
+  max-width: 240px;
+  margin-bottom: 0;  
+}
+.all-ht-it-onmap-w {            
+  justify-content: flex-start;
+  z-index: 20;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+.wrapper-5 { 
+  overflow-y: scroll; 
+}
+.all-ht-it-onmap-w .sign {
+  left: 245px;
+  z-index: 21;
+  width: 30px;
+  height: 30px;
+  top: 0px;
+  img {
+    width: 15px;    
+  }
 }
 } 
 
@@ -995,7 +1052,7 @@ a.resort-child-link {
   margin-top: 21px;
 }
 .stock-w {  
-          flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .stock-l {
   width: 100%;
@@ -1123,39 +1180,39 @@ a.resort-child-link {
   .rat._open .rat-open {
     max-height: 860px;
   }
-.card-name-h {
-  font-size: 35px;
-}
-.filter-2 {
-  margin-top: 0;
-}
-.stock-r-li,
-.stock-r-txt {
-  font-size: 14px;
-}
-.col-1-ph-g-gal {
-  margin-top: 30px;
-}
-.col-1-ph-g-gal-it {
-  height: 90px;
-}
-h1, .head-1 {
-  font-size: 35px;
-}
-.err-w {  
-          flex-direction: column;          
-          -ms-overflow-y: scroll;
-              overflow-y: scroll;
-}
-.err-l {
-  width: 100%;
-  padding-bottom: 40px;
-  padding-top: 18px;
-}
-.err-l-logo {
-  position: static;
-  margin-bottom: 25px;
-}
+  .card-name-h {
+    font-size: 35px;
+  }
+  .filter-2 {
+    margin-top: 0;
+  }
+  .stock-r-li,
+  .stock-r-txt {
+    font-size: 14px;
+  }
+  .col-1-ph-g-gal {
+    margin-top: 30px;
+  }
+  .col-1-ph-g-gal-it {
+    height: 90px;
+  }
+  h1, .head-1 {
+    font-size: 35px;
+  }
+  .err-w {  
+    flex-direction: column;          
+    -ms-overflow-y: scroll;
+    overflow-y: scroll;
+  }
+  .err-l {
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 18px;
+  }
+  .err-l-logo {
+    position: static;
+    margin-bottom: 25px;
+  }
 
 } 
 
@@ -1309,7 +1366,7 @@ h1, .head-1 {
     margin-bottom: 25px;
   }
   .rat-eva-all {    
-            flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .rat-eva-col {
     width: 100%;
@@ -1318,13 +1375,13 @@ h1, .head-1 {
     max-height: 919px;
   }
   .col-1-ph-g-resp {    
-            flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .card-name-h {
     font-size: 27px;
   }
   .section {
-    
+
   }
   .col-1-ph-g-gal-it {
     height: 70px;
@@ -1351,19 +1408,19 @@ h1, .head-1 {
     margin-top: 10px;
   }
   .articles-cat-row {
-              flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .articles-cat-col {
     width: 100%;    
     &:last-child {
       .article-it-h {
        margin-bottom: 0; 
-      }      
-    }
-  }
-  .articles-cat-row .article-it-h {
-    margin-bottom: 20px;
-  }
+     }      
+   }
+ }
+ .articles-cat-row .article-it-h {
+  margin-bottom: 20px;
+}
 }
 
 
@@ -1880,10 +1937,10 @@ input[type="text"].filter-input,
   height: 8px;
   &:not(:last-child) {
    margin-right: 2px; 
-  }  
-  img {
-    max-width: 100%;
-  }  
+ }  
+ img {
+  max-width: 100%;
+}  
 }
 .card-name-star-w {
   margin-left: 5px;
@@ -1904,14 +1961,14 @@ input[type="text"].filter-input,
 }
 .filter-2 {
   .filter-col-persons {      
-      margin-bottom: 0;   
+    margin-bottom: 0;   
   }
 }
 .room-less-row {
   padding: 20px;
 }
 .stock-r-ul-w { 
-          flex-wrap: wrap; 
+  flex-wrap: wrap; 
 }
 .stock-r-ul {
   width: 100%;
@@ -1938,17 +1995,17 @@ input[type="text"].filter-input,
 .col-1-ph-g-gal-it {  
 }
 .reviews-hor {
-.head-2 {
-  font-size: 16px;
-  margin-bottom: 30px;
-}  
+  .head-2 {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }  
 }
 .rat {
   padding: 30px 20px 20px;
 }
 .rat-n-txt-w {
   display: inline-flex;  
-          flex-grow: 1;
+  flex-grow: 1;
 }
 .rat-n .rev-top-star {
   flex: none;
@@ -1974,9 +2031,9 @@ input[type="text"].filter-input,
   width: 100%;
 }
 .nearby-section {
-.show-map {
-display: none;  
-}
+  .show-map {
+    display: none;  
+  }
 }
 .nearby-row {
   .all-ht-inf-a,
@@ -2044,7 +2101,7 @@ display: none;
   transform: translate(0%, 0%);
   margin-top: 25px;
   width: 100%;  
-          justify-content: center;
+  justify-content: center;
 }
 .hot-inf-btn {
   width: 100%;
@@ -2064,6 +2121,11 @@ display: none;
   top: 0;
   left: 0;
 }
+.all-ht-it-onmap-w {
+  height: auto;
+  top: 70px;
+  padding-left: 20px;
+}
 }
 
 @media only screen and (max-width : 375px) {
@@ -2072,9 +2134,9 @@ display: none;
       flex-grow: 1;
     }
   }
-.call-pda-btn {
-  padding: 0 15px;
-}
+  .call-pda-btn {
+    padding: 0 15px;
+  }
 }
 
 @media only screen and (max-width : 360px) {

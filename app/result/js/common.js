@@ -832,6 +832,29 @@ filter_input_persons.val(total);
   });
  }
 
+ $('.ab').each(function () {
+  let self = $(this);
+   let tit = $(this).find('.ab-w');
+   let cont = $(this).find('.ab-ul');
+   tit.click(function () {
+    self.toggleClass('_open');
+     cont.slideToggle();
+   })
+ });
+
+$('.icn').click(function () {
+  $('.all-ht-it-onmap-w').show();
+  console.log(22)
+});
+
+ $('.all-ht-it-onmap-w').each(function () {
+   let self = $(this);
+   let link = $(this).find('.sign');
+   link.click(function () {
+     self.fadeOut();
+   });
+ })
+
  $('.container__main_before-3').click(function () {  
   $('.call-popup').removeClass('_open');
   $('body').removeClass('ohi');

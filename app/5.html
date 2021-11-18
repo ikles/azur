@@ -16,51 +16,67 @@
 </head>
 <body>
 
-  <div class="wrapper">
+  <div class="wrapper wrapper-5">
 
     @@include('var/_header.html')    
-    <main class="main">
+    
 
-      <div class="col-1-filter-w">
-        <div class="col-1-filter-geo-h-w">
-          <div class="col-1-filter-geo-h"><img src="img/geo-ftr.svg" /><span class="col-1-filter-geo-h-span">Кабардинка</span></div>
-        </div>
-        <div class="col-1-filter-h-2">Услуги</div>
-        <ul class="col-1-filter-ul">
-          <li class="col-1-filter-li">
-            <label class="filter-label col-1-filter-label">
-              <span class="filter-label-span"></span>
-              <span class="label-span-txt">Гостиницы</span>
-            </label>
-
-            <label class="filter-label col-1-filter-label">
-              <span class="label-span-checked"><img src="img/check.svg" /></span>
-              <span class="label-span-txt">Дома</span>
-            </label>
-          </li>
-
-          <li class="col-1-filter-li">
-            <label class="filter-label col-1-filter-label">
-              <span class="filter-label-span"></span>
-              <span class="label-span-txt">Квартиры</span>
-            </label>
-
-            <label class="filter-label col-1-filter-label">
-              <span class="filter-label-span"></span>
-              <span class="label-span-txt">Гостевые дома</span>
-            </label>
-          </li>
-        </ul>
+    <div class="col-1-filter-w col-1-filter-w2">
+      <div class="col-1-filter-geo-h-w">
+        <div class="col-1-filter-geo-h"><img src="img/geo-ftr.svg" /><span class="col-1-filter-geo-h-span">Кабардинка</span></div>
       </div>
+      <div class="col-1-filter-h-2">Подбор жилья</div>
+
+      <div class="col-1-filter-labels2">
+        <label class="filter-label col-1-filter-label">
+          <input type="checkbox" class="col-1-filter-checkbox" wfd-invisible="true">
+          <span class="filter-label-span"></span>
+          <span class="label-span-txt">Гостиницы</span>
+        </label>
+        <label class="filter-label col-1-filter-label">
+          <input type="checkbox" class="col-1-filter-checkbox" wfd-invisible="true" checked>
+          <span class="filter-label-span"></span>
+          <span class="label-span-txt">Дома</span>
+        </label>
+        <label class="filter-label col-1-filter-label">
+          <input type="checkbox" class="col-1-filter-checkbox" wfd-invisible="true">
+          <span class="filter-label-span"></span>
+          <span class="label-span-txt">Квартиры</span>
+        </label>
+        <label class="filter-label col-1-filter-label">
+          <input type="checkbox" class="col-1-filter-checkbox" wfd-invisible="true">
+          <span class="filter-label-span"></span>
+          <span class="label-span-txt">Гостевые дома</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="all-ht-it-onmap-w">
+      <a class="sign sign-1"><img src="img/signs-2.svg"></a>
+    <div class="all-ht-it-onmap">
+      @@include('var/_all-ht-it.html',{
+        "class2": "",
+        "img": "hot-1",          
+        "stars": "7,8",        
+        "reviews": "146",
+        "name1": "Гостиница",
+        "name2": "Атлант",
+        "geo": "ул. Пролетарская, 103 А",
+        "price": "от<span class='all-ht-inf-txt-3-span'>1200 ₽</span>/ в сутки"
+      })
+    </div>
+  </div>
 
 
 
+    <div class="map map-1" id="map">
+
+    </div>
 
 
 
-            </main>
-            @@include('var/_footer.html')
-          </div><!--wrapper-->
-          @@include('var/_scripts.html')
-        </body>
-        </html>
+    
+  </div><!--wrapper-->
+  @@include('var/_scripts.html')
+</body>
+</html>
