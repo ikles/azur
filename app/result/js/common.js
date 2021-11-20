@@ -25,9 +25,9 @@ jQuery(document).ready(function( $ ) {
   });
 
 
-$('.galfull-inn').click(function () {
-  $('.inf').fadeOut();
-});
+  $('.galfull-inn').click(function () {
+    $('.inf').fadeOut();
+  });
 
   /************************************/
 
@@ -236,17 +236,30 @@ $('.accordion-header').toggleClass('inactive-header');
   });
 
 
+
+
+
+
+
+
   if($('.hotels-w-js-1').length) {
 
     $('.hotels-w-js-1').slick({  
      dots: false,
      infinite: false,
+     onAfterChange: function (slide, index) {
+      if (index <= 0) {
+        alert("Первый слайд!");
+      };
+      if (itemsLength >= index) {
+        alert("Последний слайд!");
+      };
+    },
+    speed: 300,
+    slidesToShow: 4,   
+    responsive: [
 
-     speed: 300,
-     slidesToShow: 4,   
-     responsive: [
-
-     {
+    {
       breakpoint: 1200,
       settings: {
         slidesToShow: 3        
@@ -272,6 +285,15 @@ $('.accordion-header').toggleClass('inactive-header');
     },
     ]
   });
+
+    $('.hotels-w-js-1').on('edge', function(event, slick, direction){
+      if (direction == 'left') {
+        $('.hotels-w-js-1 .slick-list').addClass('poright');
+      }
+      else if (direction == 'right') {
+        $('.hotels-w-js-1 .slick-list').removeClass('poright');
+      }
+    });
 
 }//if
 
@@ -313,6 +335,15 @@ if($('.nearby-row-js-1').length) {
   ]
 });
 
+    $('.nearby-row-js-1').on('edge', function(event, slick, direction){
+    if (direction == 'left') {
+      $('.nearby-row-js-1 .slick-list').addClass('poright');
+    }
+    else if (direction == 'right') {
+      $('.nearby-row-js-1 .slick-list').removeClass('poright');
+    }
+  });
+
 }//if
 
 
@@ -351,6 +382,18 @@ if($('.hotels-w-js-2').length) {
   },
   ]
 });
+
+
+
+  $('.hotels-w-js-2').on('edge', function(event, slick, direction){
+    if (direction == 'left') {
+      $('.hotels-w-js-2 .slick-list').addClass('poright');
+    }
+    else if (direction == 'right') {
+      $('.hotels-w-js-2 .slick-list').removeClass('poright');
+    }
+  });
+
 }
 
 if ($('.photogal-3-js').length) {
@@ -422,6 +465,17 @@ if($('.sale-w-js').length) {
   },
   ]
 });
+
+
+  $('.sale-w-js').on('edge', function(event, slick, direction){
+    if (direction == 'left') {
+      $('.sale-w-js .slick-list').addClass('poright');
+    }
+    else if (direction == 'right') {
+      $('.sale-w-js .slick-list').removeClass('poright');
+    }
+  });
+
 }
 
 if($('.rev-it-w-js').length) {
@@ -451,6 +505,16 @@ if($('.rev-it-w-js').length) {
   },
   ]
 });
+
+  $('.rev-it-w-js').on('edge', function(event, slick, direction){
+    if (direction == 'left') {
+      $('.rev-it-w-js .slick-list').addClass('poright');
+    }
+    else if (direction == 'right') {
+      $('.rev-it-w-js .slick-list').removeClass('poright');
+    }
+  });
+
 }
 
 
@@ -469,6 +533,16 @@ if ($('.gal-3-row').length) {
   }  
   ]
 });
+
+  $('.gal-3-row').on('edge', function(event, slick, direction){
+    if (direction == 'left') {
+      $('.gal-3-row .slick-list').addClass('poright');
+    }
+    else if (direction == 'right') {
+      $('.gal-3-row .slick-list').removeClass('poright');
+    }
+  });
+
 }
 
 
@@ -502,6 +576,17 @@ if ($('.photogal-w-3-js').length) {
   }  
   ]
 });
+
+
+  $('.photogal-w-3-js').on('edge', function(event, slick, direction){
+    if (direction == 'left') {
+      $('.photogal-w-3-js .slick-list').addClass('poright');
+    }
+    else if (direction == 'right') {
+      $('.photogal-w-3-js .slick-list').removeClass('poright');
+    }
+  });
+
 }
 
 if ($('.specials-row-js-1').length) {
@@ -544,6 +629,15 @@ if ($('.specials-row-js-1').length) {
   }
   ]
 });
+
+  $('.specials-row-js-1').on('edge', function(event, slick, direction){
+    if (direction == 'left') {
+      $('.specials-row-js-1 .slick-list').addClass('poright');
+    }
+    else if (direction == 'right') {
+      $('.specials-row-js-1 .slick-list').removeClass('poright');
+    }
+  });
 }
 
 
@@ -1036,8 +1130,8 @@ $('.where-close-pda, .filter-where-list li').click(function () {
   $('.filter').removeClass('on');
 });
 
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty('--vh', `${vh}px`);
+/*let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);*/
 
 
 

@@ -739,8 +739,8 @@ h1, .head-1 {
   }
 }
 .photogal-col-w {  
-          flex-wrap: wrap;
-          margin-top: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
   .col-l {
     width: 100%;
   }
@@ -751,9 +751,9 @@ h1, .head-1 {
   }
 }
 .photogal-col-w-1 {
-.col-l {
-  display: none;
-}  
+  .col-l {
+    display: none;
+  }  
 }
 } 
 
@@ -1255,7 +1255,11 @@ a.resort-child-link {
     display: none !important;
   }
   .gal-3-row {
+    height: 257px;
     .slick-list {
+      position: absolute;
+      left: 0;
+      top: 0;
       width: 642px;
     }
   }
@@ -1445,7 +1449,7 @@ a.resort-child-link {
   margin-bottom: 20px;
 }
 .gal-arrow.slick-arrow {
-  
+
 }
 }
 
@@ -1469,12 +1473,13 @@ a.resort-child-link {
       position: absolute;
       left: 0;
       top: 0;
-      margin: 0 -5px;
+      margin: 0 -5px;      
     }
     .slick-slide {
       padding: 0 5px;
     }
   }
+
 
   .hotels-w-js-1,
   .hotels-it {
@@ -1880,7 +1885,12 @@ a.resort-child-link {
   display: none !important;
 }
 .photogal-w {
+  height: 196px;
+  position: relative;
   .slick-list {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 479px;
   }
 }
@@ -1908,7 +1918,12 @@ a.resort-child-link {
   margin-top: 40px;
 }
 .specials-row {
+  position: relative;
+  height: 273px;
   .slick-list {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 630px;
   }
 }
@@ -1972,6 +1987,9 @@ input[type="text"].filter-input,
   margin-left: 5px;
   margin-top: 0;
 }
+.card-gal {
+  height: 154px;
+}
 .card-gal-img-b-w {
   height: 154px;
 }
@@ -1992,6 +2010,9 @@ input[type="text"].filter-input,
 }
 .room-less-row {
   padding: 20px;
+}
+.room-less-row-0 {
+ padding: 0; 
 }
 .stock-r-ul-w { 
   flex-wrap: wrap; 
@@ -2062,6 +2083,8 @@ input[type="text"].filter-input,
   }
 }
 .nearby-row {
+  height: 364px;
+  position: relative;
   .all-ht-inf-a,
   .all-ht-inf-geo-span {
     font-size: 14px;
@@ -2078,6 +2101,9 @@ input[type="text"].filter-input,
   }
   .slick-list {
     width: 642px;
+    position: absolute;
+    left: 0;
+    top: 0;
     margin-left: -5px;
     margin-right: -5px;
   }
@@ -2158,6 +2184,12 @@ input[type="text"].filter-input,
 .gal-arrow.slick-next {
   right: 0;
 }
+.wcol-1-ph-g-gal-it-bl-span {
+  font-size: 18px;
+}
+.region-it-w-2 .region-it:last-child {
+  width: 100%;
+}
 }
 
 @media only screen and (max-width : 375px) {
@@ -2171,7 +2203,7 @@ input[type="text"].filter-input,
   }
   
   .grid-item a {    
-            border-radius: 7px;
+    border-radius: 7px;
   }
 }
 
@@ -2237,3 +2269,10 @@ input[type="text"].filter-input,
 } 
 
 
+  .slick-list {  
+    transition: 0.5s !important;
+  }
+  .slick-list.poright {
+    left: auto;
+    right: 0;  
+  }

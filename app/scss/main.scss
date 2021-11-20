@@ -3811,7 +3811,8 @@ select {
 }
 
 .col-1-ph-g-gal-it-bl {
-  width: 87px;
+  max-width: 87px;
+  width: 100%;
   height: 197px;
   display: flex;
   background: rgb(196, 196, 196);
