@@ -113,7 +113,7 @@ jQuery(document).ready(function( $ ) {
 
 
     // Добавляем все метки на карту.
-    //myMap.controls.add(zoomControl);
+    myMap.controls.add(zoomControl);    
     myMap.geoObjects
     .add(myPlacemark1)        
     .add(myPlacemark2)        

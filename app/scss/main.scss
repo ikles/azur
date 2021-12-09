@@ -61,11 +61,11 @@ body {
 .wrapper {
   width: 100%;
   margin-left: auto;
-  margin-right: auto;  
-  overflow: hidden;
+  margin-right: auto;    
   display: flex;    
   flex-direction: column;    
-  min-height: 100vh;
+  min-height: 100vh;  
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -83,7 +83,7 @@ body {
 
 
 .lcpadding {
-  padding-left: calc((100% - 1180px)/2);    
+  padding-left: calc((100% - 1280px)/2);    
   @media only screen and (max-width : 1199px) {
     padding-left: calc((100% - 970px)/2);
   }
@@ -102,8 +102,8 @@ body {
 }
 
 .cpadding {
-  padding-left: calc((100% - 1180px)/2);
-  padding-right: calc((100% - 1180px)/2);
+  padding-left: calc((100% - 1280px)/2);
+  padding-right: calc((100% - 1280px)/2);
   @media only screen and (max-width : 1199px) {
     padding-left: calc((100% - 970px)/2);
     padding-right: calc((100% - 970px)/2);
@@ -127,7 +127,7 @@ body {
 }
 
 .rcpadding {  
-  padding-right: calc((100% - 1180px)/2);
+  padding-right: calc((100% - 1280px)/2);
   @media only screen and (max-width : 1199px) {    
     padding-right: calc((100% - 970px)/2);
   }
@@ -1215,7 +1215,8 @@ padding-bottom: 40px;
   overflow: hidden;
   position: fixed;
   right: 10px;
-  bottom: 305px;
+  /*bottom: 305px;*/
+  bottom: 85px;
   display: none;
 }
 
@@ -1242,7 +1243,7 @@ padding-bottom: 40px;
   top: 61px;
   left: 0;
   width: 100%;  
-  z-index: 2;
+  z-index: 17;
   border-radius: 10px;
   display: none;    
 }
@@ -3250,6 +3251,24 @@ select {
   width: 100%;
   margin-top: 22px;
 }
+
+.apartment-col-w .col-l {
+  position: relative;
+}
+
+
+.col-2-2-sticky {  
+  min-height: 20px;
+  max-width: 305px;
+&.fixed {
+  position: fixed;  
+  right: calc((100% - 1280px)/2);
+  top: 0;
+  z-index: 1;  
+}
+}
+
+
 
 .col-2-2-conts {
   width: 100%;
@@ -5406,6 +5425,13 @@ h1 {
     right: calc(-1 * (100vw - 345px));
   }
 }
+
+.ymaps-b-zoom_hints-pos_right {
+  left: auto !important;
+  right: 20px !important;
+  top: calc(50vh - 203px) !important;
+}
+
 .all-ht-it-onmap {    
   width: 100%;
   position: relative;
